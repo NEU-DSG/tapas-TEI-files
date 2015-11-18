@@ -1,0 +1,914 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?oxygen RNGSchema="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="xml"?>
+<TEI xml:lang="en" xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Listing to Three Sides</title>
+        <author>
+          <name>Syd</name>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <p>unpublished work used for testing</p>
+      </publicationStmt>
+      <sourceDesc>
+	<p>Born digital.</p>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <tagsDecl>
+        <rendition xml:id="r.head">align(center)case(allcaps)</rendition>
+        <rendition xml:id="r.it">slant(italic)</rendition>
+        <rendition xml:id="r.brk">break(yes)</rendition>
+        <rendition xml:id="r.nobrk">break(no)</rendition>
+        <namespace name="http://www.tei-c.org/ns/1.0">
+          <tagUsage gi="emph" render="#r.it"/>
+          <tagUsage gi="head" render="#r.head"/>
+          <tagUsage gi="mw" render="#r.brk"/>
+          <tagUsage gi="label" render="#r.nobrk"/>
+          <tagUsage gi="mcr" render="#r.it"/>
+        </namespace>
+      </tagsDecl>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="acknowledgement" rend="align(right)slant(italics)">
+        <p>Information gleefully obtained from <ref
+        target="http://listverse.com/">listverse.com</ref> as well as
+        several other sources.</p>
+      </div>
+    </front>
+    <body>
+      <div style="background-color: #FED;">
+	<head>untyped soup</head>
+	<p>I.e., lists that do not have <att>type</att> floating in
+	the soup on their own, outside of <gi>p</gi>.</p>
+	<p>First, a simple list of short <gi>item</gi>s:</p>
+	<list>
+	  <head>10 Symbols That Lost Their Original Meanings</head>
+	  <item>Star of David</item>
+	  <item>The Ichthys</item>
+	  <item>The Petrine Cross</item>
+	  <item>The Skull And Crossbones</item>
+	  <item>Barber Poles</item>
+	  <item>The <soCalled>Okay</soCalled> Sign</item>
+	  <item>Devil Horns</item>
+	  <item>The Caduceus</item>
+	  <item>The Peace Symbol</item>
+	  <item>The Swastika</item>
+	</list>
+	<p>Second, a simple list of mostly long items</p>
+	<list>
+	  <head>list of U.S. congressional powers</head>
+	  <item>To lay and collect Taxes, Duties, Imposts and Excises, to pay the Debts and provide for the common Defence and general Welfare of the United States; but all Duties, Imposts and Excises shall be uniform throughout the United States;</item>
+	  <item>To borrow money on the credit of the United States;</item>
+	  <item>To regulate Commerce with foreign Nations, and among the several States, and with the Indian Tribes;</item>
+	  <item>To establish an uniform Rule of Naturalization, and uniform Laws on the subject of Bankruptcies throughout the United States;</item>
+	  <item>To coin Money, regulate the Value thereof, and of foreign Coin, and fix the Standard of Weights and Measures;</item>
+	  <item>To provide for the Punishment of counterfeiting the Securities and current Coin of the United States;</item>
+	  <item>To establish Post Offices and Post Roads;</item>
+	  <item>To promote the Progress of Science and useful Arts, by securing for limited Times to Authors and Inventors the exclusive Right to their respective Writings and Discoveries;</item>
+	  <item>To constitute Tribunals inferior to the supreme Court;</item>
+	  <item>To define and punish Piracies and Felonies committed on the high Seas, and Offenses against the Law of Nations;</item>
+	  <item>To declare War, grant Letters of Marque and Reprisal, and make Rules concerning Captures on Land and Water;</item>
+	  <item>To raise and support Armies, but no Appropriation of Money to that Use shall be for a longer Term than two Years;</item>
+	  <item>To provide and maintain a Navy;</item>
+	  <item>To make Rules for the Government and Regulation of the land and naval Forces;</item>
+	  <item>To provide for calling forth the Militia to execute the Laws of the Union, suppress Insurrections and repel Invasions;</item>
+	  <item>To provide for organizing, arming, and disciplining, the Militia, and for governing such Part of them as may be employed in the Service of the United States, reserving to the States respectively, the Appointment of the Officers, and the Authority of training the Militia according to the discipline prescribed by Congress;</item>
+	  <item>To exercise exclusive Legislation in all Cases whatsoever, over such District (not exceeding ten Miles square) as may, by Cession of particular States, and the acceptance of Congress, become the Seat of the Government of the United States, and to exercise like Authority over all Places purchased by the Consent of the Legislature of the State in which the Same shall be, for the Erection of Forts, Magazines, Arsenals, dock-Yards, and other needful Buildings; And</item>
+	  <item>To make all Laws which shall be necessary and proper for carrying into Execution the foregoing Powers, and all other Powers vested by this Constitution in the Government of the United States, or in any Department or Officer thereof.	  </item>
+	</list>
+	<p>label-item pairs, short</p>
+	<list>
+	  <head>10 Disney Movies With Horrific Origins</head>
+	  <label>10</label> <item>Pinocchio: Corpses and Murder</item>
+	  <label>9</label> <item>Dismemberment in Aladdin</item>
+	  <label>8</label> <item>Murderous Cinderella</item>
+	  <label>7</label> <item>Sleeping Beauty Sleeps Amongst Corpses</item>
+	  <label>6</label> <item>Little Mermaid Mayhem</item>
+	  <label>5</label> <item>Snow White Tortured</item>
+	  <label>4</label> <item>Hercules Self-Immolation</item>
+	  <label>3</label> <item>Fox and the Hound Deaths</item>
+	  <label>2</label> <item>Torture and Death in the Hunchback</item>
+	  <label>1</label> <item>Pocahontas Raped and Killed</item>
+	</list>
+	<p>label-item pairs, long</p>
+        <list>
+          <label>
+            <att>met</att>
+          </label>
+          <item>May be used to specify the metrical pattern a line (or line group).</item>
+          <label>
+            <att>n</att>
+          </label>
+          <item>Provides a label or identifier for this particular element, not necessarily
+            unique.</item>
+          <label><att>next</att> and <att>prev</att></label>
+          <item>Allow what is logically a single text object (e.g. a quotation) to be encoded as a
+            series of two or more discrete XML elements, as a work-around for overlap problems.
+            These attributes represent the connections between these fragmentary elements, by
+            pointing to a prior or subsequent element in the chain of fragments. They do so by
+            referring to that element’s <att>xml:id</att> value. That is, if <att>next</att> is
+            specified on a <gi>said</gi> element, then its value should be a hash mark
+              (<code>#</code>) followed by the value of the <att>xml:id</att> of another
+              <gi>said</gi> element, the one that is the next part of the spoken passage. For
+            example, <code>&lt;said xml:id="s01" next="#s02"&gt;Hey&lt;/said&gt;, he
+              said, &lt;said xml:id="s02" prev="#s01"&gt;What's
+              up?&lt;/said&gt;</code>.</item>
+          <label>
+            <att>rend</att>
+          </label>
+          <item>May be used to specify how the element looked in the source. E.g., <tag>head
+              rend="align(center)"</tag> or <tag>l rend="indent(2)"</tag>.</item>
+          <label>
+            <att>rhyme</att>
+          </label>
+          <item>May be used to specify the rhyme scheme of a line group.</item>
+          <label>
+            <att>target</att>
+          </label>
+          <item>Provides a URI (e.g.
+              <code>http://bauman.zapto.org/gallery/Niagara_Falls_2008-01/2008_01_07T16_35_39</code>
+            or <code>#sect08</code>) that points to either another document or an element within an
+            XML document (including the current one).</item>
+          <label>
+            <att>xml:id</att>
+          </label>
+          <item>Provides a unique identifier for this particular element, thus allowing other
+            elements to point to it (using their <att>target</att>, <att>next</att>,
+            <att>prev</att>, etc.).</item>
+          <label>
+            <att>xml:lang</att>
+          </label>
+          <item>Used to indicate the language of an element’s content. Its value conforms to BCP 47
+            (a standard system for defining language codes). For information on how BCP 47 codes are
+            constructed, see the note in the <ref
+              target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-data.language.html"
+              >data.language</ref> documentation. Some sample values for the <att>xml:lang</att>
+            attribute are:<table>
+              <row>
+                <cell>English</cell>
+                <cell>
+                  <val>en</val>
+                </cell>
+              </row>
+              <row>
+                <cell>French</cell>
+                <cell>
+                  <val>fr</val>
+                </cell>
+              </row>
+              <row>
+                <cell>German</cell>
+                <cell>
+                  <val>de</val>
+                </cell>
+              </row>
+              <row>
+                <cell>Italian</cell>
+                <cell>
+                  <val>it</val>
+                </cell>
+              </row>
+              <row>
+                <cell>Latin</cell>
+                <cell>
+                  <val>la</val>
+                </cell>
+              </row>
+              <row>
+                <cell>Arabic as spoken in Iraq</cell>
+                <cell>
+                  <val>ar-IQ</val>
+                </cell>
+              </row>
+              <row>
+                <cell>Chinese</cell>
+                <cell>
+                  <val>zh</val>
+                </cell>
+              </row>
+              <row>
+                <cell>simplified Chinese</cell>
+                <cell>
+                  <val>zh-Hans</val>
+                </cell>
+              </row>
+              <row>
+                <cell>Taiwanese</cell>
+                <cell>
+                  <val>zh-TW</val>
+                </cell>
+              </row>
+            </table> If further explanation is required, a <gi>language</gi> element with an
+              <att>ident</att> attribute of the same BCP 47 code can be specified in the TEI header.
+          </item>
+        </list>
+	<p>labels inside items, short. Note that the default rendition
+	for <gi>label</gi> is <val>break(no)</val>.</p>
+	<list>
+	  <head>Odes.</head>
+	  <item>
+	    <label>Ode I.</label>
+	    <rs>The Spirit of the Air,</rs>
+	    <ref type="pageNum" target="#p04" rend="align(right)">55</ref>
+	  </item>
+	  <item>
+	    <label>Ode II.</label>
+	    <rs>The Mermaid,</rs>
+	    <ref type="pageNum" target="#p05" rend="align(right)">61</ref>
+	  </item>
+	  <item>
+	    <label>Ode III.</label>
+	    <rs>To Pain,</rs>
+	    <ref type="pageNum" target="#p06" rend="align(right)">66</ref>
+	  </item>
+	  <item>
+	    <label>Ode IV.</label>
+	    <ref type="pageNum" target="#p07" rend="align(right)">69</ref>
+	  </item>
+	  <item>
+	    <label>Ode V.</label>
+	    <rs>To the Nightingale,</rs>
+	    <ref type="pageNum" target="#p08" rend="align(right)">71</ref>
+	  </item>
+	</list>
+	<p>labels inside items, long</p>
+          <list>
+            <item><label>Elements to be eliminated or included</label>: What elements are you still uncertain about whether to use or exclude from the schema? What types of documents do you still need to review to make your decision?</item>
+            <item><label>Attributes to be eliminated or included</label>: What attributes are you still uncertain about whether to use or exclude from the schema? What types of documents do you still need to review to make your decision?</item>            
+            <item><label>Controlled vocabularies that are still being determined</label>: What terms are still uncertain? What types of documents do you still need to review to finalize these vocabularies? What decisions still need to be made?</item>
+            <item><label>Special or constrained usage</label>: Are there elements whose usage you might limit in some way? If so, what documents do you need to review to determine whether this limitation is feasible?</item>
+            <item><label>New elements to be created</label>: What new elements might still be needed? What is the rationale for adding a new element rather than using existing TEI elements or using the TEI's generic elements (<gi>seg</gi>, etc.). What types of documents do you still need to review to determine whether these are necessary or how they should be defined?  What decisions still need to be made?</item>            
+          </list>
+      </div>
+      <div style="background-color: #EDF;">
+	<head>typed soup</head>
+	<p>I.e., lists that DO have a <att>type</att> or
+	<att>rend</att>, floating in the soup on their own, outside of
+	<gi>p</gi>.</p>
+	<p>Note: we should treat the values <val>ordered</val>,
+	<val>bulleted</val>, and <val>simple</val> the same whether
+	they are on <att>type</att> (the old system) or
+	<att>rend</att> (the new system). If both attrs occur with one
+	of those values, <att>rend</att> should win.</p>
+	<p>First, a simple list of
+	short <gi>item</gi>s:</p>
+	<list rend="ordered">
+	  <head>10 Symbols That Lost Their Original Meanings</head>
+	  <item>Star of David</item>
+	  <item>The Ichthys</item>
+	  <item>The Petrine Cross</item>
+	  <item>The Skull And Crossbones</item>
+	  <item>Barber Poles</item>
+	  <item>The <soCalled>Okay</soCalled> Sign</item>
+	  <item>Devil Horns</item>
+	  <item>The Caduceus</item>
+	  <item>The Peace Symbol</item>
+	  <item>The Swastika</item>
+	</list>
+	<p>Second, a simple list of mostly long items</p>
+	<list type="bulleted">
+	  <head>list of U.S. congressional powers</head>
+	  <item>To lay and collect Taxes, Duties, Imposts and Excises, to pay the Debts and provide for the common Defence and general Welfare of the United States; but all Duties, Imposts and Excises shall be uniform throughout the United States;</item>
+	  <item>To borrow money on the credit of the United States;</item>
+	  <item>To regulate Commerce with foreign Nations, and among the several States, and with the Indian Tribes;</item>
+	  <item>To establish an uniform Rule of Naturalization, and uniform Laws on the subject of Bankruptcies throughout the United States;</item>
+	  <item>To coin Money, regulate the Value thereof, and of foreign Coin, and fix the Standard of Weights and Measures;</item>
+	  <item>To provide for the Punishment of counterfeiting the Securities and current Coin of the United States;</item>
+	  <item>To establish Post Offices and Post Roads;</item>
+	  <item>To promote the Progress of Science and useful Arts, by securing for limited Times to Authors and Inventors the exclusive Right to their respective Writings and Discoveries;</item>
+	  <item>To constitute Tribunals inferior to the supreme Court;</item>
+	  <item>To define and punish Piracies and Felonies committed on the high Seas, and Offenses against the Law of Nations;</item>
+	  <item>To declare War, grant Letters of Marque and Reprisal, and make Rules concerning Captures on Land and Water;</item>
+	  <item>To raise and support Armies, but no Appropriation of Money to that Use shall be for a longer Term than two Years;</item>
+	  <item>To provide and maintain a Navy;</item>
+	  <item>To make Rules for the Government and Regulation of the land and naval Forces;</item>
+	  <item>To provide for calling forth the Militia to execute the Laws of the Union, suppress Insurrections and repel Invasions;</item>
+	  <item>To provide for organizing, arming, and disciplining, the Militia, and for governing such Part of them as may be employed in the Service of the United States, reserving to the States respectively, the Appointment of the Officers, and the Authority of training the Militia according to the discipline prescribed by Congress;</item>
+	  <item>To exercise exclusive Legislation in all Cases whatsoever, over such District (not exceeding ten Miles square) as may, by Cession of particular States, and the acceptance of Congress, become the Seat of the Government of the United States, and to exercise like Authority over all Places purchased by the Consent of the Legislature of the State in which the Same shall be, for the Erection of Forts, Magazines, Arsenals, dock-Yards, and other needful Buildings; And</item>
+	  <item>To make all Laws which shall be necessary and proper for carrying into Execution the foregoing Powers, and all other Powers vested by this Constitution in the Government of the United States, or in any Department or Officer thereof.	  </item>
+	</list>
+	<p>label-item pairs, short</p>
+	<list type="gloss">
+	  <head>10 Disney Movies With Horrific Origins</head>
+	  <label>10</label> <item>Pinocchio: Corpses and Murder</item>
+	  <label>9</label> <item>Dismemberment in Aladdin</item>
+	  <label>8</label> <item>Murderous Cinderella</item>
+	  <label>7</label> <item>Sleeping Beauty Sleeps Amongst Corpses</item>
+	  <label>6</label> <item>Little Mermaid Mayhem</item>
+	  <label>5</label> <item>Snow White Tortured</item>
+	  <label>4</label> <item>Hercules Self-Immolation</item>
+	  <label>3</label> <item>Fox and the Hound Deaths</item>
+	  <label>2</label> <item>Torture and Death in the Hunchback</item>
+	  <label>1</label> <item>Pocahontas Raped and Killed</item>
+	</list>
+	<p>label-item pairs, long</p>
+        <list type="gloss">
+          <label>
+            <att>met</att>
+          </label>
+          <item>May be used to specify the metrical pattern a line (or line group).</item>
+          <label>
+            <att>n</att>
+          </label>
+          <item>Provides a label or identifier for this particular element, not necessarily
+            unique.</item>
+          <label><att>next</att> and <att>prev</att></label>
+          <item>Allow what is logically a single text object (e.g. a quotation) to be encoded as a
+            series of two or more discrete XML elements, as a work-around for overlap problems.
+            These attributes represent the connections between these fragmentary elements, by
+            pointing to a prior or subsequent element in the chain of fragments. They do so by
+            referring to that element’s <att>xml:id</att> value. That is, if <att>next</att> is
+            specified on a <gi>said</gi> element, then its value should be a hash mark
+              (<code>#</code>) followed by the value of the <att>xml:id</att> of another
+              <gi>said</gi> element, the one that is the next part of the spoken passage. For
+            example, <code>&lt;said xml:id="s01" next="#s02"&gt;Hey&lt;/said&gt;, he
+              said, &lt;said xml:id="s02" prev="#s01"&gt;What's
+              up?&lt;/said&gt;</code>.</item>
+          <label>
+            <att>rend</att>
+          </label>
+          <item>May be used to specify how the element looked in the source. E.g., <tag>head
+              rend="align(center)"</tag> or <tag>l rend="indent(2)"</tag>.</item>
+          <label>
+            <att>rhyme</att>
+          </label>
+          <item>May be used to specify the rhyme scheme of a line group.</item>
+          <label>
+            <att>target</att>
+          </label>
+          <item>Provides a URI (e.g.
+              <code>http://bauman.zapto.org/gallery/Niagara_Falls_2008-01/2008_01_07T16_35_39</code>
+            or <code>#sect08</code>) that points to either another document or an element within an
+            XML document (including the current one).</item>
+          <label>
+            <att>xml:id</att>
+          </label>
+          <item>Provides a unique identifier for this particular element, thus allowing other
+            elements to point to it (using their <att>target</att>, <att>next</att>,
+            <att>prev</att>, etc.).</item>
+          <label>
+            <att>xml:lang</att>
+          </label>
+          <item>Used to indicate the language of an element’s content. Its value conforms to BCP 47
+            (a standard system for defining language codes). For information on how BCP 47 codes are
+            constructed, see the note in the <ref
+              target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-data.language.html"
+              >data.language</ref> documentation. Some sample values for the <att>xml:lang</att>
+            attribute are:<table>
+              <row>
+                <cell>English</cell>
+                <cell>
+                  <val>en</val>
+                </cell>
+              </row>
+              <row>
+                <cell>French</cell>
+                <cell>
+                  <val>fr</val>
+                </cell>
+              </row>
+              <row>
+                <cell>German</cell>
+                <cell>
+                  <val>de</val>
+                </cell>
+              </row>
+              <row>
+                <cell>Italian</cell>
+                <cell>
+                  <val>it</val>
+                </cell>
+              </row>
+              <row>
+                <cell>Latin</cell>
+                <cell>
+                  <val>la</val>
+                </cell>
+              </row>
+              <row>
+                <cell>Arabic as spoken in Iraq</cell>
+                <cell>
+                  <val>ar-IQ</val>
+                </cell>
+              </row>
+              <row>
+                <cell>Chinese</cell>
+                <cell>
+                  <val>zh</val>
+                </cell>
+              </row>
+              <row>
+                <cell>simplified Chinese</cell>
+                <cell>
+                  <val>zh-Hans</val>
+                </cell>
+              </row>
+              <row>
+                <cell>Taiwanese</cell>
+                <cell>
+                  <val>zh-TW</val>
+                </cell>
+              </row>
+            </table> If further explanation is required, a <gi>language</gi> element with an
+              <att>ident</att> attribute of the same BCP 47 code can be specified in the TEI header.
+          </item>
+        </list>
+	<p>labels inside items, short. Note that the default rendition
+	for <gi>label</gi> is <val>break(no)</val>.</p>
+	<list type="toc">
+	  <head>Odes.</head>
+	  <item>
+	    <label>Ode I.</label>
+	    <rs>The Spirit of the Air,</rs>
+	    <ref type="pageNum" target="#p04" rend="align(right)">55</ref>
+	  </item>
+	  <item>
+	    <label>Ode II.</label>
+	    <rs>The Mermaid,</rs>
+	    <ref type="pageNum" target="#p05" rend="align(right)">61</ref>
+	  </item>
+	  <item>
+	    <label>Ode III.</label>
+	    <rs>To Pain,</rs>
+	    <ref type="pageNum" target="#p06" rend="align(right)">66</ref>
+	  </item>
+	  <item>
+	    <label>Ode IV.</label>
+	    <ref type="pageNum" target="#p07" rend="align(right)">69</ref>
+	  </item>
+	  <item>
+	    <label>Ode V.</label>
+	    <rs>To the Nightingale,</rs>
+	    <ref type="pageNum" target="#p08" rend="align(right)">71</ref>
+	  </item>
+	</list>
+	<p>labels inside items, long</p>
+          <list rend="simple">
+            <item><label>Elements to be eliminated or included</label>: What elements are you still uncertain about whether to use or exclude from the schema? What types of documents do you still need to review to make your decision?</item>
+            <item><label>Attributes to be eliminated or included</label>: What attributes are you still uncertain about whether to use or exclude from the schema? What types of documents do you still need to review to make your decision?</item>            
+            <item><label>Controlled vocabularies that are still being determined</label>: What terms are still uncertain? What types of documents do you still need to review to finalize these vocabularies? What decisions still need to be made?</item>
+            <item><label>Special or constrained usage</label>: Are there elements whose usage you might limit in some way? If so, what documents do you need to review to determine whether this limitation is feasible?</item>
+            <item><label>New elements to be created</label>: What new elements might still be needed? What is the rationale for adding a new element rather than using existing TEI elements or using the TEI's generic elements (<gi>seg</gi>, etc.). What types of documents do you still need to review to determine whether these are necessary or how they should be defined?  What decisions still need to be made?</item>            
+          </list>
+      </div>
+      <!-- ********* -->
+      <div style="background-color: #DFE;">
+	<head>untyped chunk</head>
+	<p>I.e., lists that do not have <att>type</att> inside a
+	<gi>p</gi>.</p>
+	<p>First, a simple list of short <gi>item</gi>s:
+	<list>
+	  <head>10 Symbols That Lost Their Original Meanings</head>
+	  <item>Star of David</item>
+	  <item>The Ichthys</item>
+	  <item>The Petrine Cross</item>
+	  <item>The Skull And Crossbones</item>
+	  <item>Barber Poles</item>
+	  <item>The <soCalled>Okay</soCalled> Sign</item>
+	  <item>Devil Horns</item>
+	  <item>The Caduceus</item>
+	  <item>The Peace Symbol</item>
+	  <item>The Swastika</item>
+	</list>
+	</p>
+	<p>Second, a simple list of mostly long items
+	<list>
+	  <head>list of U.S. congressional powers</head>
+	  <item>To lay and collect Taxes, Duties, Imposts and Excises, to pay the Debts and provide for the common Defence and general Welfare of the United States; but all Duties, Imposts and Excises shall be uniform throughout the United States;</item>
+	  <item>To borrow money on the credit of the United States;</item>
+	  <item>To regulate Commerce with foreign Nations, and among the several States, and with the Indian Tribes;</item>
+	  <item>To establish an uniform Rule of Naturalization, and uniform Laws on the subject of Bankruptcies throughout the United States;</item>
+	  <item>To coin Money, regulate the Value thereof, and of foreign Coin, and fix the Standard of Weights and Measures;</item>
+	  <item>To provide for the Punishment of counterfeiting the Securities and current Coin of the United States;</item>
+	  <item>To establish Post Offices and Post Roads;</item>
+	  <item>To promote the Progress of Science and useful Arts, by securing for limited Times to Authors and Inventors the exclusive Right to their respective Writings and Discoveries;</item>
+	  <item>To constitute Tribunals inferior to the supreme Court;</item>
+	  <item>To define and punish Piracies and Felonies committed on the high Seas, and Offenses against the Law of Nations;</item>
+	  <item>To declare War, grant Letters of Marque and Reprisal, and make Rules concerning Captures on Land and Water;</item>
+	  <item>To raise and support Armies, but no Appropriation of Money to that Use shall be for a longer Term than two Years;</item>
+	  <item>To provide and maintain a Navy;</item>
+	  <item>To make Rules for the Government and Regulation of the land and naval Forces;</item>
+	  <item>To provide for calling forth the Militia to execute the Laws of the Union, suppress Insurrections and repel Invasions;</item>
+	  <item>To provide for organizing, arming, and disciplining, the Militia, and for governing such Part of them as may be employed in the Service of the United States, reserving to the States respectively, the Appointment of the Officers, and the Authority of training the Militia according to the discipline prescribed by Congress;</item>
+	  <item>To exercise exclusive Legislation in all Cases whatsoever, over such District (not exceeding ten Miles square) as may, by Cession of particular States, and the acceptance of Congress, become the Seat of the Government of the United States, and to exercise like Authority over all Places purchased by the Consent of the Legislature of the State in which the Same shall be, for the Erection of Forts, Magazines, Arsenals, dock-Yards, and other needful Buildings; And</item>
+	  <item>To make all Laws which shall be necessary and proper for carrying into Execution the foregoing Powers, and all other Powers vested by this Constitution in the Government of the United States, or in any Department or Officer thereof.	  </item>
+	</list></p>
+	<p>label-item pairs, short
+	<list>
+	  <head>10 Disney Movies With Horrific Origins</head>
+	  <label>10</label> <item>Pinocchio: Corpses and Murder</item>
+	  <label>9</label> <item>Dismemberment in Aladdin</item>
+	  <label>8</label> <item>Murderous Cinderella</item>
+	  <label>7</label> <item>Sleeping Beauty Sleeps Amongst Corpses</item>
+	  <label>6</label> <item>Little Mermaid Mayhem</item>
+	  <label>5</label> <item>Snow White Tortured</item>
+	  <label>4</label> <item>Hercules Self-Immolation</item>
+	  <label>3</label> <item>Fox and the Hound Deaths</item>
+	  <label>2</label> <item>Torture and Death in the Hunchback</item>
+	  <label>1</label> <item>Pocahontas Raped and Killed</item>
+	</list></p>
+	<p>label-item pairs, long
+        <list>
+          <label>
+            <att>met</att>
+          </label>
+          <item>May be used to specify the metrical pattern a line (or line group).</item>
+          <label>
+            <att>n</att>
+          </label>
+          <item>Provides a label or identifier for this particular element, not necessarily
+            unique.</item>
+          <label><att>next</att> and <att>prev</att></label>
+          <item>Allow what is logically a single text object (e.g. a quotation) to be encoded as a
+            series of two or more discrete XML elements, as a work-around for overlap problems.
+            These attributes represent the connections between these fragmentary elements, by
+            pointing to a prior or subsequent element in the chain of fragments. They do so by
+            referring to that element’s <att>xml:id</att> value. That is, if <att>next</att> is
+            specified on a <gi>said</gi> element, then its value should be a hash mark
+              (<code>#</code>) followed by the value of the <att>xml:id</att> of another
+              <gi>said</gi> element, the one that is the next part of the spoken passage. For
+            example, <code>&lt;said xml:id="s01" next="#s02"&gt;Hey&lt;/said&gt;, he
+              said, &lt;said xml:id="s02" prev="#s01"&gt;What's
+              up?&lt;/said&gt;</code>.</item>
+          <label>
+            <att>rend</att>
+          </label>
+          <item>May be used to specify how the element looked in the source. E.g., <tag>head
+              rend="align(center)"</tag> or <tag>l rend="indent(2)"</tag>.</item>
+          <label>
+            <att>rhyme</att>
+          </label>
+          <item>May be used to specify the rhyme scheme of a line group.</item>
+          <label>
+            <att>target</att>
+          </label>
+          <item>Provides a URI (e.g.
+              <code>http://bauman.zapto.org/gallery/Niagara_Falls_2008-01/2008_01_07T16_35_39</code>
+            or <code>#sect08</code>) that points to either another document or an element within an
+            XML document (including the current one).</item>
+          <label>
+            <att>xml:id</att>
+          </label>
+          <item>Provides a unique identifier for this particular element, thus allowing other
+            elements to point to it (using their <att>target</att>, <att>next</att>,
+            <att>prev</att>, etc.).</item>
+          <label>
+            <att>xml:lang</att>
+          </label>
+          <item>Used to indicate the language of an element’s content. Its value conforms to BCP 47
+            (a standard system for defining language codes). For information on how BCP 47 codes are
+            constructed, see the note in the <ref
+              target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-data.language.html"
+              >data.language</ref> documentation. Some sample values for the <att>xml:lang</att>
+            attribute are:<table>
+              <row>
+                <cell>English</cell>
+                <cell>
+                  <val>en</val>
+                </cell>
+              </row>
+              <row>
+                <cell>French</cell>
+                <cell>
+                  <val>fr</val>
+                </cell>
+              </row>
+              <row>
+                <cell>German</cell>
+                <cell>
+                  <val>de</val>
+                </cell>
+              </row>
+              <row>
+                <cell>Italian</cell>
+                <cell>
+                  <val>it</val>
+                </cell>
+              </row>
+              <row>
+                <cell>Latin</cell>
+                <cell>
+                  <val>la</val>
+                </cell>
+              </row>
+              <row>
+                <cell>Arabic as spoken in Iraq</cell>
+                <cell>
+                  <val>ar-IQ</val>
+                </cell>
+              </row>
+              <row>
+                <cell>Chinese</cell>
+                <cell>
+                  <val>zh</val>
+                </cell>
+              </row>
+              <row>
+                <cell>simplified Chinese</cell>
+                <cell>
+                  <val>zh-Hans</val>
+                </cell>
+              </row>
+              <row>
+                <cell>Taiwanese</cell>
+                <cell>
+                  <val>zh-TW</val>
+                </cell>
+              </row>
+            </table> If further explanation is required, a <gi>language</gi> element with an
+              <att>ident</att> attribute of the same BCP 47 code can be specified in the TEI header.
+          </item>
+        </list></p>
+	<p>labels inside items, short. Note that the default rendition
+	for <gi>label</gi> is <val>break(no)</val>.
+	<list>
+	  <head>Odes.</head>
+	  <item>
+	    <label>Ode I.</label>
+	    <rs>The Spirit of the Air,</rs>
+	    <ref type="pageNum" target="#p04" rend="align(right)">55</ref>
+	  </item>
+	  <item>
+	    <label>Ode II.</label>
+	    <rs>The Mermaid,</rs>
+	    <ref type="pageNum" target="#p05" rend="align(right)">61</ref>
+	  </item>
+	  <item>
+	    <label>Ode III.</label>
+	    <rs>To Pain,</rs>
+	    <ref type="pageNum" target="#p06" rend="align(right)">66</ref>
+	  </item>
+	  <item>
+	    <label>Ode IV.</label>
+	    <ref type="pageNum" target="#p07" rend="align(right)">69</ref>
+	  </item>
+	  <item>
+	    <label>Ode V.</label>
+	    <rs>To the Nightingale,</rs>
+	    <ref type="pageNum" target="#p08" rend="align(right)">71</ref>
+	  </item>
+	</list></p>
+	<p>labels inside items, long
+          <list>
+            <item><label>Elements to be eliminated or included</label>: What elements are you still uncertain about whether to use or exclude from the schema? What types of documents do you still need to review to make your decision?</item>
+            <item><label>Attributes to be eliminated or included</label>: What attributes are you still uncertain about whether to use or exclude from the schema? What types of documents do you still need to review to make your decision?</item>            
+            <item><label>Controlled vocabularies that are still being determined</label>: What terms are still uncertain? What types of documents do you still need to review to finalize these vocabularies? What decisions still need to be made?</item>
+            <item><label>Special or constrained usage</label>: Are there elements whose usage you might limit in some way? If so, what documents do you need to review to determine whether this limitation is feasible?</item>
+            <item><label>New elements to be created</label>: What new elements might still be needed? What is the rationale for adding a new element rather than using existing TEI elements or using the TEI's generic elements (<gi>seg</gi>, etc.). What types of documents do you still need to review to determine whether these are necessary or how they should be defined?  What decisions still need to be made?</item>            
+          </list></p>
+      </div>
+      <div style="background-color: #DEF;">
+	<head>typed chunks</head>
+	<p>I.e., lists that DO have a <att>type</att> or
+	<att>rend</att>, inside <gi>p</gi>.</p>
+	<p>Note: we should treat the values <val>ordered</val>,
+	<val>bulleted</val>, and <val>simple</val> the same whether
+	they are on <att>type</att> (the old system) or
+	<att>rend</att> (the new system). If both attrs occur with one
+	of those values, <att>rend</att> should win.</p>
+	<p>First, a simple list of
+	short <gi>item</gi>s:
+	<list rend="ordered">
+	  <head>10 Symbols That Lost Their Original Meanings</head>
+	  <item>Star of David</item>
+	  <item>The Ichthys</item>
+	  <item>The Petrine Cross</item>
+	  <item>The Skull And Crossbones</item>
+	  <item>Barber Poles</item>
+	  <item>The <soCalled>Okay</soCalled> Sign</item>
+	  <item>Devil Horns</item>
+	  <item>The Caduceus</item>
+	  <item>The Peace Symbol</item>
+	  <item>The Swastika</item>
+	</list></p>
+	<p>Second, a simple list of mostly long items
+	<list type="bulleted">
+	  <head>list of U.S. congressional powers</head>
+	  <item>To lay and collect Taxes, Duties, Imposts and Excises, to pay the Debts and provide for the common Defence and general Welfare of the United States; but all Duties, Imposts and Excises shall be uniform throughout the United States;</item>
+	  <item>To borrow money on the credit of the United States;</item>
+	  <item>To regulate Commerce with foreign Nations, and among the several States, and with the Indian Tribes;</item>
+	  <item>To establish an uniform Rule of Naturalization, and uniform Laws on the subject of Bankruptcies throughout the United States;</item>
+	  <item>To coin Money, regulate the Value thereof, and of foreign Coin, and fix the Standard of Weights and Measures;</item>
+	  <item>To provide for the Punishment of counterfeiting the Securities and current Coin of the United States;</item>
+	  <item>To establish Post Offices and Post Roads;</item>
+	  <item>To promote the Progress of Science and useful Arts, by securing for limited Times to Authors and Inventors the exclusive Right to their respective Writings and Discoveries;</item>
+	  <item>To constitute Tribunals inferior to the supreme Court;</item>
+	  <item>To define and punish Piracies and Felonies committed on the high Seas, and Offenses against the Law of Nations;</item>
+	  <item>To declare War, grant Letters of Marque and Reprisal, and make Rules concerning Captures on Land and Water;</item>
+	  <item>To raise and support Armies, but no Appropriation of Money to that Use shall be for a longer Term than two Years;</item>
+	  <item>To provide and maintain a Navy;</item>
+	  <item>To make Rules for the Government and Regulation of the land and naval Forces;</item>
+	  <item>To provide for calling forth the Militia to execute the Laws of the Union, suppress Insurrections and repel Invasions;</item>
+	  <item>To provide for organizing, arming, and disciplining, the Militia, and for governing such Part of them as may be employed in the Service of the United States, reserving to the States respectively, the Appointment of the Officers, and the Authority of training the Militia according to the discipline prescribed by Congress;</item>
+	  <item>To exercise exclusive Legislation in all Cases whatsoever, over such District (not exceeding ten Miles square) as may, by Cession of particular States, and the acceptance of Congress, become the Seat of the Government of the United States, and to exercise like Authority over all Places purchased by the Consent of the Legislature of the State in which the Same shall be, for the Erection of Forts, Magazines, Arsenals, dock-Yards, and other needful Buildings; And</item>
+	  <item>To make all Laws which shall be necessary and proper for carrying into Execution the foregoing Powers, and all other Powers vested by this Constitution in the Government of the United States, or in any Department or Officer thereof.	  </item>
+	</list></p>
+	<p>label-item pairs, short
+	<list type="gloss">
+	  <head>10 Disney Movies With Horrific Origins</head>
+	  <label>10</label> <item>Pinocchio: Corpses and Murder</item>
+	  <label>9</label> <item>Dismemberment in Aladdin</item>
+	  <label>8</label> <item>Murderous Cinderella</item>
+	  <label>7</label> <item>Sleeping Beauty Sleeps Amongst Corpses</item>
+	  <label>6</label> <item>Little Mermaid Mayhem</item>
+	  <label>5</label> <item>Snow White Tortured</item>
+	  <label>4</label> <item>Hercules Self-Immolation</item>
+	  <label>3</label> <item>Fox and the Hound Deaths</item>
+	  <label>2</label> <item>Torture and Death in the Hunchback</item>
+	  <label>1</label> <item>Pocahontas Raped and Killed</item>
+	</list></p>
+	<p>label-item pairs, long
+        <list type="gloss">
+          <label>
+            <att>met</att>
+          </label>
+          <item>May be used to specify the metrical pattern a line (or line group).</item>
+          <label>
+            <att>n</att>
+          </label>
+          <item>Provides a label or identifier for this particular element, not necessarily
+            unique.</item>
+          <label><att>next</att> and <att>prev</att></label>
+          <item>Allow what is logically a single text object (e.g. a quotation) to be encoded as a
+            series of two or more discrete XML elements, as a work-around for overlap problems.
+            These attributes represent the connections between these fragmentary elements, by
+            pointing to a prior or subsequent element in the chain of fragments. They do so by
+            referring to that element’s <att>xml:id</att> value. That is, if <att>next</att> is
+            specified on a <gi>said</gi> element, then its value should be a hash mark
+              (<code>#</code>) followed by the value of the <att>xml:id</att> of another
+              <gi>said</gi> element, the one that is the next part of the spoken passage. For
+            example, <code>&lt;said xml:id="s01" next="#s02"&gt;Hey&lt;/said&gt;, he
+              said, &lt;said xml:id="s02" prev="#s01"&gt;What's
+              up?&lt;/said&gt;</code>.</item>
+          <label>
+            <att>rend</att>
+          </label>
+          <item>May be used to specify how the element looked in the source. E.g., <tag>head
+              rend="align(center)"</tag> or <tag>l rend="indent(2)"</tag>.</item>
+          <label>
+            <att>rhyme</att>
+          </label>
+          <item>May be used to specify the rhyme scheme of a line group.</item>
+          <label>
+            <att>target</att>
+          </label>
+          <item>Provides a URI (e.g.
+              <code>http://bauman.zapto.org/gallery/Niagara_Falls_2008-01/2008_01_07T16_35_39</code>
+            or <code>#sect08</code>) that points to either another document or an element within an
+            XML document (including the current one).</item>
+          <label>
+            <att>xml:id</att>
+          </label>
+          <item>Provides a unique identifier for this particular element, thus allowing other
+            elements to point to it (using their <att>target</att>, <att>next</att>,
+            <att>prev</att>, etc.).</item>
+          <label>
+            <att>xml:lang</att>
+          </label>
+          <item>Used to indicate the language of an element’s content. Its value conforms to BCP 47
+            (a standard system for defining language codes). For information on how BCP 47 codes are
+            constructed, see the note in the <ref
+              target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-data.language.html"
+              >data.language</ref> documentation. Some sample values for the <att>xml:lang</att>
+            attribute are:<table>
+              <row>
+                <cell>English</cell>
+                <cell>
+                  <val>en</val>
+                </cell>
+              </row>
+              <row>
+                <cell>French</cell>
+                <cell>
+                  <val>fr</val>
+                </cell>
+              </row>
+              <row>
+                <cell>German</cell>
+                <cell>
+                  <val>de</val>
+                </cell>
+              </row>
+              <row>
+                <cell>Italian</cell>
+                <cell>
+                  <val>it</val>
+                </cell>
+              </row>
+              <row>
+                <cell>Latin</cell>
+                <cell>
+                  <val>la</val>
+                </cell>
+              </row>
+              <row>
+                <cell>Arabic as spoken in Iraq</cell>
+                <cell>
+                  <val>ar-IQ</val>
+                </cell>
+              </row>
+              <row>
+                <cell>Chinese</cell>
+                <cell>
+                  <val>zh</val>
+                </cell>
+              </row>
+              <row>
+                <cell>simplified Chinese</cell>
+                <cell>
+                  <val>zh-Hans</val>
+                </cell>
+              </row>
+              <row>
+                <cell>Taiwanese</cell>
+                <cell>
+                  <val>zh-TW</val>
+                </cell>
+              </row>
+            </table> If further explanation is required, a <gi>language</gi> element with an
+              <att>ident</att> attribute of the same BCP 47 code can be specified in the TEI header.
+          </item>
+        </list></p>
+	<p>labels inside items, short. Note that the default rendition
+	for <gi>label</gi> is <val>break(no)</val>.
+	<list type="toc">
+	  <head>Odes.</head>
+	  <item>
+	    <label>Ode I.</label>
+	    <rs>The Spirit of the Air,</rs>
+	    <ref type="pageNum" target="#p04" rend="align(right)">55</ref>
+	  </item>
+	  <item>
+	    <label>Ode II.</label>
+	    <rs>The Mermaid,</rs>
+	    <ref type="pageNum" target="#p05" rend="align(right)">61</ref>
+	  </item>
+	  <item>
+	    <label>Ode III.</label>
+	    <rs>To Pain,</rs>
+	    <ref type="pageNum" target="#p06" rend="align(right)">66</ref>
+	  </item>
+	  <item>
+	    <label>Ode IV.</label>
+	    <ref type="pageNum" target="#p07" rend="align(right)">69</ref>
+	  </item>
+	  <item>
+	    <label>Ode V.</label>
+	    <rs>To the Nightingale,</rs>
+	    <ref type="pageNum" target="#p08" rend="align(right)">71</ref>
+	  </item>
+	</list></p>
+	<p>labels inside items, long
+          <list rend="simple">
+            <item><label>Elements to be eliminated or included</label>: What elements are you still uncertain about whether to use or exclude from the schema? What types of documents do you still need to review to make your decision?</item>
+            <item><label>Attributes to be eliminated or included</label>: What attributes are you still uncertain about whether to use or exclude from the schema? What types of documents do you still need to review to make your decision?</item>            
+            <item><label>Controlled vocabularies that are still being determined</label>: What terms are still uncertain? What types of documents do you still need to review to finalize these vocabularies? What decisions still need to be made?</item>
+            <item><label>Special or constrained usage</label>: Are there elements whose usage you might limit in some way? If so, what documents do you need to review to determine whether this limitation is feasible?</item>
+            <item><label>New elements to be created</label>: What new elements might still be needed? What is the rationale for adding a new element rather than using existing TEI elements or using the TEI's generic elements (<gi>seg</gi>, etc.). What types of documents do you still need to review to determine whether these are necessary or how they should be defined?  What decisions still need to be made?</item>            
+          </list></p>
+      </div>
+    </body>
+  </text>
+</TEI>
+<!-- 	<p>Section 8 - Powers of Congress -->
+
+<!-- The Congress shall have Power To lay and collect Taxes, Duties, Imposts and Excises, to pay the Debts and provide for the common Defence and general Welfare of the United States; but all Duties, Imposts and Excises shall be uniform throughout the United States; -->
+
+<!-- To borrow money on the credit of the United States; -->
+
+<!-- To regulate Commerce with foreign Nations, and among the several States, and with the Indian Tribes; -->
+
+<!-- To establish an uniform Rule of Naturalization, and uniform Laws on the subject of Bankruptcies throughout the United States; -->
+
+<!-- To coin Money, regulate the Value thereof, and of foreign Coin, and fix the Standard of Weights and Measures; -->
+
+<!-- To provide for the Punishment of counterfeiting the Securities and current Coin of the United States; -->
+
+<!-- To establish Post Offices and Post Roads; -->
+
+<!-- To promote the Progress of Science and useful Arts, by securing for limited Times to Authors and Inventors the exclusive Right to their respective Writings and Discoveries; -->
+
+<!-- To constitute Tribunals inferior to the supreme Court; -->
+
+<!-- To define and punish Piracies and Felonies committed on the high Seas, and Offenses against the Law of Nations; -->
+
+<!-- To declare War, grant Letters of Marque and Reprisal, and make Rules concerning Captures on Land and Water; -->
+
+<!-- To raise and support Armies, but no Appropriation of Money to that Use shall be for a longer Term than two Years; -->
+
+<!-- To provide and maintain a Navy; -->
+
+<!-- To make Rules for the Government and Regulation of the land and naval Forces; -->
+
+<!-- To provide for calling forth the Militia to execute the Laws of the Union, suppress Insurrections and repel Invasions; -->
+
+<!-- To provide for organizing, arming, and disciplining, the Militia, and for governing such Part of them as may be employed in the Service of the United States, reserving to the States respectively, the Appointment of the Officers, and the Authority of training the Militia according to the discipline prescribed by Congress; -->
+
+<!-- To exercise exclusive Legislation in all Cases whatsoever, over such District (not exceeding ten Miles square) as may, by Cession of particular States, and the acceptance of Congress, become the Seat of the Government of the United States, and to exercise like Authority over all Places purchased by the Consent of the Legislature of the State in which the Same shall be, for the Erection of Forts, Magazines, Arsenals, dock-Yards, and other needful Buildings; And -->
+
+<!-- To make all Laws which shall be necessary and proper for carrying into Execution the foregoing Powers, and all other Powers vested by this Constitution in the Government of the United States, or in any Department or Officer thereof.</p> -->

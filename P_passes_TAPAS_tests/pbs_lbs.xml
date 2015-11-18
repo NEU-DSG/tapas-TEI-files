@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Flatland: testing pb and lb</title>
+        <author>Edwin A. Abbott</author>
+      </titleStmt>
+      <publicationStmt>
+        <p>Just a file used to test some stylesheets.</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Extracted from http://www.gutenberg.org/cache/epub/97/pg97.txt.</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="3" facs="page_images/016-044.jpg"/>
+      <div type="part">
+        <head>THIS WORLD</head>
+        <div type="section">
+          <head>Of the Nature of Flatland</head>
+          <p>I call our world Flatland, not because we call it so, but to make
+          <lb/>its nature clearer to you, my happy readers, who are privileged to live
+          <lb/>in Space.</p>
+          <p>Imagine a vast sheet of paper on which straight Lines, Triangles,
+          <lb/>Squares, Pentagons, Hexagons, and other figures, instead of remaining
+          <lb/>fixed in their places, move freely about, on or in the surface, but without
+          <lb/>the power of rising above or sinking below it, very much like shadows
+          <lb/>—only hard with luminous edges—and you will then have a pretty
+          <lb/>correct notion of my country and countrymen. Alas, a few years ago,
+          <lb/>I should have said “my universe:” but now my mind has been opened
+          <lb/>to higher views of things.</p>
+          <p>In such a country, you will perceive at once that
+          <lb/>it is impossible that there should be anything of what you call a “solid” kind; but I dare say
+          <lb/>you will suppose that we could at least distinguish by sight the Triangles,
+          <lb/>Squares, and other figures, moving about as I have described them. On
+          <lb/>the contrary, we could see nothing of the kind, not at least so as to
+          <pb n="4" facs="page_images/017-047.jpg"/>distinguish one figure from another. Nothing was visible, nor could be
+          <lb/>visible, to us, except Straight Lines; and the necessity of this I will
+          <lb/>speedily demonstrate.</p>
+          <p>Place a penny on the middle of one of your tables in Space; and
+          <lb/>leaning over it, look down upon it. It will appear a circle.</p>
+          <p>But now, drawing back to the edge of the table, gradually lower
+          <lb/>your eye (thus bringing yourself more and more into the condition of
+          <lb/>the inhabitants of Flatland), and you will find the penny becoming more
+          <lb/>and more oval to your view, and at last when you have placed your
+          <lb/>eye exactly on the edge of the table (so that you are, as it were,
+          <lb/>actually a Flatlander) the penny will then have ceased to appear
+          <lb/>oval at all, and will have become, so far as you can see, a straight line.</p>
+          <p>The same thing would happen if you were to treat in the same way a
+          <lb/>Triangle, or a Square, or any other figure cut out from pasteboard. As soon
+          <lb/>as you look at it with your eye on the edge of
+          <lb/>the table, you will find that it ceases to appear
+          <lb/>to you as a figure, and that it becomes in appear<lb break="no"/>ance a straight line. Take for example an
+          <lb/>equilateral Triangle—who represents with us a
+          <lb/>Tradesman of the respectable class. Figure 1
+          <lb/>represents the Tradesman as you would see him
+          <lb/>while you were bending over him from above;
+          <lb/>figures 2 and 3 represent the Tradesman, as you
+          <lb/>would see him if your eye were close to the
+          <lb/>level, or all but on the level of the table; and
+          <lb/>if your eye were quite on the level of the table
+          <lb/>(and that is how we see him in Flatland) you would see nothing but a straight line.</p> 
+          <p>When I was in Spaceland I heard that your sailors have very similar
+          <lb/>experiences while they traverse your seas and discern some distant island
+          <pb n="5" facs="page_images/018-050.jpg"/>or coast lying on the horizon. The far-off land may have bays, forelands,
+          <lb/>angles in and out to any number and extent; yet at a distance you see
+          <lb/>none of these (unless indeed your sun shines bright upon them revealing
+          <lb/>the projections and retirements by means of light and shade), nothing but
+          <lb/>a grey unbroken line upon the water.</p>
+          <p>Well, that is just what we see when one of our triangular or other
+          <lb/>acquaintances comes towards us in Flatland. As there is neither sun
+          <lb/>with us, nor any light of such a kind as to make shadows, we have none
+          <lb/>of the helps to the sight that you have in Spaceland. If our friend
+          <lb/>comes closer to us we see his line becomes larger; if he leaves us it
+          <lb/>becomes smaller; but still he looks like a straight line; be he a
+          <lb/>Triangle, Square, Pentagon, Hexagon, Circle, what you will—a straight
+          <lb/>Line he looks and nothing else.</p>
+          <p>You may perhaps ask how under these disadvantagous circumstances
+          <lb/>we are able to distinguish our friends from one another: but the answer
+          <lb/>to this very natural question will be more fitly and easily given when I
+          <lb/>come to describe the inhabitants of Flatland. For the present let me
+          <lb/>defer this subject, and say a word or two about the climate and houses in
+          <lb/>our country.</p>
+        </div>
+        <div type="section">
+          <head>Of the Climate and Houses in Flatland</head>
+          <p>As with you, so also with us, there are four points of the compass
+          <lb/>North, South, East, and West.</p>
+          <p>There being no sun nor other heavenly bodies, it is impossible for us to
+          <lb/>determine the North in the usual way; but we have a method of our own. By
+          <lb/>a Law of Nature with us, there is a constant attraction to the South; and,
+          <lb/>although in temperate climates this is very slight—so that even a Woman
+          <lb/>in reasonable health can journey several furlongs northward without much
+          <lb/>difficulty—yet the hampering effort of the southward attraction is quite
+          <lb/>sufficient to serve as a compass in most parts of our earth. Moreover,
+          <pb n="6" facs="page_images/019-053.jpg"/>the rain (which falls at stated intervals) coming always from the North, is
+          <lb/>an additional assistance; and in the towns we have the guidance of the
+          <lb/>houses, which of course have their side-walls running for the most part
+          <lb/>North and South, so that the roofs may keep off the rain from the
+          <lb/>North. In the country, where there are no houses, the trunks of the
+          <lb/>trees serve as some sort of guide. Altogether, we have not so much
+          <lb/>difficulty as might be expected in determining our bearings.</p>
+          <p>Yet in our more temperate regions, in which the southward attraction
+          <lb/>is hardly felt, walking sometimes in a perfectly desolate plain where there
+          <lb/>have been no houses nor trees to guide me, I have been occasionally
+          <lb/>compelled to remain stationary for hours together, waiting till the rain came
+          <lb/>before continuing my journey. On the weak and aged, and especially on
+          <lb/>delicate Females, the force of attraction tells much more heavily than
+          <lb/>on the robust of the Male Sex, so that it is a point of breeding, if you
+          <lb/>meet a Lady on the street, always to give her the North side of the way
+          <lb/>—by no means an easy thing to do always at short notice when
+          <lb/>you are in rude health and in a climate where it is difficult to tell your
+          <lb/>North from your South.</p>
+          <p>Windows there are none in our houses: for the light comes to us
+          <lb/>alike in our homes and out of them, by day and by night, equally at
+          <lb/>all times and in all places, whence we know not. It was in old days,
+          <lb/>with our learned men, an interesting and oft-investigate question,
+          <lb/>“What is the origin of light?” and the solution of it has been repeatedly
+          <lb/>attempted, with no other result than to crowd our lunatic asylums
+          <lb/>with the would-be solvers. Hence, after fruitless attempts to suppress
+          <lb/>such investigations indirectly by making them liable to a heavy tax,
+          <lb/>the Legislature, in comparatively recent times, absolutely prohibited
+          <lb/>them. I—alas, I alone in Flatland—know now only too well the true
+          <lb/>solution of this mysterious problem; but my knowledge cannot be made
+          <lb/>intelligible to a single one of my countrymen; and I am mocked at—I,
+          <pb n="7" facs="page_images/020-056.jpg"/>the sole possessor of the truths of Space and of the theory of the
+          <lb/>introduction of Light from the world of three Dimensions—as if I were
+          <lb/>the maddest of the mad! But a truce to these painful digressions:
+          <lb/>let me return to our homes.</p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

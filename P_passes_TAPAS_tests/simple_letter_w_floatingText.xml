@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+	<title>tapas reading interface test 02</title>
+	<author>Syd</author>
+      </titleStmt>
+      <publicationStmt>
+	<p>Not for publication; content © CBS Record, I presume</p>
+      </publicationStmt>
+      <sourceDesc>
+	<ab>Liner notes from <title>Wednesday Morning, 3 A.
+	M.</title>. I got them from
+	http://www.medialab.chalmers.se/guitar/garfunkel.html on
+	2003-10-22T18:15-04.</ab>
+	<ab>The liner notes are apparently a transcription of a letter
+	from Art Garfunkel in NYC to Paul Simon in London.</ab>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <salute>Dear Paul,</salute>
+      <p>How's London? I just want to interrupt your tea for a moment
+      to let you know what's been happening since you left. You know
+      it kills me that you're in London now, goofing, while I'm here
+      with three term papers ahead of me. And the album's sitting
+      waiting downtown at CBS in our cubby.</p>
+      <p>Two things before I forget: Did you find a scooter for us?
+      Call up that number I gave you, the guy knows all about these
+      sort of things--he'll be very helpful. I expect to see you and
+      the machine in Paris when I come after finals. Also send me the
+      chords to <title>Wednesday Morning</title> because I expect to
+      do singles at Gerde's for a few nights.</p>
+      <p>Tom asked me yesterday if I would write the album notes. I
+      told him I thought the author should explain his own songs but
+      I'm reconsidering. In fact, it's a very pleasant task. I know
+      how you feel about this, but I (your greatest advocate) want as
+      many as possible to understand as much as possible. Please
+      understand that mine is the difficult position more than
+      slightly analogous to the man who received Franz Kafka's dying
+      request to burn all his manuscripts, but who nonetheless felt
+      obliged to rush off to the publisher at his first chance. The
+      point is that you understanding the songs, me believing in their
+      worth, and Columbia recording them, is really not sufficient. So
+      I decided last night to write the following as a
+      <soCalled>listener's guide</soCalled> to the songs:
+      <floatingText>
+	<body>
+	  <p>I first heard <title>He Was My Brother</title> in June
+	  1963, the week after Paul Simon wrote it. Cast in the Bob
+	  Dylan mold of that time there was no subtlety in the song,
+	  no sophistication in the lyric; rather, the innocent voice
+	  of an uncomfortable youth. The ending is joyously optimistic
+	  I was happy to feel the way the song made me feel. It was
+	  clearly the product of considerable talent.</p>
+	  <p>In September 1963, I returned from Berkeley, California,
+	  where I had spent the summer. Paul had just completed
+	  <title>Sparrow</title> and was already working on the third
+	  song. With <title>Sparrow</title> begins much of the style
+	  that characterizes all the later work. The clarity of the
+	  song's structure is matched by the simplicity of its
+	  subject. The song is asking: <q>Who will love?</q> Poetic
+	  personification is used for the answers: Greed (<q>the oak
+	  tree</q>), Vanity (<q>the swan</q>), Hypocrisy (<q>the wheat</q>).</p>
+	  <p>I was greatly impressed with <title>Sparrow</title>, and
+	  I arranged the two songs for us. We sang at Folk City that
+	  night and formed the partnership.</p>
+	  <p>I confess that <title>Bleecker Street</title> (finished
+	  in October 1963), was too much for me at first The song is
+	  highly intellectual, the symbolism extremely challenging.
+	  The opening line in which the fog comes like a <q>shroud</q>
+	  over the city introduces the theme of <term>creative
+	  sterility.</term> But it is the second verse which I find
+	  particularly significant:
+	  <quote rend="italic">
+	    <l>Voices leaking from a sad cafe</l>
+	    <l>Smiling faces try to understand</l>
+	    <l>I saw a shadow touch a shadow's hand</l>
+	    <l>On Bleecker Street</l>
+	  </quote>
+	  The first line is a purely poetic image. The second line
+	  touches poignantly on human conditions of our time. To me,
+	  it shows the same perceptive psychological characterization
+	  as <title>Sparrow</title>--the <q>golden wheat</q> (<quote>I
+	  would it I could but I cannot, I know</quote>). The third
+	  line marks the first appearance of a theme that is to occupy
+	  great attention in later work--<q>lack of
+	  communication.</q></p>
+	  <p>The author says that the poets have <q>sold out</q>
+	  (<quote>the poet writes his crooked rhyme</quote>). The line
+	  <quote>Thirty dollars pays your rent</quote> reminds one of
+	  Judas Iscariot's betrayal of Christ for thirty pieces of
+	  silver. Admittedly, the song is difficult to understand, but
+	  worth the effort.</p>
+	  <p>The <title>Sounds of Silence</title> is a major work. We
+	  were looking for a song on a larger scale, but this was more
+	  than either of us expected. Paul had the theme and the
+	  melody set in November, but three months of frustrating
+	  attempts were necessary before the song <soCalled>burst
+	  forth.</soCalled> On February 19, 1964, the song practically
+	  wrote itself. Its theme is man's inability to communicate
+	  with man. The author sees the extent of communication as it
+	  is on only its most superficial and <q>commercial</q> level
+	  (of which the <q>neon sign</q> is representative). There is
+	  no serious understanding because there is no serious
+	  communication--<quote>people talking without speaking--
+	  hearing without listening</quote>. No one dares take the
+	  risk of reaching out (<quote>take my arms that I might reach
+	  you</quote>) to disturb the sound of silence. The poet's
+	  attempts are equally futile (<quote>... but my words like
+	  silent raindrops fell within the wells of silence</quote>).
+	  The ending is an enigma. I find my own meaning in it, but
+	  like most good works, it is best interpreted by each person
+	  individually. The words tell us that when meaningful
+	  communication fails, the only sound is silence.</p>
+	  <p><title>Wednesday Morning, 3 A.M.</title>, written in
+	  April 1964, is a change of pace. The heightened intensity of
+	  <title>The Sounds of Silence</title> has given way here to a
+	  gentle mood, and the melody is once again a soft, smooth
+	  vehicle. It is a painting that sets a scene, sketches some
+	  details and quietly concludes.</p>
+	</body>
+      </floatingText>
+      </p>
+      <p>Paul--let me know what you think. I tried to be as honest as
+      I can. You know how [I] [we] feel--there may or may not be a
+      market for intellectuality, but there is your personal feel for
+      the material, and ours for the performance.</p>
+      <p>I promised I'd be down to the mastering next week to fight
+      for the harmonica in <title>He Was My Brother</title>. (Making
+      an album is lots of fun.)</p>
+      <p>Listen, try and get us a job for when I come. And no singing
+      in the streets.</p>
+    </body>
+  </text>
+</TEI>
