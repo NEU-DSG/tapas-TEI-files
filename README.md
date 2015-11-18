@@ -12,4 +12,4 @@ Doubt this arrangement will remain, for now:
 * **P** = _pass_: should pass all tests
 
 Files are likely to change directories when we change our minds about
-processing.
+processing. :
