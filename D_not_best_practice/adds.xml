@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?oxygen RNGSchema="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="xml"?>
+<TEI xml:lang="en" xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+	<title>Some <gi>add</gi>s</title>
+	<author>Syd</author>
+      </titleStmt>
+      <publicationStmt>
+	<ab>unpublished work used for testing</ab>
+      </publicationStmt>
+      <sourceDesc>
+	<ab>Born digital</ab>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <handNotes>
+	<handNote xml:id="HWll">Lois Lane</handNote>
+      </handNotes>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>Some <gi>add</gi>itions</head>
+      <p>This paragraph has an <add>addition</add> that does not
+      indicate in whose handwriting the addition was made.</p>
+      <p>This paragraph has an <add hand="#HWll">addition</add> that asserts
+      it was written by <persName ref=""Lois Lane.
+    </body>
+  </text>
+</TEI>
+
