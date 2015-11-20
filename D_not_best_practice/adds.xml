@@ -25,8 +25,15 @@
       <head>Some <gi>add</gi>itions</head>
       <p>This paragraph has an <add>addition</add> that does not
       indicate in whose handwriting the addition was made.</p>
-      <p>This paragraph has an <add hand="#HWll">addition</add> that asserts
-      it was written by <persName ref=""Lois Lane.
+      <p>This paragraph has an <add hand="#HWll">addition</add> that
+      asserts it was written by <persName
+      ref="http://dc.wikia.com/wiki/Lois_Lane">Lois Lane</persName>,
+      which it wasn't, but the link should work.</p>
+      <p>This paragraph has an <add hand="#HWjo">addition</add> that
+      asserts it was written by <persName
+      ref="http://dc.wikia.com/wiki/Jimmy_Olsen">Jimmy
+      Olsen</persName>, which it wasn't; and the link won't even
+      work.</p>
     </body>
   </text>
 </TEI>
