@@ -1,8 +1,8 @@
 # tapas-TEI-test-suite
-TEI test files (and expected results)
+TEI test files (and some expected results)
 
 
-Doubt this arrangement will remain, for now:
+Doubt this arrangement will remain, but for now:
 
 * **F** = _fatal_: ill-formed, not XML
 * **S** = _severe_: invalid TEI (including not in TEI namespace)
