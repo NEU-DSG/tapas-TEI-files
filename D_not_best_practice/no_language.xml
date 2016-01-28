@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+	<title>I Only Want To Be With You</title>
+	<author>Dusty Springfield</author>
+      </titleStmt>
+      <publicationStmt>
+	<p>test file</p>
+      </publicationStmt>
+      <sourceDesc>
+	<ab>idunno</ab>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <p>This document does not have an <att>xml:lang</att> on <gi>text</gi> nor <gi>TEI</gi>,
+      and does not have any <code>/TEI/teiHeader/profileDesc/langUsage/language</code> elements,
+      so TAPAS, for the moment, does not know what language it is in.</p>
+    <body>
+      <div>
+	<head>I Only Want To Be With You - Dusty Springfield</head>
+	<lg rhyme="aabbcc">
+	  <l>I don't know what it is that makes me love you <rhyme>so</rhyme>.</l>
+	  <l>I only know I never wanna let you <rhyme>go</rhyme></l>
+	  <l>'cos you started something, can't you <rhyme>see</rhyme>.</l>
+	  <l>That ever since we met you've had a hold on <rhyme>me</rhyme>.</l>
+	  <l>It happens to be <rhyme>true</rhyme>,</l>
+	  <l>I only want to be with <rhyme>you</rhyme>.</l>
+	</lg>
+	<lg rhyme="aabbcc">
+	  <l>It doesn't matter where you go or what you <rhyme>do</rhyme>.</l>
+	  <l>I wanna spend each moment of the day with <rhyme>you</rhyme>.</l>
+	  <l>Look what has happened with just one <rhyme>kiss</rhyme>.</l>
+	  <l>That I never knew that I could be in love like <rhyme>this</rhyme>.</l>
+	  <l>It's crazy but it's <rhyme>true</rhyme></l>
+	  <l>I only want to be with <rhyme>you</rhyme>.</l>
+	</lg>
+	<lg rhyme="abcb">
+	  <l>You stopped and smiled at <rhyme>me</rhyme>,</l>
+	  <l>asked me if I'd care to <rhyme>dance</rhyme>.</l>
+	  <l>I fell into your open <rhyme>arms</rhyme>,</l>
+	  <l>I didn't stand a <rhyme>chance</rhyme>.</l>
+	</lg>
+	<lg rhyme="aabbcc">
+	  <l>Now, listen, honey, I just wanna be beside you <rhyme>everywhere</rhyme>.</l>
+	  <l>As long as we're together, honey, I don't <rhyme>care</rhyme></l>
+	  <l>'cos you started something, can't you <rhyme>see</rhyme>.</l>
+	  <l>That ever since we met you've had a hold on <rhyme>me</rhyme>.</l>
+	  <l>No matter what you <rhyme>do</rhyme>,</l>
+	  <l>I only want to be with <rhyme>you</rhyme>.</l>
+	</lg>
+	<lg rhyme="abcb">
+	  <l>You stopped and smiled at <rhyme>me</rhyme>,</l>
+	  <l>asked me if I'd care to <rhyme>dance</rhyme>.</l>
+	  <l>I fell into your open <rhyme>arms</rhyme>,</l>
+	  <l>I didn't stand a <rhyme>chance</rhyme>.</l>
+	</lg>
+	<lg rhyme="aabbcccc">
+	  <l>Now, listen, honey, I just wanna be beside you <rhyme>everywhere</rhyme>.</l>
+	  <l>As long as we're together, honey, I don't <rhyme>care</rhyme></l>
+	  <l>'cos you started something, can't you <rhyme>see</rhyme>.</l>
+	  <l>That ever since we met you've had a hold on <rhyme>me</rhyme>.</l>
+	  <l>No matter what you <rhyme>do</rhyme>,</l>
+	  <l>I only want to be with <rhyme>you</rhyme>.</l>
+	  <l>No matter what you <rhyme>do</rhyme>,</l>
+	  <l>I only want to be with <rhyme>you</rhyme>.</l>
+	</lg>
+      </div>
+    </body>
+  </text>
+</TEI>
