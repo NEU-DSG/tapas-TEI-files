@@ -1,4 +1,5 @@
 <?xml version="1.0"?>
+<!-- copy of https://github.com/TEIC/TEI/blob/dev/P5/Exemplars/tei_ms.tei -->
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
