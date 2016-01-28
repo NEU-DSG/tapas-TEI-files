@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<div  xmlns="http://www.tei-c.org/ns/1.0" type="song">
+  <head>My Favorite Tags</head>
+  <opener>To the tune of <title>My Favorite Things</title>
+  (Rogers and Hammerstein)</opener>
+  <lg type="verse">
+    <l><gi>persName</gi> and <gi>placeName</gi> and <att>ref</att>s on <gi>rs</gi>s,</l>
+    <l><gi>Certainty</gi> tags that record all my guesses,</l>
+    <l>Page breaks and forme work and <gi>milestone</gi> flags,</l>
+    <l>These are a few of my favorite tags.</l>
+  </lg>
+  <lg type="verse">
+    <l><gi>Incipit</gi> and <gi>rubric</gi> and <gi>musicNotation</gi>,</l>
+    <l>Fine-tooth measurements with <name type="class">att.dimensions</name>,</l>
+    <l><gi>Birth</gi> without <gi>death</gi> tells me who's still alive,</l>
+    <l>These are the things that I like in P5</l>
+  </lg>
+  <lg type="verse">
+    <l><gi>Front</gi>, <gi>body</gi>, <gi>back</gi> in a text with a header</l>
+    <l><gi>Div</gi>s nesting deeply, now what could be better?</l>
+    <l><gi>Castgroup</gi>s in <gi>castlist</gi>s and <gi>l</gi>s in <gi>lg</gi>,</l>
+    <l>These are the things P5 gives for free.</l>
+  </lg>
+  <lg type="verse">
+    <l>When I'm surfing</l>
+    <l>And I download</l>
+    <l>Formats I deplore,</l>
+    <l>I smugly reflect on my TEI text</l>
+    <l>And then I rejoice once more.</l>
+  </lg>
+</div>
+<!--
+
+		Raindrops on roses, And whiskers on kittens,
+		Bright copper kettles And warm woolen mittens.
+		Brown paper packages Tied up with string,
+		These are a few of my favorite things.
+
+		Cream colored ponies, And crisp apple strudel.
+		Doorbells and sleighbells And schnitzel with noodles,
+		Wild geese that fly With the moon on their wings,
+		These are a few of my favorite things.
+
+		Girls in white dresses with blue satin sashes,
+		Snowflakes that stay on my nose and eyelashes,
+		Silver white winters that melt into springs
+		These are a few of my favorite things.
+
+		When the dog bites,
+		When the bee stings,
+		When I'm feeling sad.
+		I simply remember my favorite things,
+		And then I don't feel so bad!
+
+-->

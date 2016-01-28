@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/wwp-store.rng"    type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../schema/wwp-store.isosch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- Copied from:-->
+<!-- http://liblab.neu.edu/svn/DSG/wwp/textbase/trunk/distribution/elizabeth.lastspeech.xml 27244 2015-11-24 20:06:11Z syd $ -->
+<TEI xmlns:w="http://www.wwp.northeastern.edu/ns/textbase" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <teiHeader xml:id="TR00371.hdr">
+    <fileDesc>
+      <titleStmt>
+        <title type="main">The Last Speech and Thanks of Queen Elizabeth, 1601</title>
+        <author>
+          <persName ref="personography.xml#elizabeth.neu" type="person-female">Elizabeth I</persName>
+        </author>
+        <sponsor>Brown University</sponsor>
+        <sponsor>Northeastern University</sponsor>
+        <funder>U.S. National Endowment for the Humanities</funder>
+        <funder>The Andrew W. Mellon Foundation</funder>
+      </titleStmt>
+      <editionStmt>
+        <edition n="2.1">Second edition: version 2.1</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Northeastern University Women Writers Project</publisher>
+        <address>
+          <addrLine>SL 213</addrLine>
+          <addrLine>Northeastern University</addrLine>
+          <addrLine>360 Huntington Avenue</addrLine>
+          <addrLine>Boston, MA  02115-5005</addrLine>
+          <addrLine>USA</addrLine>
+          <addrLine>url:mailto:wwp@neu.edu</addrLine>
+          <addrLine>url:http://www.wwp.northeastern.edu/</addrLine>
+        </address>
+        <idno type="WWP">TR00371</idno>
+        <idno type="URL">http://www.wwp.northeastern.edu/texts/elizabeth.lastspeech.html</idno>
+        <xi:include href="../common-boilerplate.xml" xpointer="element(WWPavailability)"/>
+        <date when="2001-04-23"/>
+      </publicationStmt>
+      <sourceDesc n="OT00371">
+        <biblStruct>
+          <monogr>
+            <author>
+              <persName ref="personography.xml#elizabeth.neu" type="titlePage">Queen Elizabeth</persName>
+              <persName ref="personography.xml#elizabeth.neu" type="regularized">Elizabeth I</persName>
+            </author>
+            <title>The last speech and thanks of Queen Elizabeth of ever blessed memory, to her last Parliament, after her delivery from the Popish plots, etc.</title>
+            <edition>Sole early edition</edition>
+            <idno type="dfo">E530</idno>
+            <idno type="Wing">E530</idno>
+            <imprint>
+              <pubPlace>London</pubPlace>
+              <publisher>
+                <persName ref="personography.xml#unknown.zzx" type="person">[s.n.]</persName>
+              </publisher>
+              <date when="1679">1679</date>
+            </imprint>
+            <extent>
+              <measure unit="page" quantity="4"/>
+            </extent>
+            <extent>
+              <dimensions>
+                <format>folio</format>
+              </dimensions>
+            </extent>
+          </monogr>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <xi:include href="../common-boilerplate.xml" xpointer="element(WWPprojectDescription)"/>
+      <xi:include href="../common-boilerplate.xml" xpointer="element(WWPsamplingDeclaration)"/>
+      <xi:include href="../common-boilerplate.xml" xpointer="element(WWPeditorialDeclaration)"/>
+      <xi:include href="../common-boilerplate.xml" xpointer="element(WWPcharacterDeclaration)"/>
+      <tagsDecl>
+        <rendition xml:id="rend.p">break(yes)first-indent(1)</rendition>
+        <rendition xml:id="rend.head">align(center)</rendition>
+        <rendition xml:id="rend.pn">break(yes)align(center)</rendition>
+        <namespace name="http://www.wwp.northeastern.edu/ns/textbase">
+          <tagUsage gi="head" render="#rend.head"/>
+          <tagUsage gi="p"    render="#rend.p"/>
+          <tagUsage gi="mw"   render="#rend.pn"/>
+        </namespace>
+      </tagsDecl>
+      <xi:include href="../common-boilerplate.xml" xpointer="element(WWPclassificationDeclaration)"/>
+    </encodingDesc>
+    <profileDesc>
+      <textClass>
+        <catRef type="main" target="#G.non-fiction"/>
+        <catRef type="other" target="#G.non-fiction.other"/>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change n="RCS:1.22" when="1999-08-16" who="personography.xml#jrussom.zxg">Updated header names.</change>
+      <change when="1999-04-05" who="personography.xml#jrussom.zxg">Changed publisher from n.p. to s.n. in sourceDesc per AACR2.</change>
+      <change when="1999-03-01" who="personography.xml#rkempster.jgf">Made proofreading corrections</change>
+      <change when="1999-01-13" who="personography.xml#jrussom.zxg">Revised TEI header FILEDESC element names, ordering, and contents</change>
+      <change when="1998-10-01" who="personography.xml#njordan.yeu">Entered changes from encoding review. Supravalidated with
+1.1.13a of wwp-store DTD.</change>
+      <change when="1997-11-21" who="personography.xml#njordan.yeu">Began capture using  psgml/emacs on Unix with version 1.1.6a of
+wwp-store DTD.</change>
+      <change when="1997-12-05" who="personography.xml#njordan.yeu">Finished capture.</change>
+      <change when="1997-12-10" who="personography.xml#njordan.yeu">Completed single proofing, corrections, and checking
+round. Completed supra-SGML.</change>
+      <change when="1998-07-24" who="personography.xml#njordan.yeu">Repeated checking round to make sure corrections were entered
+since chart was not filled out.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text xml:id="TR00371">
+    <pb n="i"/>
+    <milestone n="A1r" unit="sig"/>
+    <front>
+      <titleBlock>
+        <titlePart><hi rend="case(mixed)">The Laſt</hi><lb/>Speech
+<lb/>and
+<lb/>Thanks
+<lb/>of
+<lb/><hi rend="case(mixed)"><persName ref="personography.xml#elizabeth.neu">Queen Elizabeth</persName><lb/>Of ever Bleſſed Memory,</hi></titlePart>
+        <titlePart type="desc">to her Last
+<lb/><orgName>Parliament</orgName>,
+<lb/>after her
+<lb/>Delivery
+<lb/>from the
+<lb/><hi rend="case(mixed)">Popiſh Plots, &amp;c.</hi>
+</titlePart>
+        <docImprint rend="pre(#rule)"><placeName rend="slant(italic)">London</placeName>, Printed, <date when="1679">1679</date>.</docImprint>
+      </titleBlock>
+    </front>
+    <pb n="ii"/>
+    <milestone n="A1v" unit="sig"/>
+    <pb n="1"/>
+    <milestone n="A2r" unit="sig"/>
+    <mw type="pageNum">1</mw>
+    <body>
+      <head rend="case(allcaps)pre(#rule)">The Last
+<lb/>Speech
+<lb/>of
+<lb/><persName ref="personography.xml#elizabeth.neu"><hi rend="case(mixed)">Queen</hi> Elizabeth</persName>
+<lb/>to her
+<lb/>Laſt <orgName>Parliament</orgName>,</head>
+      <head type="sub">Which began <date rend="case(allcaps)" when="1601-10-20">October 20<hi rend="sup()">th</hi> 1601</date>.</head>
+      <p><hi rend="class(#DIC)">T</hi><hi rend="case(allcaps)">he</hi><date when="1601-11-30">Thirtieth of <hi rend="slant(italic)">November</hi></date> Her Majeſty being ſeated
+under a Canopy
+<lb/>of State in the Council Chamber; the <rs rend="slant(italic)">Speaker</rs>, with about 180. of the
+<lb/><orgName>Houſe of <hi rend="slant(italic)">Commons</hi></orgName> preſented
+themſelves at her Majeſties feet, for that
+<lb/>ſo Graciouſly and Speedily She had heard and yielded to Her
+Subjects
+<lb/>deſires, humbly kneeling upon their knees: To whom She ſpake in
+theſe Words.</p>
+      <p><rs rend="slant(italic)"><hi rend="case(mixed)">Mr</hi>. Speaker</rs>, We perceive, your coming is to preſent Thanks to
+Us; Know I
+<lb/>accept them with no leſs Joy, than your Loves can have a
+deſire to offer ſuch
+<lb/>a preſent; and do more eſteem it than any treaſure or
+riches. For the value of
+<lb/>Them I know, but Loyalty, Love and Thanks I account unvaluable;
+and though
+<lb/>God hath raiſed Me high, yet this I account
+the Glory of My Crown, that I have
+<lb/>Reigned with your Loves. This makes Me that I do not ſo much
+rejoyce, that
+<lb/>God hath made me a Queen, as to be a Queen of
+ſo thankful a people, and to be
+<lb/>a means under God, to conſerve you in
+ſafety, and to preſerve you from danger;
+<lb/>yea, to be an Inſtrument to preſerve you from diſhonour,
+ſhame and infamy; to
+<lb/>keep you out of ſervitude and ſlavery under Our Enemies, and
+cruel tyranny
+<lb/>and vile oppreſſion intended againſt Us. For the better
+withſtanding whereof,
+<lb/>We take very acceptably your intended Supplies; and chiefly, that
+it manifeſteth
+<lb/>your Love and Largeneſs of heart to your Sovereign. Of My Self I
+was never
+<lb/>a greedy ſcraping graſper, nor ſtrict faſt-holding Prince,
+nor yet a Waſter. My
+<lb/>heart was never ſet upon any wordly goods; but what you beſtow
+on Me, I
+<lb/>will not hoard it up, but receive it, to beſtow on you
+again. Yea, my own pro­
+<lb/>perties I account yours, to be expended for your good, and your
+Eyes ſhall ſee
+<lb/>the beſtowing of it for your welfare.</p>
+      <p><rs rend="slant(italic)"><hi rend="case(mixed)">Mr</hi>. Speaker</rs>, I wiſh you and the
+reſt of the Gentlemen to ſtand up, for I fear I
+<lb/>ſhall yet trouble you with a longer Speech.</p>
+      <mw type="sig">A2</mw>
+      <mw rend="align(right)break(no)" type="catch">Mr. Speaker,</mw>
+      <pb n="2"/>
+      <milestone n="A2v" unit="sig"/>
+      <mw type="pageNum">2</mw>
+      <p>Mr. <hi rend="slant(italic)">Speaker</hi>, You give Me thanks, but
+I am more to thank you, and I charge
+<lb/>you thank them of the Lower Houſe from me; for had I not
+received knowledge
+<lb/>from you, I might have fallen into the lapſe of an errour, only
+for want of true
+<lb/>Information. Since I was a Queen, I never yet put my Pen to any
+Grant, but
+<lb/>upon pretext and ſemblance made, that it was for the good and
+avail of My Sub­
+<lb/>jects in General, though a private profit to ſome of my antient
+ſervants, who
+<lb/>have deſerved well. But that any Grant of Mine, ſhall be made
+grievous to My
+<lb/>people, and oppreſſion to be priviledg'd under the Colour of
+our Patents, Our
+<lb/>Princely Dignity ſhall not ſuffer it. When I heard it, I could
+give no reſt to
+<lb/>My thoughts; and thoſe Varlets, lewd perſons, abuſers of My
+Bounty ſhall know,
+<lb/>I will not ſuffer it. And <rs rend="slant(italic)"><hi rend="case(mixed)">Mr</hi>. Speaker</rs>, Tell the Houſe from Me, That I
+take it
+<lb/>exceeding grateful, that the knowledge of theſe are come unto Me
+from them:
+<lb/>and though amongſt them the principal members are ſuch as are
+not touched
+<lb/>in private, and therefore ſpeak not from any feeling of the
+grief, yet We have
+<lb/>heard, That other Gentlemen alſo of the Houſe who ſtand as
+free, have ſpoken as
+<lb/>freely in it. Which gives Us to know, that no reſpects of
+Intereſts have moved
+<lb/>them, otherwiſe than what they bear to ſuffer the diminution
+of Our Honor, and
+<lb/>Our Subjects Love to Us. The zeal of which affection tending to
+eaſe My people
+<lb/>and knit their hearts to Us, I embrace with a Princely care; for
+above all other
+<lb/>treaſures, I eſteem My peoples love, more than which, I
+deſire not to merit: and God
+<lb/>that gave me to ſit, and placed Me over you, knows, That I never
+reſpected My,
+<lb/>but as your good was concerned in Me. Yea, What dangers! What
+perils!
+<lb/>What practices I have paſt, ſome if not all of you know; but
+none of thoſe
+<lb/>things ever moved me, or made me fear, but it's
+God that hath delivered Me.
+</p>
+      <p>And in governing this Land, I have ever ſet the laſt Judgement
+day before
+<lb/>My eyes, and ſo to rule, as I ſhall be judged and anſwer
+before a higher Judge,
+<lb/>to whoſe Judgement Seat I do appeal, That never thought was
+cheriſhed in My
+<lb/>heart, that tended not to My peoples good. And if My Princely
+Bounty hath
+<lb/>been abuſed, and my Grace turned to the Hurt of My people
+contrary to My
+<lb/>Will and Meaning, or if any Authority under Me have neglected, or
+converted
+<lb/>what I committed to them from My deſign, I hope God will not lay
+their Culp
+<lb/>upon My charge.</p>
+      <p>To be a King, and wear a Crown, is a thing more Glorious to them
+that ſee
+<lb/>it, than it is pleaſant to them that bear it. For My Self, I was
+never ſo much
+<lb/>inticed with the Glorious Name of a King, or the Royal Authority
+of a Queen,
+<lb/>as delighted, that God made me his
+Inſtrument to maintain his Truth and Glory,
+<lb/>and defend this Kingdom from diſhonor, damage, Tyranny and
+oppreſſion.</p>
+      <p>But ſhould I aſcribe theſe things to My Self or to My Sexly
+weakneſs, I were
+<lb/>not worthy to live; and of all moſt unworthy of the Mercies I
+have received at
+<lb/>Gods hands: but to God
+alone, and to him wholly is all given and aſcribed.</p>
+      <p>The Cares and troubles of a Crown, I cannot more fitly reſemble,
+than to the
+<lb/>Druggs of an Apothecary perfumed with ſome Aromatical favour, or
+bitter Pills
+<lb/>gilded over, by which they are made acceptable or leſs
+offenſive, when indeed they
+<lb/>are bitter and unpleaſant. As for My own part, were it not for
+Conscience ſake
+<lb/>to diſcharge the duty God hath laid upon
+Me, and to maintain his Glory, and
+<lb/>keep you in ſafety, in my diſpoſition I ſhould be willing
+to Reſign that place I hold
+<lb/>to any other, and be glad to be freed of the Glory with the
+labour. For it is
+<lb/>not My deſire to Live and Reign longer, than My Life and Reign
+ſhall be for
+<lb/>your good; and though you have had, and may have Mightier and
+Wiſer Princes
+<lb/>ſitting on this Seat, yet you never had, nor ſhall have any that
+will love you
+<lb/>better.</p>
+      <p>Thus <rs rend="slant(italic)"><hi rend="case(mixed)">Mr</hi>. Speaker</rs>, I commend Me to
+your Loyal Loves, and yours to My beſt
+<lb/>Care and your further Counſels. And I pray you <rs rend="slant(italic)"><hi rend="case(mixed)">Mr</hi>. Controller</rs>
+and <rs rend="slant(italic)"><hi rend="case(mixed)">Mr</hi>. Secretary</rs>,
+<lb/>and you of My Council, that before theſe Gentlemen depart into
+the Countrey,
+<lb/>you bring them all to Kiſs My Hand.</p>
+      <trailer rend="slant(italic)case(allcaps)align(center)">Finis</trailer>
+    </body>
+  </text>
+</TEI>

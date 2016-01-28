@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.sample.org/NOT-TEI/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Trouble with a Capital T</title>
+        <author>Horslips</author>
+      </titleStmt>
+      <publicationStmt>
+        <p>Publication Information</p>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl><ref target="http://www.lyricsmania.com/trouble_with_a_capital_t_lyrics_horslips.html"
+            >Lyrcsmania, retrieved 2016-01-25</ref></bibl>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="song">
+        <head>Trouble With A Capital 'T'</head>
+        <lg type="stanza">
+          <l>High on the mountain stands a boat,</l>
+          <l>But are they gods or real folk?</l>
+          <l>We can't see the fire but we smell the smoke.</l>
+          <l>Who'll take the plough? Who'll be the yoke?</l>
+          <l>Night after night I don't believe.</l>
+          <l>We are the ones you won't deceive.</l>
+          <l>Not a thing will you achieve</l>
+          <l>'cos we belong and we won't leave.</l>
+        </lg>
+        <lg type="verse">
+          <l>Trouble, trouble.</l>
+          <l>I try to chase trouble but it's chasing me.</l>
+          <l>Trouble, trouble.</l>
+          <l>Trouble with a capital T.</l>
+        </lg>
+        <lg type="stanza">
+          <l>Lay down your silver and your gold.</l>
+          <l>I'm a man who can't be sold.</l>
+          <l>And, even when my heart grows cold,</l>
+          <l>I'll curse your evil stranglehold.</l>
+          <l>The waves are running much too high.</l>
+          <l>It's got so dark can't see the sky.</l>
+          <l>But a change is coming by and by,</l>
+          <l>A time to laugh, a time to die.</l>
+        </lg>
+        <lg type="verse">
+          <l>Trouble, trouble.</l>
+          <l>I try to chase trouble but it's chasing me.</l>
+          <l>Trouble, trouble.</l>
+          <l>Trouble with a capital T.</l>
+        </lg>
+        <lg type="stanza">
+          <l>Been so long away from home,</l>
+          <l>I almost made this place my own.</l>
+          <l>Now it seems I'll soon be gone,</l>
+          <l>Moving on and all alone.</l>
+          <l>High on the mountain stands a boat,</l>
+          <l>But are they gods or real folk?</l>
+          <l>We can't see the fire but we smell the smoke.</l>
+          <l>Who'll take the plough? Who'll be the yoke?</l>
+        </lg>
+        <lg type="verse">
+          <l>Trouble, trouble.</l>
+          <l>I try to chase trouble but it's chasing me.</l>
+          <l>Trouble, trouble.</l>
+          <l>Trouble with a capital T.</l>
+        </lg>
+        <lg type="verse">
+          <l>Trouble, trouble.</l>
+          <l>I try to chase trouble but it's chasing me.</l>
+          <l>Trouble, trouble.</l>
+          <l>Trouble with a capital T. </l>
+        </lg>
+      </div>
+    </body>
+  </text>
+</TEI>
