@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Missing <TEI>, <teiHeader>, <text>, <body> -->
 <div  xmlns="http://www.tei-c.org/ns/1.0" type="song">
   <head>My Favorite Tags</head>
   <opener>To the tune of <title>My Favorite Things</title>

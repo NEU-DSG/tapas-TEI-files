@@ -6,7 +6,7 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Trouble with a Capital T</title>
+        <title>tapas test of TEI validity: wrong namespace</title>
         <author>Horslips</author>
       </titleStmt>
       <publicationStmt>

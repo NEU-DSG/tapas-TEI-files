@@ -19,6 +19,7 @@
       <p>This document does not have an <att>xml:lang</att> on <gi>text</gi> nor <gi>TEI</gi>,
       and does not have any <code>/TEI/teiHeader/profileDesc/langUsage/language</code> elements,
       so TAPAS, for the moment, does not know what language it is in.</p>
+    </front>
     <body>
       <div>
 	<head>I Only Want To Be With You - Dusty Springfield</head>
