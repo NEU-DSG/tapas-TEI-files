@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>A very bad inclusion</title>
+        <author>Syd Bauman</author>
+      </titleStmt>
+      <publicationStmt>
+        <p>Currently an unpublished test document.</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>None; born digital.</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>Can you say <q>infinite loop</q>? I thought you could.</head>
+      <xi:include href="./ERROR_includes_self.xml">
+	<xi:fallback>
+	  <p>WHhaaaa!</p>
+	</xi:fallback>
+      </xi:include>
+    </body>
+  </text>
+</TEI>

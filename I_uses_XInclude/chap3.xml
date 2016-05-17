@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<div type="chapter" n="3" xmlns="http://www.tei-c.org/ns/1.0">
+  <head>In Fashion</head>
+  <p>I believe <term>tapas</term> are also the hats worn with a <term>zoot suit</term>.</p>
+  <?sb a proccessing instruction?>
+  <p>Test of <![CDATA[a CDATA marked]]> section.</p>
+</div>

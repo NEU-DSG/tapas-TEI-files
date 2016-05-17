@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<div xmlns="http://www.tei-c.org/ns/1.0"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <head>A includes B</head>
+  <p>This non-self-referrential file still gets around to patting
+  itself on the back.</p>
+  <xi:include href="SEVERE_B_includes_A.xml">
+    <xi:fallback>
+      <p>Canna load <name type="file">SEVERE_B_includes_A.xml</name>.</p>
+    </xi:fallback>
+  </xi:include>
+</div>
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?oxygen RNGSchema="../../../TEIdepot/web/release/xml/tei/custom/schema/relaxng/teilite.rnc" type="compact"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>What is TAPAS?</title>
+        <author>Syd Bauman</author>
+      </titleStmt>
+      <publicationStmt>
+        <p>Currently an unpublished test document.</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>None; born digital.</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>What is <q>tapas</q>?</head>
+      <xi:include href="./chap1.xml"/>
+      <xi:include href="./chap2.xml"/>
+      <xi:include href="./chap3.xml"/>
+    </body>
+  </text>
+</TEI>
