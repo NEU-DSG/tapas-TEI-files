@@ -1,6 +1,5 @@
-# tapas-TEI-test-suite
+# tapas-TEI-files/test_suite/
 TEI test files (and some expected results)
-
 
 Doubt this arrangement will remain, but for now:
 
