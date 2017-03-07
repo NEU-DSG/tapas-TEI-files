@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>TAPAS Template for Personographies</title>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Northeastern University TAPAS project</publisher>
+            <availability>
+               <ab>
+                  Freely available for download and redistribution for educational, non-commercial use.
+               </ab>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <!-- Born digital: no previous source exists. This document was composed using the following resource as a guide:-->
+            <bibl>
+               <title level="a">Sample personography of Tudor monarchs</title>. 
+               <author xml:id="jf">Julia Flanders</author>, <title>Encoding Contextual Information</title>. 
+               <publisher>Northeastern University Women Writers Project</publisher>
+               <date>2016</date>.
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listPerson>
+            <!-- repeat '<person></person>' container for each new entry -->
+            <person xml:id="pers_jane_doe">
+               <persName>Jane Doe</persName>
+               <birth when="2017-01-01">
+                  <placeName ref="#location_name">Birthplace</placeName>
+               </birth>
+               <death notBefore="2017"/>
+               <education><orgName>Name of Institution</orgName></education>
+               <langKnowledge>
+                  <langKnown tag="en">first language</langKnown>
+               </langKnowledge>
+               <nationality><placeName>United States</placeName></nationality>
+               <occupation from="2017">Subject of a TAPAS Personography template</occupation>
+               <residence from="2017-01" to="2017-02">
+                  <placeName ref="#place_residence_1">Place of Residence 1</placeName>
+               </residence>
+               <residence from="2017-02" to="2017-03">
+                  <placeName ref="#place_residence_2">Place of Residence 2</placeName>
+               </residence>
+               <event when="2017-02" where="#place_residence_1">
+                  <p>Something cool happened...</p>
+               </event>
+               <trait type="eye_color">
+                  <label>eye color</label>
+                  <desc>green</desc>
+               </trait>
+               <state type="marital_status">
+                  <label>marital status</label>
+                  <desc>partnered</desc>
+               </state>
+            </person>
+            
+         </listPerson>
+      </body>
+   </text>
+</TEI>
