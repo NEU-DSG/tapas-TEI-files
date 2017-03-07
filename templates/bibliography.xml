@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>TAPAS Template Bibliography</title>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Northeastern University TAPAS project</publisher>
+            <availability>
+               <ab>
+                  Freely available for download and redistribution for educational, non-commercial use.
+               </ab>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born Digital</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <listBibl><!-- repeat '<bibl></bibl>' container for new entry -->
+            <bibl xml:id="bibl_source_1">
+               <author>Author Name</author>
+               <title>Document Title</title>
+               <date>Year</date>
+            </bibl>
+         </listBibl>
+      </body>
+  </text>
+</TEI>
