@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader><!-- the tei header records information about the encoded document under <fileDesc>, <encodingDesc>, <profileDesc>. TEI headers come in all shapes and sizes, and include a widerange of information based on the source document or purpose of project to which it belongs. However, in all cases, headers must include at a minimum a fileDesc. -->
+      <fileDesc><!-- fileDesc is a required header section. It is where we record bibliographic information of the encoded document. For <fileDesc> to be valid, it must include at a minumum <titleStmt>, <publicationStmt>, and <sourceDesc> subsections -->
+         <titleStmt><!-- titleStmt is mandatory. It groups elements for recording information about the title of a work and those responsible, at various levels, for the creation or editorial work of its content.-->
+            <title><!-- title of the document. The format of our title will depend on whether the document is the first of its kind (e.g., this is the  first edition of the "TAPAS Templates: a Minimally Encoded Header") or an encoded edition of a historical source document (e.g., Oscar Wilde's "The Importance of Being Earnest"). In the former, the title is straightforward in so far as the originator decides the document title; in the latter, one may choose to preserve the orginal historical title (e.g., "The Importance of Being Earnest") to emphasize the historical object being encoded. However, as one would be creating a new edition (of many other possible editions) of the source work in the TEI, it is considered best practice to reflect that the new object is an iteration of a source object: e.g., "Oscar Wilde's The Importance of Being Earnest: a TEI Edition." To record the original source title (and other bibliographic data), we can use <bibl> under <sourceDesc>. In this case, we would include the original source creator under <author> (e.g., Oscar Wilde), and record the TEI edition's creator/encoder under <respStmt>. -->Title of Source Work</title>
+            <author><!-- name of source object author or an organization reseponsible for producing the work; repeat <author> for multiauthored works; we can also nest <persName> in <author> for asssociating author with a personography --><persName> Author name <!-- (could also use <gi>orgName</gi>, for organizations) -->
+            </persName></author>
+            <sponsor><!-- person(s)/group(s) responsible for providing intellectual sponsorship -->
+               <name>
+                  Name of sponsor
+               </name>
+            </sponsor>
+            <funder><!--  person(s)/group(s) responsible for providing money -->
+               <name>
+                  Name of funder
+               </name>
+            </funder>
+            <editor><!-- in the case of document being part of an edition -->
+               <name>Name of editor</name>
+            </editor>
+            <principal><!-- in the case document is the product of formal research -->
+               <persName>Name of the lead researcher</persName>
+            </principal>
+            <respStmt><!-- groups elements for recording information on creators and contributors in the creation of the TEI edition (e.g., those on an encoding team who contributed to creation or editing of the TEI edition) not already named in above sections-->
+               <name><!-- the name of contributor; we can also wrap in <persName> if we have an accompanying personography-->Contributor's Name</name>
+               <resp><!-- the role of contributor in creation of TEI edition (e.g., primary encoder; or editor of original transcription)-->Contributor's Role</resp>
+            </respStmt><!-- we can add multiple <respStmt> sections where there are multiple contributors <respStmt><name></name><resp></resp></respStmt> -->
+         </titleStmt>
+         <editionStmt><!-- editionStmt is optional, but recommended by TEI-C guidelines if in case of multiple editions. It is used to group information on a single edition of text -->
+            <edition>Edition statement...</edition>
+            <respStmt><!-- used to record primary contributors of edition; add addition <respStmt> where there is more than one contributor to the edition -->
+               <name><!-- responsible for task or role noted below -->Name of person</name>
+               <resp><!-- description of task or role --></resp>
+            </respStmt>
+         </editionStmt>
+         <extent><!-- extent is optional. Used for documenting the size of the textual medium as a digital object-->
+            <measure unit="MiB" quantity=".3">About .3 megabytes</measure>
+            <measure unit="pages" quantity="1">1 page of source material</measure>
+         </extent>
+         <publicationStmt><!-- publicationStmt is mandatory. It groups information concerning the publication or distribution of the digital TEI object; use <sourceDesc> section below to record publication data that may be different than TEI edition, say for an historical source work.  -->
+            <publisher><!-- the person or ogranization responsible for the creation of TEI edition, and who has rights over its production and/or distribution -->Publisher Name</publisher>
+            <address> 
+               <addrLine><!-- repeat addrLine as needed -->Address Line 1,</addrLine> 
+            </address> 
+            <idno type="ISBN"><!-- Use <idno> for ISBN or any other identifying numbers that are relevant -->0-19-254705-4</idno>
+            <availability><!-- availability statement clarifies a general copyright and fair use policy governing reuse of the TEI edition -->
+               <licence target="URL_of_full_license">
+                  Summary statement of which license applies to this TEI file
+               </licence>
+               <p><!-- okay to add <p> to include other related but necessary blocks of information -->Availablity statement continued...</p>
+            </availability>
+            <date when="2017-01-01"><!-- the date of publication of the TEI edition -->Publication Date</date>
+            <distributor><!-- you can identify organization responsible for the distribution or purchase handling of the TEI edition -->Distributor of this TEI Edition</distributor>
+            <date><!-- provide a date for update on availability statement if different than publication date -->Availability Date</date>
+         </publicationStmt>
+         <seriesStmt><!-- seriesStmt is optional. It records the relation between separate documents understood as each part of a series (e.g., collected works (essays, lectures, articles, etc.), document volumes, etc.) by declaring its parent work/identity -->
+            <title level="s">Title of Series</title>
+            <respStmt><!-- name of person responsible for series, e.g., editor or organization -->
+               <resp>ed. by...</resp>
+               <name>Name of Editor</name> 
+            </respStmt>
+            <biblScope unit="vol">biblScope...</biblScope>
+            <idno type="ISSN">idno...</idno>
+         </seriesStmt>
+         <notesStmt><!-- notesStmt is optional. It adds multiple notes for additional information or discussion of document -->
+            <note><!-- repeat <note> as needed -->Notes on the text...</note>
+         </notesStmt>
+         <sourceDesc><!-- sourceDesc is mandatory. It describes the source from which an electronic text was derived or generated, typically a bibliographic description <bibl> in the case of a digitized edition of a print text; in the case where the TEI file is born digital,we can include <p>"born digital"</p> -->
+            <bibl>
+               <title>Title of Source Work</title>
+               <author>Author of Source Work</author>
+               <pubPlace>Place of Publication of Source Work</pubPlace>
+               <publisher>Publisher of Source Work</publisher>
+               <date>Publication Date of Source Work</date>. 
+            </bibl>
+            <!-- sourceDesc can also include Ography data of source Work; for more detailed discussion of internal and external Ography handling see: http://beta.tapasproject.org/guides/ographies-->
+            <listPerson>
+               <person xml:id="BJD">
+                  <persName>Benjamin J. Doyle</persName>
+                  <birth when="1981-05-12">
+                     <placeName ref="tapas-placeography.xml#worc-ma-us">Worcester, Massachusetts</placeName>
+                  </birth>
+                  <occupation from="2014">Project Manager for 
+                     <orgName ref="tapas-orgography.xml#org-TAPAS">The TEI Archiving, Publishing, and Access Service (TAPAS)</orgName>
+                     at <orgName ref="tapas-orgography.xml#org-NU">Northeastern University</orgName>
+                     <note>
+                        <!-- position description -->
+                     </note>
+                     <email>info@tapasproject.org</email>ATTN:Benjamin Doyle
+                  </occupation>
+                  <residence from="2007-08-15">
+                     <placeName ref="tapas-placegraphy.xml#bos-ma-us">Boston, Massachusetts</placeName>
+                  </residence>
+               </person>
+            </listPerson>
+            <listOrg>
+               <org xml:id="org-tapas">  
+                  <orgName>the TEI Archiving, Publishing, and Access Service</orgName>
+                  <desc>
+                     <ref target="http://beta.tapasproject.org/">http://tapasproject.org/</ref>
+                  </desc>
+               </org>
+            </listOrg>
+            <listPlace>
+               <place xml:id="bos-ma-us">
+                  <placeName>Boston</placeName>
+                  <location>
+                     <country key="US"></country>
+                     <geo>42.360082 -71.058880</geo>
+                  </location>
+                  <listPlace>
+                     <place xml:id="nu-bos-ma-us">
+                        <placeName>Northeastern University</placeName>
+                        <location>
+                           <country key="US"></country>
+                           <geo>42.340082 -71.089488</geo>
+                           <address>
+                  <addrLine>360 Huntington Ave</addrLine>
+                  <addrLine>Boston, MA 02115</addrLine>
+               </address>
+                        </location>
+                     </place>
+                  </listPlace>
+               </place>
+            </listPlace>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc><!-- encodingDesc section is optional, but recommended. It groups elements for recording information on the encoding practices used in relation to source work's orginal formatting; this section can range from a brief statement on encoding approach under <projectDesc> to a more detailed overview of editorial decisions under <editorialDesc> -->
+         <projectDesc><!-- a statment on purpose of TEI edition, project objectives, teams, etc -->
+         <p>A Project Description ...</p>
+            </projectDesc>
+         <samplingDecl><!-- can use this section to provide details on how text(s) at project level were selected -->
+            <p>
+               Information about text(s) in collection
+            </p>
+         </samplingDecl>
+         <editorialDecl>
+            
+            <correction><!-- one might wish to note any "corrections" or alterations -->
+               <p>A Correction statement on any edits made of source work in TEI edition</p>
+            </correction>
+            <normalization><!-- we can also record any regularization decisions made to source work in translating into a digital format -->
+               <p>A Normalization statement on any edits made of source work in TEI edition for reasons of regularizing the work for digital format</p>
+            </normalization>
+            <quotation>
+               <p>
+                  Information about treatment of quotations (preservation of original quotation marks, etc.)
+               </p>
+            </quotation>
+            <hyphenation eol="hard">
+               <p>Treatment of the hyphenation of the source</p>
+            </hyphenation>
+            <segmentation>
+               <p>
+                  Information about whether and how the text has been segmented (mostly for linguistic purposes)
+               </p>
+            </segmentation>
+            <interpretation>
+               <p>
+                  Information about any interpretive information added to the text
+               </p>
+            </interpretation>
+         </editorialDecl>
+         <tagsDecl>
+            <!--
+ Used to document the tags used in the text, their frequency of use, and their default rendition 
+-->
+            <rendition xml:id="rend.head">font-size: 120%; text-align: center;</rendition>
+            <namespace name="http://www.tei-c.org/ns/1.0">
+               <tagUsage gi="head" occurs="17" render="rend.head">Description of how the tag is used</tagUsage>
+               <!--  one <tagUsage> for each element type in <text>  -->
+            </namespace>
+         </tagsDecl>
+         <classDecl>
+            <taxonomy xml:id="DDC22">
+               <bibl>
+                  <title>Dewey Decimal Classification</title>
+                  <edition>22nd print</edition>
+                  <publisher>OCLC Online Computer Library Center, Inc.</publisher>
+                  <pubPlace>Dublin, OH USA</pubPlace>
+               </bibl>
+            </taxonomy>
+         </classDecl>
+         <charDecl>
+            <desc>
+               Definitions of characters glyphs, e.g. characters not (yet) in Unicode, or to differentiate separate glyphs used for same character
+            </desc>
+            <char xml:id="for_empty_g">
+               <charName>
+                  name is required (even if only CJK UNIFIED IDEOGRAPH xxx)
+               </charName>
+               <charProp>
+                  <localName>name of a non-Unicode property</localName>
+                  <value>property value</value>
+               </charProp>
+               <mapping type="important_to_have_a_type">char_to_which_its_mapped</mapping>
+               <graphic url="./charPic.png"/>
+            </char>
+            <glyph xml:id="for_g">
+               <glyphName>required</glyphName>
+               <desc>brief description, if desired</desc>
+               <charProp>
+                  <unicodeName>name of a Unicode property</unicodeName>
+                  <value>property value</value>
+               </charProp>
+               <mapping>optional</mapping>
+               <graphic url="./glyph.png"/>
+            </glyph>
+         </charDecl>
+      </encodingDesc>
+      <profileDesc><!-- Optional. profileDesc groups elements that record such information as creation data (<creation/>), language (<langUsage/>), abstract (<abstract/>), description of text (<textDesc/>), description of setting of text (<settingDesc/>), personography data (<particDesc/>) -->
+         <handNotes><!--  List of the handwriting that appears in the text  -->
+            <handNote xml:id="hojhf" medium="blueInk" scope="major" scribe="JHFlanders" script="plain"/><!-- the details of one particular set of handwriting are specified on the attributes -->
+            <handNote xml:id="hosdb" medium="pencil" scope="minor" scribe="SDBauman" script="sloppy"/>
+         </handNotes>
+         <creation><!-- where we recorded publication data of source work under <sourceDesc> above, here we can track information known of the creation of source work -->
+            <date>Creation Date of Source Work</date>
+            <listChange><!-- records information on changes/revisions to source work during stages of its creation; <revisionDesc> can be used after <listChange> to record information on changes/revisions to the TEI edition; can add more <change/> sections to track multiple changes/revisions -->
+               <change>A note on change/revision made at a particualr stage in the creation of source work...</change>
+            </listChange>
+         </creation>
+         <langUsage>
+            <language ident="en-US"><!-- a good online resource for language subtags can be found here: http://r12a.github.io/apps/subtags/ -->Language of Source Work</language>
+         </langUsage>
+         <abstract><!-- add a description or abstract of source work --><p>Abstract of source work...</p></abstract>
+         <textDesc><!--  provides a full description of the situation within which a text was produced or experienced; this is a commonly occuring yet complex section of the header, and its attributes and values; see the following for a detailed overview of each grouped element in this section: http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CC.html#CCAHTD -->
+            <channel mode="x"><!-- allowed values of "mode" include: s (spoken); w (written); sw (spoken to be written) e.g. dictation; ws (written to be spoken) e.g. a script; m (mixed); x
+(unknown or inapplicable) [Default] --></channel>
+            <constitution type="single"><!-- allowed values of "constitution" include: single (a single complete text [Default]); composite (a text made by combining several smaller items, each individually complete); frags (fragments, a text made by combining several smaller, not necessarily complete, items); unknown (composition unknown or unspecified) --></constitution>
+            <derivation type="original"><!-- sample values of "derivation" include: original (text is original); revision (text is a revision of some other text); translation (text is a translation of some other text); abridgment (text is an abridged version of some other text); plagiarism (text is plagiarized from some other text); traditional (text has no obvious source but is one of a number derived from some common ancestor) --></derivation>
+            <domain type="education"><!-- sample values of "domain" include: art (art and entertainment); domestic (domestic and private); religious (religious and ceremonial); business (business and work place); education (education); govt (government, government and law); public (other forms of public context)  -->educational resource</domain>
+            <factuality type="inapplicable"><!-- allowed values include: fiction (the text is to be regarded as entirely imaginative); fact (the text is to be regarded as entirely informative or factual); mixed (the text contains a mixture of fact and fiction); inapplicable (the fiction/fact distinction is not regarded as helpful or appropriate to this text) -->one of many models of TEI encoding based on standard guidelines</factuality>
+            <interaction type="inapplicable" active="singular" passive="world"><!-- for a full description of these optional attributes and their suggested or allowed values, see: http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-interaction.html --></interaction>
+            <preparedness type="formulaic"><!-- sample values include: none (spontaneous or unprepared); scripted (follows a script); formulaic (follows a predefined set of conventions);
+revised (polished or revised before presentation) --></preparedness>
+            <purpose type="inform" degree="high"><!-- for a full description of these optional attributes and their suggested or allowed values, see: http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-purpose.html --></purpose>
+         </textDesc>
+         <settingDesc><!-- this section is used to describe the setting or settings in which language interaction takes place in the source work. We can write out a prose description using <p> or the following elements grouped by <setting>. We can use additional <setting> sections to record information where there is more than one setting -->
+            <setting>
+               <name><!-- often used to refer to location of setting (e.g., paris); the accompanying attribute @type on <name> may include "person," "place," or one may use <perName>, <placeName>, <orgName> alternatively to <name> --> Place Name of setting</name>
+               <date><!-- any identifiable date associated with the setting --> Date associated with setting</date>
+               <time><!-- a phrase describing the setting's time of day -->Time associated with setting</time>
+               <locale><!-- a brief informal description of the setting's location  -->Location of setting</locale>
+               <activity><!-- a brief informal description of the actions (other than speaking) of participants in setting -->Activities of participants in setting</activity>
+            </setting>   
+         </settingDesc>
+         
+        <particDesc><!-- Personography and Orgography data may go here as well; for a more detailed example of internal and external ography handling, please see: -->
+            <listPerson>
+               <person xml:id="idpersn">
+                  <!-- ... -->
+               </person>
+            </listPerson>
+            <listOrg>
+               <org xml:id="idorgs"></org>
+               <!-- ... -->
+            </listOrg>
+         </particDesc>
+      </profileDesc>
+      <xenoData><!-- (Optional) Documents nonTEI metadata formats--></xenoData>
+      <revisionDesc><!-- Optional. revisionDesc tracks the revision history of the encoded document -->
+         <change when="2016-11-11" who="#BJD">Revision change recorded here ...</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+        <p><!--document body content goes here--></p>
+         <p>This document is an extended, annotated template of the TEI header modeled in our <ref target="http://tapasproject.org/tapas-commons/files/template-header-basic">basic</ref> header template.</p>
+         <div>
+            <head>How to use this template</head>
+            <p>You can toggle the XML stylesheet to view the header structure. The comments included attempt to situate newer TEI practitioners to each of the required and commonly expected sections and element groupings of a minimally encoded header. You may download this template by selecting "files" tab.</p>
+         </div>
+         <div>
+            <head>Credit</head>
+            <p>This document was prepared using the <ref target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/HD.html">TEI-C</ref> guidelines on headers and the <ref target="http://www.wwp.northeastern.edu/outreach/seminars/_current/handouts/header_template.xml">Women Writers Project</ref> TEI resources as reference.</p>
+         </div>
+      </body>
+   </text>
+</TEI>
