@@ -35,57 +35,30 @@
       </fileDesc>
    </teiHeader>
    <text>
-      <body>
-         <lg type="poem">
-            <head>Basic Example</head>
-            <l>To capture one,</l>
-            <l>or more lines of verse,</l>
-            <l>nest 'l' in 'lg', </l>
-            <l>where @type on 'lg'</l>
-            <l>declares it as a 'poem'</l>
-         </lg>
-         <lg type="poem">
-            <head>An Extended Example</head>
-            <lg type="stanza" n="1">
-               <l n="1">We can capture as well</l>
-               <l n="2">verse divided into stanza</l>
-               <l n="3">by nesting 'lg' with @type='stanza'</l>     
-            </lg>
-            <lg type="stanza" n="2">
-               <l n="4">And we can note the order</l>
-               <l n="5">of each stanza using</l>
-               <l n="6">@n attribute with numeric values</l>
-            </lg>
-            <lg type="stanza" n="3">
-               <l n="7">@n attribute can be used as well</l>
-               <l n="8">to mark the line numbers</l>
-               <l n="9">of the poem.</l>
-            </lg>
-         </lg>
-         
-         <lg type="poem">
-            <head>Sonnet 130</head>
-            <lg type="quatrain" n="1">
-               <l>My Mistres eyes are nothing like the Sunne,</l>
-               <l>Currall is farre more red, then her lips red</l>
-               <l>If snow be white, why then her brests are dun:</l>
-               <l>If haires be wiers, black wiers grown on her head:</l>
+      <body><!-- this template has been based off the following publicly available TEI resources: Women Writers Project Online: https://www.wwp.northeastern.edu/research/publications/guide/html/verse_outline.html;TEI By Example: http://teibyexample.org/modules/TBED04v00.htm -->
+         <lg type="poem.sonnet-shakespearean"><!-- To capture one or more lines of verse, nest 'l' in 'lg'. Like 'div', 'lg' can include '@type=attribute' to declare its type of grouping; in this example, 'poem.sonnet-shakespearean' declares the outer most grouping as a poem, composed in style of Sharespearean sonnet. One could declare this as a 'poem' or a 'sonnet,' but we know this to be a Shakespearean sonnet, divided into three 'lg's' with @type='quatrain' and one 'lg' with @type="couplet". (see for more detail on handling poetry: https://www.wwp.northeastern.edu/research/publications/guide/html/verse_wholepoem.html; see for more on @type="attribute" for verse: https://www.wwp.northeastern.edu/research/publications/guide/html/verse_stanzas.html) -->
+            <head>Sonnet 130</head><!-- 'head' for capturing poem title or stanza heading -->
+            <lg type="quatrain" n="1"><!-- @n='attribute' can be used to number/count lg's and individual l's -->
+               <l n="1">My Mistres eyes are nothing like the Sunne,</l>
+               <l n="2">Currall is farre more red, then her lips red</l>
+               <l n="3">If snow be white, why then her brests are dun:</l>
+               <l n="4">If haires be wiers, black wiers grown on her head:</l>
             </lg>
             <lg type="quatrain" n="2">
-               <l>I have seene Roses damaskt, red and white,</l>
-               <l>But no such Roses see I in her cheekes,</l>
-               <l>And in some perfumes is there more delight,</l>
-               <l>Then in the breath that from my Mistres reekes.</l>
+               <l n="5">I have seene Roses damaskt, red and white,</l>
+               <l n="6">But no such Roses see I in her cheekes,</l>
+               <l n="7">And in some perfumes is there more delight,</l>
+               <l n="8">Then in the breath that from my Mistres reekes.</l>
             </lg>
             <lg type="quatrain" n="3">
-               <l>I love to heare her speake, yet well I know,</l>
-               <l>That Musicke hath a farre more pleasing sound:</l>
-               <l>I graunt I never saw a goddesse goe,</l>
-               <l>My Mistres when shee walkes treads on the ground.</l>
+               <l n="9">I love to heare her speake, yet well I know,</l>
+               <l n="10">That Musicke hath a farre more pleasing sound:</l>
+               <l n="11">I graunt I never saw a goddesse goe,</l>
+               <l n="12">My Mistres when shee walkes treads on the ground.</l>
             </lg>
             <lg type="couplet" n="4">
-               <l>And yet by heaven I think my love as rare,</l>
-               <l>As any she beli'd with false compare.</l>
+               <l n="13">And yet by heaven I think my love as rare,</l>
+               <l n="14">As any she beli'd with false compare.</l>
             </lg>
          </lg>
       </body>
