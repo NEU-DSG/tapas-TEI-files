@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader type="text">
+      <fileDesc>
+         <titleStmt>
+            <title>An Minimally Encoded Letter in the TEI</title>
+            <author>
+               <orgName instant="false" full="yes">TAPAS Project</orgName>
+            </author>
+            <respStmt>
+               <resp>Encoded by, </resp>
+               <persName instant="false" full="yes">Benjamin J. Doyle</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName instant="false" full="yes">the TEI Archiving, Publishing, and Access Service (TAPAS)</orgName>
+            </publisher>
+            <address>
+               <addrLine>360 Huntington Avenue</addrLine>
+               <addrLine>Northeastern University</addrLine>
+               <addrLine>Boston, MA 02115</addrLine>
+            </address>
+            <date instant="false">2017-01-17</date>
+            <availability default="false" status="unknown">
+               <p part="N">This file is free to download, share, or repurpose for educational and project development purposes.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc default="false">
+            <p part="N">Born digital</p>
+         </sourceDesc>
+         
+      </fileDesc>
+     <profileDesc>
+        <particDesc default="false">
+           <listOrg default="false">
+              <org xml:id="org_TAPAS" instant="false">
+                 <orgName instant="false" full="yes">the TEI Archiving, Publishing, and Access Service (TAPAS)</orgName>
+                 <note anchored="true">A digital resource for the TEI community that supports longterm storage of their TEI data and project curation tools.</note>
+              </org>
+           </listOrg>
+           <listPerson default="false">
+              <person xml:id="pers_tapasuser" instant="false">
+                 <persName instant="false" full="yes">TAPAS User</persName>
+                 <note anchored="true">A generic title for registered users of the TAPAS project site.</note>
+              </person>
+           </listPerson>
+        </particDesc>
+     </profileDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <opener>
+            <dateline>
+               <placeName ref="#place_boston-ma" instant="false" full="yes">Boston, MA. USA</placeName>
+               <date when="2016-08-05" instant="false">January 01, 2017</date>
+            </dateline>
+            <salute>Dear <persName ref="#pers_tapasuser" instant="false" full="yes">TAPAS User</persName>,</salute>
+         </opener>
+         <p part="N">This is a letter to you, which we hope will be of some benefit should you be in search of a sample letter encoded in the TEI. We have based this letter off of the <orgName ref="#org_teic" instant="false" full="yes">Text Encoding Initiative Consortium</orgName> Guidelines. The Guidelines can be found <ref target="http://www.tei-c.org/Guidelines/">here</ref>. A detailed overview of encoded letter components can be found via the Women Writers Project <ref target="https://www.wwp.northeastern.edu/research/publications/guide/html/letters_outline.html">encoding guides</ref>.
+         </p>
+         <p part="N">Toggle the "XML View" under Stylesheets above to view XML comments explaining the basic encoded letter structure.</p>
+         <closer>
+            <salute>
+               Sincerely,
+            </salute>
+            <signed>
+               <orgName ref="#org_TAPAS" instant="false" full="yes">the TAPAS Project</orgName>
+            </signed>
+         </closer>
+         <postscript>
+            <label>P.S.</label>
+            <p part="N">Be sure to check out the TAPAS Learn guide: <ref target="http://tapasproject.org/tapas-learn/letters">"Letters"</ref> for an extended discussion of letters as an encoded document genre. If you have any questions about working with letters in the TEI not covered in our guides, <ref target="http://tapasproject.org/forums/letters">post to our forums!</ref></p>
+         </postscript>
+      </body>
+     <back>
+        <listPlace default="false">
+              <place xml:id="place_boston-ma" instant="false">
+                 <placeName instant="false" full="yes">Boston, MA</placeName>
+                 <location instant="false">
+                    <geo>42.3600825,-71.05888010000001</geo>
+                    <country key="US">United States</country>
+                 </location>
+              </place>
+        </listPlace>
+     </back>
+  </text>
+</TEI>
