@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader type="text">
+      <fileDesc>
+         <titleStmt>
+            <title>An Minimally Encoded Example of Verse in the TEI</title>
+            <author>
+               <orgName instant="false" full="yes">TAPAS Project</orgName>
+            </author>
+            <respStmt>
+               <resp>Encoded by, </resp>
+               <persName instant="false" full="yes">Benjamin J. Doyle</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName instant="false" full="yes">the TEI Archiving, Publishing, and Access Service (TAPAS)</orgName>
+            </publisher>
+            <address>
+               <addrLine>360 Huntington Avenue</addrLine>
+               <addrLine>Northeastern University</addrLine>
+               <addrLine>Boston, MA 02115</addrLine>
+            </address>
+            <date instant="false">2017-01-17</date>
+            <availability default="false" status="unknown">
+               <p part="N">This file is free to download, share, or repurpose for educational and project development purposes.</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc default="false">
+            <p part="N">Born digital</p>
+         </sourceDesc>     
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <lg type="poem.sonnet-shakespearean" part="N" org="uniform" sample="complete">
+            <head>Sonnet 130</head>
+            <lg type="quatrain" n="1" part="N" org="uniform" sample="complete">
+               <l n="1" part="N">My Mistres eyes are nothing like the Sunne,</l>
+               <l n="2" part="N">Currall is farre more red, then her lips red</l>
+               <l n="3" part="N">If snow be white, why then her brests are dun:</l>
+               <l n="4" part="N">If haires be wiers, black wiers grown on her head:</l>
+            </lg>
+            <lg type="quatrain" n="2" part="N" org="uniform" sample="complete">
+               <l n="5" part="N">I have seene Roses damaskt, red and white,</l>
+               <l n="6" part="N">But no such Roses see I in her cheekes,</l>
+               <l n="7" part="N">And in some perfumes is there more delight,</l>
+               <l n="8" part="N">Then in the breath that from my Mistres reekes.</l>
+            </lg>
+            <lg type="quatrain" n="3" part="N" org="uniform" sample="complete">
+               <l n="9" part="N">I love to heare her speake, yet well I know,</l>
+               <l n="10" part="N">That Musicke hath a farre more pleasing sound:</l>
+               <l n="11" part="N">I graunt I never saw a goddesse goe,</l>
+               <l n="12" part="N">My Mistres when shee walkes treads on the ground.</l>
+            </lg>
+            <lg type="couplet" n="4" part="N" org="uniform" sample="complete">
+               <l n="13" part="N">And yet by heaven I think my love as rare,</l>
+               <l n="14" part="N">As any she beli'd with false compare.</l>
+            </lg>
+         </lg>
+      </body>
+   </text>
+</TEI>

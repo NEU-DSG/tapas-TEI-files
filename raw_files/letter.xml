@@ -42,13 +42,17 @@
            <!-- orgography may 
               be stashed here -->
            <listOrg>
-              <org><!--  --></org>
+              <org xml:id="org_TAPAS">
+                 <orgName>the TEI Archiving, Publishing, and Access Service (TAPAS)</orgName>
+                 <note>A digital resource for the TEI community that supports longterm storage of their TEI data and project curation tools.</note>
+              </org>
            </listOrg>
            <!-- personography may 
               be stashed here -->
            <listPerson>
-              <person>
-                 <persName><!--  --></persName>
+              <person xml:id="pers_tapasuser">
+                 <persName>TAPAS User</persName>
+                 <note>A generic title for registered users of the TAPAS project site.</note>
               </person>
            </listPerson>
         </particDesc>
@@ -60,13 +64,14 @@
             <!-- groups dateline, 
                byline, salutation -->
             <dateline>
-               <placeName>Boston, MA. USA</placeName>
+               <placeName ref="#place_boston-ma">Boston, MA. USA</placeName>
                <date when="2016-08-05">January 01, 2017</date>
             </dateline>
-            <salute>Dear <persName ref="tapas-personography.xml#JF">TAPAS User</persName>,</salute>
+            <salute>Dear <persName ref="#pers_tapasuser">TAPAS User</persName>,</salute>
          </opener>
          <p>This is a letter to you, which we hope will be of some benefit should you be in search of a sample letter encoded in the TEI. We have based this letter off of the <orgName ref="#org_teic">Text Encoding Initiative Consortium</orgName> Guidelines. The Guidelines can be found <ref target="http://www.tei-c.org/Guidelines/">here</ref>. A detailed overview of encoded letter components can be found via the Women Writers Project <ref target="https://www.wwp.northeastern.edu/research/publications/guide/html/letters_outline.html">encoding guides</ref>.
          </p>
+         <p>Toggle the "XML View" under Stylesheets above to view XML comments explaining the basic encoded letter structure.</p>
          <closer>
             <!-- groups together 
                salute and signed -->
@@ -74,7 +79,7 @@
                Sincerely,
             </salute>
             <signed>
-               <orgName ref="#TAPAS">the TAPAS Project</orgName>
+               <orgName ref="#org_TAPAS">the TAPAS Project</orgName>
             </signed>
          </closer>
          <postscript>
@@ -87,7 +92,13 @@
            <!-- learn more about internal and 
               external ography data 
               http://tapasproject.org/tapas-learn/ographies -->
-           <place><!--  --></place>
+              <place xml:id="place_boston-ma">
+                 <placeName>Boston, MA</placeName>
+                 <location>
+                    <geo>42.3600825,-71.05888010000001</geo>
+                    <country key="US">United States</country>
+                 </location>
+              </place>
         </listPlace>
      </back>
   </text>

@@ -261,7 +261,6 @@ revised (polished or revised before presentation) --></preparedness>
             </listOrg>
          </particDesc>
       </profileDesc>
-      <xenoData><!-- (Optional) Documents nonTEI metadata formats--></xenoData>
       <revisionDesc><!-- Optional. revisionDesc tracks the revision history of the encoded document -->
          <change when="2016-11-11" who="#BJD">Revision change recorded here ...</change>
       </revisionDesc>
