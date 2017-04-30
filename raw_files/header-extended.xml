@@ -6,9 +6,12 @@
    <teiHeader><!-- the tei header records information about the encoded document under <fileDesc>, <encodingDesc>, <profileDesc>. TEI headers come in all shapes and sizes, and include a widerange of information based on the source document or purpose of project to which it belongs. However, in all cases, headers must include at a minimum a fileDesc. -->
       <fileDesc><!-- fileDesc is a required header section. It is where we record bibliographic information of the encoded document. For <fileDesc> to be valid, it must include at a minumum <titleStmt>, <publicationStmt>, and <sourceDesc> subsections -->
          <titleStmt><!-- titleStmt is mandatory. It groups elements for recording information about the title of a work and those responsible, at various levels, for the creation or editorial work of its content.-->
-            <title><!-- title of the document. The format of our title will depend on whether the document is the first of its kind (e.g., this is the  first edition of the "TAPAS Templates: a Minimally Encoded Header") or an encoded edition of a historical source document (e.g., Oscar Wilde's "The Importance of Being Earnest"). In the former, the title is straightforward in so far as the originator decides the document title; in the latter, one may choose to preserve the orginal historical title (e.g., "The Importance of Being Earnest") to emphasize the historical object being encoded. However, as one would be creating a new edition (of many other possible editions) of the source work in the TEI, it is considered best practice to reflect that the new object is an iteration of a source object: e.g., "Oscar Wilde's The Importance of Being Earnest: a TEI Edition." To record the original source title (and other bibliographic data), we can use <bibl> under <sourceDesc>. In this case, we would include the original source creator under <author> (e.g., Oscar Wilde), and record the TEI edition's creator/encoder under <respStmt>. -->Title of Source Work</title>
-            <author><!-- name of source object author or an organization reseponsible for producing the work; repeat <author> for multiauthored works; we can also nest <persName> in <author> for asssociating author with a personography --><persName> Author name <!-- (could also use <gi>orgName</gi>, for organizations) -->
-            </persName></author>
+            <title><!-- title of the document. The format of our title will depend on whether the document is the first of its kind (e.g., this is the  first edition of the "TAPAS Templates: a Minimally Encoded Header") or an encoded edition of a historical source document (e.g., Oscar Wilde's "The Importance of Being Earnest"). In the former, the title is straightforward in so far as the originator decides the document title; in the latter, one may choose to preserve the orginal historical title (e.g., "The Importance of Being Earnest") to emphasize the historical object being encoded. However, as one would be creating a new edition (of many other possible editions) of the source work in the TEI, it is considered best practice to reflect that the new object is an iteration of a source object: e.g., "Oscar Wilde's The Importance of Being Earnest: a TEI Edition." To record the original source title (and other bibliographic data), we can use <bibl> under <sourceDesc>. In this case, we would include the original source creator under <author> (e.g., Oscar Wilde), and record the TEI edition's creator/encoder under <respStmt>. -->The Importance of Being Earnest</title>
+            <title>A trivial comedy for serious people</title>
+            <title>A TEI edition</title>
+            <author><!-- name of source object author or an organization reseponsible for producing the work; repeat <author> for multiauthored works; we can also nest <persName> in <author> for asssociating author with a personography -->
+               <persName ref="#pers_oscarwilde">Oscar Wilde</persName>
+            </author>
             <sponsor><!-- person(s)/group(s) responsible for providing intellectual sponsorship -->
                <name>
                   Name of sponsor
@@ -79,22 +82,8 @@
             </bibl>
             <!-- sourceDesc can also include Ography data of source Work; for more detailed discussion of internal and external Ography handling see: http://beta.tapasproject.org/guides/ographies-->
             <listPerson>
-               <person xml:id="BJD">
-                  <persName>Benjamin J. Doyle</persName>
-                  <birth when="1981-05-12">
-                     <placeName ref="tapas-placeography.xml#worc-ma-us">Worcester, Massachusetts</placeName>
-                  </birth>
-                  <occupation from="2014">Project Manager for 
-                     <orgName ref="tapas-orgography.xml#org-TAPAS">The TEI Archiving, Publishing, and Access Service (TAPAS)</orgName>
-                     at <orgName ref="tapas-orgography.xml#org-NU">Northeastern University</orgName>
-                     <note>
-                        <!-- position description -->
-                     </note>
-                     <email>info@tapasproject.org</email>ATTN:Benjamin Doyle
-                  </occupation>
-                  <residence from="2007-08-15">
-                     <placeName ref="tapas-placegraphy.xml#bos-ma-us">Boston, Massachusetts</placeName>
-                  </residence>
+               <person>
+                  <persName><!-- ... --></persName>
                </person>
             </listPerson>
             <listOrg>
@@ -250,11 +239,11 @@ revised (polished or revised before presentation) --></preparedness>
          </settingDesc>
          
         <particDesc><!-- Personography and Orgography data may go here as well; for a more detailed example of internal and external ography handling, please see: -->
-            <listPerson>
-               <person xml:id="idpersn">
-                  <!-- ... -->
-               </person>
-            </listPerson>
+           <listPerson>
+              <person xml:id="pers_oscarwilde">
+                 <persName>Oscar Wilde</persName>
+              </person>
+           </listPerson>
             <listOrg>
                <org xml:id="idorgs"></org>
                <!-- ... -->
@@ -262,21 +251,12 @@ revised (polished or revised before presentation) --></preparedness>
          </particDesc>
       </profileDesc>
       <revisionDesc><!-- Optional. revisionDesc tracks the revision history of the encoded document -->
-         <change when="2016-11-11" who="#BJD">Revision change recorded here ...</change>
+         <change when="2016-11-11" who="#BJD">Added revision description to header to represent this metadata section.</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
         <p><!--document body content goes here--></p>
-         <p>This document is an extended, annotated template of the TEI header modeled in our <ref target="http://tapasproject.org/tapas-commons/files/template-header-basic">basic</ref> header template.</p>
-         <div>
-            <head>How to use this template</head>
-            <p>You can toggle the XML stylesheet to view the header structure. The comments included attempt to situate newer TEI practitioners to each of the required and commonly expected sections and element groupings of a minimally encoded header. You may download this template by selecting "files" tab.</p>
-         </div>
-         <div>
-            <head>Credit</head>
-            <p>This document was prepared using the <ref target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/HD.html">TEI-C</ref> guidelines on headers and the <ref target="http://www.wwp.northeastern.edu/outreach/seminars/_current/handouts/header_template.xml">Women Writers Project</ref> TEI resources as reference.</p>
-         </div>
       </body>
    </text>
 </TEI>
