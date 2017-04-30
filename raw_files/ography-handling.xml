@@ -79,13 +79,7 @@
       <body>
          <div>
             <head>Introduction</head>
-            <p>This document aims to demonstrate how the TAPAS reading interface handles internal and external ography data. It makes use of four externally linked ography tei files:</p>
-            <list>
-               <item><ref target="/tapas-commons/files/tapas-personography">TAPAS Template Personography</ref></item>
-               <item><ref target="/tapas-commons/files/tapas-placeography">TAPAS Template Placeography</ref></item>
-               <item><ref target="/tapas-commons/files/tapas-orgography">TAPAS Template Orgography</ref></item>
-               <item><ref target="/tapas-commons/files/tapas-bibliography">TAPAS Template Bibliography</ref></item>
-            </list>
+            <p>This document demonstrates how the TAPAS reading interface handles internal and external ography data.</p>
          </div>
          <div>
             <head>General Notes about Linking</head>
@@ -98,6 +92,15 @@
             <p>We identify the project (/tapas-commons) within which both files live, and include full path to -Ography file (/files/tapas-personography) followed by the referenced entry (#pers_jane_doe):</p>
             <p>TRY IT: Click <persName ref="/tapas-commons/files/tapas-personography#pers_jane_doe">Jane Doe</persName> to learn more about her. </p>
          </div>
+         <div><head>Sample Ography files in TAPAS Commons</head>
+            <list>
+               <item><ref target="/tapas-commons/files/tapas-personography">TAPAS Template Personography</ref></item>
+               <item><ref target="/tapas-commons/files/tapas-placeography">TAPAS Template Placeography</ref></item>
+               <item><ref target="/tapas-commons/files/tapas-orgography">TAPAS Template Orgography</ref></item>
+               <item><ref target="/tapas-commons/files/tapas-bibliography">TAPAS Template Bibliography</ref></item>
+            </list>
+         </div>
+         
       </body>
    </text>
 </TEI>
