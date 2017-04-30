@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader type="text">
+      <fileDesc>
+         <titleStmt>
+            <title>The Importance of Being Earnest</title>
+            <title>A trivial comedy for serious people</title>
+            <title>A TEI edition</title>
+            <author>
+               <persName ref="#pers_oscarwilde" instant="false" full="yes">Oscar Wilde</persName>
+            </author>
+            <sponsor>
+               <name full="yes" instant="false">
+                  Name of sponsor
+               </name>
+            </sponsor>
+            <funder>
+               <name full="yes" instant="false">
+                  Name of funder
+               </name>
+            </funder>
+            <editor>
+               <name full="yes" instant="false">Name of editor</name>
+            </editor>
+            <principal>
+               <persName instant="false" full="yes">Name of the lead researcher</persName>
+            </principal>
+            <respStmt>
+               <name full="yes" instant="false">Contributor's Name</name>
+               <resp>Contributor's Role</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>Edition statement...</edition>
+            <respStmt>
+               <name full="yes" instant="false">Name of person</name>
+               <resp/>
+            </respStmt>
+         </editionStmt>
+         <extent>
+            <measure unit="MiB" quantity=".3">About .3 megabytes</measure>
+            <measure unit="pages" quantity="1">1 page of source material</measure>
+         </extent>
+         <publicationStmt>
+            <publisher>Publisher Name</publisher>
+            <address> 
+               <addrLine>Address Line 1,</addrLine> 
+            </address> 
+            <idno type="ISBN">0-19-254705-4</idno>
+            <availability default="false" status="unknown">
+               <licence target="URL_of_full_license">
+                  Summary statement of which license applies to this TEI file
+               </licence>
+               <p part="N">Availablity statement continued...</p>
+            </availability>
+            <date when="2017-01-01" instant="false">Publication Date</date>
+            <distributor>Distributor of this TEI Edition</distributor>
+            <date instant="false">Availability Date</date>
+         </publicationStmt>
+         <seriesStmt>
+            <title level="s">Title of Series</title>
+            <respStmt>
+               <resp>ed. by...</resp>
+               <name full="yes" instant="false">Name of Editor</name> 
+            </respStmt>
+            <biblScope unit="vol">biblScope...</biblScope>
+            <idno type="ISSN">idno...</idno>
+         </seriesStmt>
+         <notesStmt>
+            <note anchored="true">Notes on the text...</note>
+         </notesStmt>
+         <sourceDesc default="false">
+            <bibl default="false" status="draft">
+               <title>Title of Source Work</title>
+               <author>Author of Source Work</author>
+               <pubPlace>Place of Publication of Source Work</pubPlace>
+               <publisher>Publisher of Source Work</publisher>
+               <date instant="false">Publication Date of Source Work</date>. 
+            </bibl>
+            <listPerson default="false">
+               <person instant="false">
+                  <persName instant="false" full="yes"/>
+               </person>
+            </listPerson>
+            <listOrg default="false">
+               <org xml:id="org-tapas" instant="false">  
+                  <orgName instant="false" full="yes">the TEI Archiving, Publishing, and Access Service</orgName>
+                  <desc>
+                     <ref target="http://beta.tapasproject.org/">http://tapasproject.org/</ref>
+                  </desc>
+               </org>
+            </listOrg>
+            <listPlace default="false">
+               <place xml:id="bos-ma-us" instant="false">
+                  <placeName instant="false" full="yes">Boston</placeName>
+                  <location instant="false">
+                     <country key="US"/>
+                     <geo>42.360082 -71.058880</geo>
+                  </location>
+                  <listPlace default="false">
+                     <place xml:id="nu-bos-ma-us" instant="false">
+                        <placeName instant="false" full="yes">Northeastern University</placeName>
+                        <location instant="false">
+                           <country key="US"/>
+                           <geo>42.340082 -71.089488</geo>
+                           <address>
+                  <addrLine>360 Huntington Ave</addrLine>
+                  <addrLine>Boston, MA 02115</addrLine>
+               </address>
+                        </location>
+                     </place>
+                  </listPlace>
+               </place>
+            </listPlace>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc default="false">
+         <p part="N">A Project Description ...</p>
+            </projectDesc>
+         <samplingDecl default="false">
+            <p part="N">
+               Information about text(s) in collection
+            </p>
+         </samplingDecl>
+         <editorialDecl default="false">
+            
+            <correction default="false" status="unknown" method="silent">
+               <p part="N">A Correction statement on any edits made of source work in TEI edition</p>
+            </correction>
+            <normalization default="false" method="silent">
+               <p part="N">A Normalization statement on any edits made of source work in TEI edition for reasons of regularizing the work for digital format</p>
+            </normalization>
+            <quotation default="false">
+               <p part="N">
+                  Information about treatment of quotations (preservation of original quotation marks, etc.)
+               </p>
+            </quotation>
+            <hyphenation eol="hard" default="false">
+               <p part="N">Treatment of the hyphenation of the source</p>
+            </hyphenation>
+            <segmentation default="false">
+               <p part="N">
+                  Information about whether and how the text has been segmented (mostly for linguistic purposes)
+               </p>
+            </segmentation>
+            <interpretation default="false">
+               <p part="N">
+                  Information about any interpretive information added to the text
+               </p>
+            </interpretation>
+         </editorialDecl>
+         <tagsDecl>
+            <rendition xml:id="rend.head">font-size: 120%; text-align: center;</rendition>
+            <namespace name="http://www.tei-c.org/ns/1.0">
+               <tagUsage gi="head" occurs="17" render="rend.head">Description of how the tag is used</tagUsage>
+            </namespace>
+         </tagsDecl>
+         <classDecl>
+            <taxonomy xml:id="DDC22">
+               <bibl default="false" status="draft">
+                  <title>Dewey Decimal Classification</title>
+                  <edition>22nd print</edition>
+                  <publisher>OCLC Online Computer Library Center, Inc.</publisher>
+                  <pubPlace>Dublin, OH USA</pubPlace>
+               </bibl>
+            </taxonomy>
+         </classDecl>
+         <charDecl>
+            <desc>
+               Definitions of characters glyphs, e.g. characters not (yet) in Unicode, or to differentiate separate glyphs used for same character
+            </desc>
+            <char xml:id="for_empty_g">
+               <charName>
+                  name is required (even if only CJK UNIFIED IDEOGRAPH xxx)
+               </charName>
+               <charProp>
+                  <localName>name of a non-Unicode property</localName>
+                  <value>property value</value>
+               </charProp>
+               <mapping type="important_to_have_a_type">char_to_which_its_mapped</mapping>
+               <graphic url="./charPic.png"/>
+            </char>
+            <glyph xml:id="for_g">
+               <glyphName>required</glyphName>
+               <desc>brief description, if desired</desc>
+               <charProp>
+                  <unicodeName>name of a Unicode property</unicodeName>
+                  <value>property value</value>
+               </charProp>
+               <mapping>optional</mapping>
+               <graphic url="./glyph.png"/>
+            </glyph>
+         </charDecl>
+      </encodingDesc>
+      <profileDesc>
+         <handNotes>
+            <handNote xml:id="hojhf" medium="blueInk" scope="major" scribe="JHFlanders" script="plain"/>
+            <handNote xml:id="hosdb" medium="pencil" scope="minor" scribe="SDBauman" script="sloppy"/>
+         </handNotes>
+         <creation>
+            <date instant="false">Creation Date of Source Work</date>
+            <listChange ordered="true">
+               <change status="draft">A note on change/revision made at a particualr stage in the creation of source work...</change>
+            </listChange>
+         </creation>
+         <langUsage default="false">
+            <language ident="en-US">Language of Source Work</language>
+         </langUsage>
+         <abstract><p part="N">Abstract of source work...</p></abstract>
+         <textDesc default="false">
+            <channel mode="x"/>
+            <constitution type="single"/>
+            <derivation type="original"/>
+            <domain type="education">educational resource</domain>
+            <factuality type="inapplicable">one of many models of TEI encoding based on standard guidelines</factuality>
+            <interaction type="inapplicable" active="singular" passive="world"/>
+            <preparedness type="formulaic"/>
+            <purpose type="inform" degree="high"/>
+         </textDesc>
+         <settingDesc default="false">
+            <setting>
+               <name full="yes" instant="false"> Place Name of setting</name>
+               <date instant="false"> Date associated with setting</date>
+               <time instant="false">Time associated with setting</time>
+               <locale>Location of setting</locale>
+               <activity>Activities of participants in setting</activity>
+            </setting>   
+         </settingDesc>
+         
+        <particDesc default="false">
+           <listPerson default="false">
+              <person xml:id="pers_oscarwilde" instant="false">
+                 <persName instant="false" full="yes">Oscar Wilde</persName>
+              </person>
+           </listPerson>
+            <listOrg default="false">
+               <org xml:id="idorgs" instant="false"/>
+            </listOrg>
+         </particDesc>
+      </profileDesc>
+      <revisionDesc status="draft">
+         <change when="2016-11-11" who="#BJD" status="draft">Added revision description to header to represent this metadata section.</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+        <p part="N"/>
+      </body>
+   </text>
+</TEI>
