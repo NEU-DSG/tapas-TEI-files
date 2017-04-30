@@ -75,36 +75,29 @@
          </particDesc>
       </profileDesc>
    </teiHeader>
-  <text>
+   <text>
       <body>
          <div>
             <head>Introduction</head>
-         <p>This document aims to demonstrate how the TAPAS reading interface handles internal and external ography data. It makes use of four externally linked ography tei files:</p>
-         <list>
-            <item><ref target="/">TAPAS Template Personography</ref></item>
-            <item><ref target="/">TAPAS Template Placeography</ref></item>
-            <item><ref target="/">TAPAS Template Orgography</ref></item>
-            <item><ref target="/">TAPAS Template Bibliography</ref></item>
-         </list>
+            <p>This document aims to demonstrate how the TAPAS reading interface handles internal and external ography data. It makes use of four externally linked ography tei files:</p>
+            <list>
+               <item><ref target="/tapas-commons/files/tapas-personography">TAPAS Template Personography</ref></item>
+               <item><ref target="/tapas-commons/files/tapas-placeography">TAPAS Template Placeography</ref></item>
+               <item><ref target="/tapas-commons/files/tapas-orgography">TAPAS Template Orgography</ref></item>
+               <item><ref target="/tapas-commons/files/tapas-bibliography">TAPAS Template Bibliography</ref></item>
+            </list>
          </div>
          <div>
             <head>General Notes about Linking</head>
-            <p>You can generate links to data in the tei header and to an external file by following the following formats:</p>
-            <p>Linking to data in header: using <![CDATA[<ref>]]> with @target to desired anchor ID in header. For example, to grab data from internal personography data on my friend, Jane Doe, I would wrap <![CDATA[<ref>]]> around the named reference with her unique ID: <![CDATA[<person xml:id="pers_jane_doe">]]>.</p>
-            <p> Click <ref target="#pers_jane_doe">Jane Doe</ref> to learn more about her. </p>
-            <p>Linking to data from an external file: we use similar reference setup, but we need to include the full path to file followed by desired anchor ID in that file, using following format:</p>
-            <p><![CDATA[<ref target="personography-file-name.xml#pers_jane_doe">]]></p>
-            <p>So, in our case, we will link to the TAPAS external personography file: 'tapas-template-personography.xml', with #jane_doe as desired anchor ID:</p>
-            <p><![CDATA[<ref target="tapas-template-personography.xml#pers_jane_doe">]]></p>
-            <p> Click <ref target="#pers_jane_doe">Jane Doe</ref> to learn more about her. </p>
-         </div>
-         <div>
-            <head>Examples with Discussion of Formats</head>
-            <p>Personography DATA</p>
-            <p>Placeography DATA</p>
-            <p>Orgography DATA</p>
-            <p>Bibliography DATA</p>
+            <p>You can allow front-end user to dynamically call on -Ography data in two ways through the TAPAS Reader:</p>
+            <p>(1) by generating a link to -Ography data stored in the tei header. To do accomplish this, we use, for example, <![CDATA[<persName>]]> with @ref to desired anchor ID in header. As this is an internal link, we only need to use a "#". For example, to grab data from  internally stored personography data on Jane Doe in this file's header, we wrap <![CDATA[<persName>]]> around the named reference "Jane Doe" with her unique ID: <![CDATA["pers_jane_doe"]]>.</p>
+            <p><![CDATA[<persName ref="#pers_jane_doe">Jane Doe</persName>]]></p>
+            <p>TRY IT: Click <persName ref="#pers_jane_doe">Jane Doe</persName> to learn more about her. </p>
+            <p>(2) by linking to an external -Ography file. You may also upload your -Ography files into your TAPAS project as "Support" Records. <note>(*Note: all Support Records must be uploaded prior to Primary Records to ensure proper association. Step 1: Upload your -Ography files first; Step 2: then, upload your primary encoded file(s).</note> Here we use a similar setup, but as we are linking to data outside the primary file, we need to include the full path to the reference file:</p>
+            <p><![CDATA[<persName ref="/tapas-commons/files/tapas-personography#pers_jane_doe">Jane Doe</persName>]]></p>
+            <p>We identify the project (/tapas-commons) within which both files live, and include full path to -Ography file (/files/tapas-personography) followed by the referenced entry (#pers_jane_doe):</p>
+            <p>TRY IT: Click <persName ref="/tapas-commons/files/tapas-personography#pers_jane_doe">Jane Doe</persName> to learn more about her. </p>
          </div>
       </body>
-  </text>
+   </text>
 </TEI>
