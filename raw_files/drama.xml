@@ -34,9 +34,35 @@
         </sourceDesc>     
      </fileDesc>
   </teiHeader>
-  <text>
-     <body><!-- this template has been based off the following publicly available TEI resources: Women Writers Project Online: http://www.wwp.northeastern.edu/research/publications/guide/html/drama_outline.html -->
-         <p>Some text here.</p>
+   <text><!-- this template has been based off the following publicly available TEI resources: Women Writers Project Online: http://www.wwp.northeastern.edu/research/publications/guide/html/drama_outline.html -->
+     <front>
+        <div type="castlist"><!-- in most cases, works of drama will include a Cast List, or Dramatis Personae, in the front matter of the published work. We can mark this section of source document under a custom <div> with @type value of "castlist." It is recommended and often the practice to add a Cast List in cases even where there isn't one in published edition: see WWP's recommendations and <hyperDiv> discussion: http://www.wwp.northeastern.edu/research/publications/guide/html/drama_castList.html  -->
+           <castList><!-- the TEI offers an element <castList> to markup the Cast List, and includes a <head> followed by a <castItem> for each character entry, and often grouped together under each <castGroup>. -->
+              <head><!-- Dramatis Personae -->The Persons of the Play</head>
+              <castGroup><!-- Cast Lists are often divided into Cast Groups, often by gender. We can add <castGroup> as a child of <castList>, with <head> under each <castGroup> to declare the grouping type: <castList><castGroup><head>Women</head><castItem> ... </castItem></castGroup></castList> In our example here, however, we find a divided cast list by gender that is not directly stated by a grouping title, so we will forgo the use of <head>...</head> in each <castGroup>.-->
+                 <castItem><!-- used for each character entry in Cast List -->
+                    <role><!-- declares character role played by actor -->John Worthington, J.P.</role>
+                 </castItem>
+                 <castItem><role>Algernon Moncrieff</role></castItem>
+                 <castItem><role>Rev. Canon Chasuble, D.D.</role></castItem>
+                 <castItem><role>Merriman</role>,<roleDesc><!-- add <roleDesc> as a sibling of <role> to include role descriptions. --> Butler</roleDesc></castItem>
+                 <castItem><role>Lane</role>, <roleDesc>Manservant</roleDesc></castItem>
+              </castGroup>
+              <castGroup><!-- cast of female characters. Source text does not declare, so we forgo <head>Women</head> -->
+                 <castItem><role>Lady Bracknell</role></castItem>
+                 <castItem><role>Hon. Gwendolen Fairfax</role></castItem>
+                 <castItem><role>Cecily Cardew</role></castItem>
+                 <castItem><role>Miss Prism</role>, <roleDesc>Governess</roleDesc></castItem>
+              </castGroup>
+           </castList>
+        </div>
+     </front>
+     <body>
+        <div type="act" n="I">
+           <div type="scene" n="1"></div>
+           <div type="scene" n="2"></div>
+           <div type="scene" n="3"></div>
+        </div>
       </body>
   </text>
 </TEI>
