@@ -6,7 +6,7 @@
   <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>An Minimally Encoded Letter in the TEI</title>
+            <title>A Minimally Encoded Letter in the TEI</title>
             <author>
                <orgName>TAPAS Project</orgName>
             </author>
@@ -31,8 +31,7 @@
          </publicationStmt>
          <sourceDesc>
             <p>Born digital</p>
-         </sourceDesc>
-         
+         </sourceDesc>     
       </fileDesc>
      <profileDesc>
         <particDesc>
