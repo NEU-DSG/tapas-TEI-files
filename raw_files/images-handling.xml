@@ -26,11 +26,9 @@
       <body>
          <p>TAPAS supports the display of image files in two ways:</p>
          <p>1.<![CDATA[<figure>]]></p>
-         <p>In the following case, <![CDATA[<figure><!--1.<figure>;-->
-            <graphic url="image1.jpg"/>
-            <head>Figure Title</head>
-            <figDesc>Description of figure file</figDesc>
-         </figure>]]></p>
+         <p>In the following case, we have an image file, "image1.jpg," which we've uploaded via the TAPAS Record form for this TEI file under "Auxillary Files." <note>TAPAS Records support upload of multiple image files.</note> To encode this image into our TEI file, we would reference the file and its path on the @url value on <![CDATA[graphic]]>: <![CDATA[<graphic url="image1.jpg"/>]]>. <note>In this case, our image file is loaded along with file as part of the TAPAS Record, so we only need to include the file name and corresponding file type. If you wanted to reference an image file that lived on another web server, you would simply add the full url path on the @url value</note></p> 
+         <p>We then wrap <![CDATA[<graphic/>]]> with <![CDATA[<figure>]]>. We can also add a title to this image using <![CDATA[<head>]]> and a description using <![CDATA[<figDesc>]]>:</p> 
+         <p>The full markup might look like the following: <![CDATA[<figure><graphic url="image1.jpg"/><head>Figure Title</head><figDesc>Description of figure file</figDesc></figure>]]></p>
          <figure>
             <graphic url="image1.jpg"/>
             <head>Figure Title</head>
@@ -38,8 +36,7 @@
          </figure>
  
          <p>2.<![CDATA[@facs on <pb/>]]></p>
-         <p>In the following case, <![CDATA[<pb n="1" facs="page1.png"/>]]></p>
-         <p>@facs (facsimile) points to all or part of an image which corresponds with the content of the element.</p>
+         <p>We may also wish to add page images of our markup up text. We can do this by uploading our page images as "Auxillary Files" for our TAPAS Record. We would then call on these files following a similar approach as putlined above, except we add the file name and path as a value of @facs on <![CDATA[<pb/>]]>:</p> <p><![CDATA[<pb n="1" facs="page1.png"/>]]></p>
          <pb n="1" facs="page1.png"/>
       </body>
   </text>
