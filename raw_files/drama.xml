@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+     <fileDesc>
+        <titleStmt>
+           <title>A Minimally Encoded Document Drama in the TEI</title>
+           <author>
+              <orgName>TAPAS Project</orgName>
+           </author>
+           <respStmt>
+              <resp>Encoded by, </resp>
+              <persName>Benjamin J. Doyle</persName>
+           </respStmt>
+        </titleStmt>
+        <publicationStmt>
+           <publisher>
+              <orgName>the TEI Archiving, Publishing, and Access Service (TAPAS)</orgName>
+           </publisher>
+           <address>
+               <addrLine>360 Huntington Avenue</addrLine>
+               <addrLine>Northeastern University</addrLine>
+               <addrLine>Boston, MA 02115</addrLine>
+            </address>
+           <date>2017-01-17</date>
+           <availability>
+              <p>This file is free to download, share, or repurpose for educational and project development purposes.</p>
+           </availability>
+        </publicationStmt>
+        <sourceDesc>
+           <p>Born digital</p>
+        </sourceDesc>     
+     </fileDesc>
+  </teiHeader>
+  <text>
+     <body><!-- this template has been based off the following publicly available TEI resources: Women Writers Project Online: http://www.wwp.northeastern.edu/research/publications/guide/html/drama_outline.html -->
+         <p>Some text here.</p>
+      </body>
+  </text>
+</TEI>

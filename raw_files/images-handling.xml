@@ -6,16 +6,34 @@
   <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Title</title>
+            <title>Handling of Image files in TAPAS Records</title>
+            <author>
+               <orgName>TAPAS Project</orgName>
+            </author>
+            <respStmt>
+               <resp>Encoded by, </resp>
+               <persName>Benjamin J. Doyle</persName>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
-            <p>Publication Information</p>
+            <publisher>
+               <orgName>the TEI Archiving, Publishing, and Access Service (TAPAS)</orgName>
+            </publisher>
+            <address>
+               <addrLine>360 Huntington Avenue</addrLine>
+               <addrLine>Northeastern University</addrLine>
+               <addrLine>Boston, MA 02115</addrLine>
+            </address>
+            <date>2017-01-17</date>
+            <availability>
+               <p>This file is free to download, share, or repurpose for educational and project development purposes.</p>
+            </availability>
          </publicationStmt>
          <sourceDesc>
-            <p>Information about the source</p>
+            <p>Born digital</p>
          </sourceDesc>
       </fileDesc>
-     <encodingDesc><p>Basic encoding, modeling a minimally encoded document of drama. All included encoding sections were decided based on resources from the TEI Guidelines</p></encodingDesc>
+     <encodingDesc><p>Basic encoding, modeling handling of image files in TAPAS for TEI Records.</p></encodingDesc>
      <profileDesc>
      </profileDesc>
      <revisionDesc>
