@@ -6,9 +6,9 @@
   <teiHeader>
      <fileDesc>
         <titleStmt>
-           <title>A Minimally Encoded Document Drama in the TEI</title>
+           <title>The Importance of Being Earnest: a TEI Edition to Model A Minimally Encoded Document Drama in the TEI</title>
            <author>
-              <orgName>TAPAS Project</orgName>
+              <persName>Oscar Wilde</persName>
            </author>
            <respStmt>
               <resp>Encoded by, </resp>
@@ -30,7 +30,13 @@
            </availability>
         </publicationStmt>
         <sourceDesc>
-           <p>Born digital</p>
+           <bibl>
+              <title>The Importance of Being Earnest: A Trivial Comedy for Serious People</title>
+              <author>Oscar Wilde</author>
+              <pubPlace>London</pubPlace>
+              <publisher>Methuen and Co. Ltd.</publisher>
+              <date>1915</date>
+           </bibl>
         </sourceDesc>     
      </fileDesc>
   </teiHeader>
