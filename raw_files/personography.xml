@@ -33,6 +33,11 @@
             <!-- repeat '<person></person>' container for each new entry -->
             <person xml:id="pers_jane_doe">
                <persName>Jane Doe</persName>
+               <figure>
+                  <graphic url="pers-jane-doe-biopic.jpg"/>
+                  <head>Jane Doe</head>
+                  <figDesc>A photo of Jane Doe from spring 2016</figDesc>
+               </figure>
                <birth when="2017-01-01">
                   <placeName ref="#location_name">Birthplace</placeName>
                </birth>
