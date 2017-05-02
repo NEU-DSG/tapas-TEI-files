@@ -88,9 +88,9 @@
             <p><![CDATA[<persName ref="#pers_jane_doe">Jane Doe</persName>]]></p>
             <p>TRY IT: Click <persName ref="#pers_jane_doe">Jane Doe</persName> to learn more about her. </p>
             <p>(2) by linking to an external -Ography file. You may also upload your -Ography files into your TAPAS project as "Support" Records. <note>(*Note: all Support Records must be uploaded prior to Primary Records to ensure proper association. Step 1: Upload your -Ography files first; Step 2: then, upload your primary encoded file(s).</note> Here we use a similar setup, but as we are linking to data outside the primary file, we need to include the full path to the reference file:</p>
-            <p><![CDATA[<persName ref="/tapas-commons/files/tapas-personography#pers_jane_doe">Jane Doe</persName>]]></p>
+            <p><![CDATA[<persName ref="/tapas-commons/files/personography.xml#pers_jane_doe">Jane Doe</persName>]]></p>
             <p>We identify the project (/tapas-commons) within which both files live, and include full path to -Ography file (/files/tapas-personography) followed by the referenced entry (#pers_jane_doe):</p>
-            <p>TRY IT: Click <persName ref="/tapas-commons/files/tapas-personography#pers_jane_doe">Jane Doe</persName> to learn more about her. </p>
+            <p>TRY IT: Click <persName ref="/tapas-commons/files/personography.xml#pers_jane_doe">Jane Doe</persName> to learn more about her. </p>
          </div>
          <div><head>Sample Ography files in TAPAS Commons</head>
             <list>
