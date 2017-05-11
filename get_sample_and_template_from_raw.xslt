@@ -4,30 +4,33 @@
   exclude-result-prefixes="#all"
   version="2.0">
 
-  <!-- raw2sample_and_template.xslt -->
+  <!-- get_sample_and_template_from_raw.xslt -->
   <!-- Read in a TEI P5 file (or any other XML file, really) that has both content -->
   <!-- and comments; write out 2 extractions of the input file, 1 with everything -->
   <!-- except the comments, the other with everything except the content. Write -->
   <!-- those out to the particular dicrectories we use in TAPAS. -->
   <!-- Written 2017-03-16 by Syd Bauman -->
-  
+
+  <xsl:param name="debug" select="false()" as="xs:boolean"/>
   <xsl:variable name="inpath" select="document-uri(/)"/>
   <xsl:variable name="template" select="replace( $inpath,'raw_files/','template_files/')"/>
   <xsl:variable name="sample"   select="replace( $inpath,'raw_files/','sample_files/')"/>
   
   <xsl:template match="/">
-    <xsl:message>
-      <xsl:text>&#x0A;</xsl:text>
-      input: <xsl:value-of select="$inpath"/>
-      <xsl:text>&#x0A;</xsl:text>
-      out 1: <xsl:value-of select="$sample"/>
-      <xsl:text>&#x0A;</xsl:text>
-      out 2: <xsl:value-of select="$template"/>
-      <xsl:text>&#x0A;</xsl:text>
-    </xsl:message>
+    <xsl:if test="$debug">
+      <xsl:message>
+        <xsl:text>&#x0A;</xsl:text>
+        input: <xsl:value-of select="$inpath"/>
+        <xsl:text>&#x0A;</xsl:text>
+        out 1: <xsl:value-of select="$sample"/>
+        <xsl:text>&#x0A;</xsl:text>
+        out 2: <xsl:value-of select="$template"/>
+        <xsl:text>&#x0A;</xsl:text>
+      </xsl:message>
+    </xsl:if>
     <xsl:choose>
       <xsl:when test="$inpath eq $sample  or  $inpath eq $template">
-        <xsl:message terminate="yes">ERROR: input and output same file (is input in raw_files/ directory?)</xsl:message>
+        <xsl:message terminate="yes">ERROR: input and one of the outputs are the same file (is input in raw_files/ directory?)</xsl:message>
       </xsl:when>
       <xsl:otherwise>
         <xsl:result-document href="{$template}">
@@ -51,13 +54,21 @@
   <xsl:template match="@*" mode="#all">
     <xsl:copy/>
   </xsl:template>
-  
+
+  <!-- remove non-whitespace-only text nodes from templates -->
   <xsl:template match="text()[ not( normalize-space(.) eq '') ]" mode="template" priority="3"/>
 
+  <!-- remove comments and whitespace preceding a comment when there is also whitespace after said comment -->
   <xsl:template match="comment()" mode="sample" priority="3"/>
-  <xsl:template match="text()[ normalize-space(.) eq '']
-                             [following-sibling::node()[1][self::comment()]]
-                             [following-sibling::node()[2][self::text()[normalize-space(.) eq '']]]"
-                mode="sample" priority="3"/>  
+  <xsl:template mode="sample" priority="3"
+                match="text()                                      (: text nodes :)
+                       [ normalize-space(.) eq '']                 (: that are whitespace only :)
+                       [following-sibling::node()[1]               (: whose closest following sibling node :)
+                         [self::comment()]                         (: is a comment :)
+                         ]                                         (: and whose :)
+                       [following-sibling::node()[2]               (: 2nd closest following sibling node :)
+                         [self::text()[normalize-space(.) eq '']]  (: is also whitespace only :)
+                         ]"
+                />
   
 </xsl:stylesheet>
