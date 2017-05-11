@@ -44,21 +44,21 @@
      <front>
         <div type="castlist"><!-- in most cases, works of drama will include a Cast List, or Dramatis Personae, in the front matter of the published work. We can mark this section of source document under a custom <div> with @type value of "castlist." It is recommended and often the practice to add a Cast List in cases even where there isn't one in published edition: see WWP's recommendations and <hyperDiv> discussion: http://www.wwp.northeastern.edu/research/publications/guide/html/drama_castList.html  -->
            <castList><!-- the TEI offers an element <castList> to markup the Cast List, and includes a <head> followed by a <castItem> for each character entry, and often grouped together under each <castGroup>. -->
-              <head rend="uppercase"><!-- Dramatis Personae -->The Persons of the Play</head>
+              <head style="text-transform: uppercase;"><!-- Dramatis Personae -->The Persons of the Play</head>
               <castGroup><!-- Cast Lists are often divided into Cast Groups, often by gender. We can add <castGroup> as a child of <castList>, with <head> under each <castGroup> to declare the grouping type: <castList><castGroup><head>Women</head><castItem> ... </castItem></castGroup></castList> In our example here, however, we find a divided cast list by gender that is not directly stated by a grouping title, so we will forgo the use of <head>...</head> in each <castGroup>. In cases where a description is offered for each character grouping, use <trailer>...</trailer> after <head>-->
                  <castItem><!-- used for each character entry in Cast List -->
                     <role><!-- declares character role played by actor -->John Worthington, J.P.</role>
                  </castItem>
-                 <castItem><role><hi rend="uppercase">Algernon Moncrieff</hi></role></castItem>
-                 <castItem><role><hi rend="uppercase">Rev. Canon Chasuble, D.D.</hi></role></castItem>
-                 <castItem><role><hi rend="uppercase">Merriman</hi></role>,<roleDesc><!-- add <roleDesc> as a sibling of <role> to include role descriptions. --> Butler</roleDesc></castItem>
-                 <castItem><role><hi rend="uppercase">Lane</hi></role>, <roleDesc>Manservant</roleDesc></castItem>
+                 <castItem><role style="text-transform: uppercase;">Algernon Moncrieff</role></castItem>
+                 <castItem><role style="text-transform: uppercase;">Rev. Canon Chasuble, D.D.</role></castItem>
+                 <castItem><role style="text-transform: uppercase;">Merriman</role>,<roleDesc><!-- add <roleDesc> as a sibling of <role> to include role descriptions. --> Butler</roleDesc></castItem>
+                 <castItem><role style="text-transform: uppercase;">Lane</role>, <roleDesc>Manservant</roleDesc></castItem>
               </castGroup>
               <castGroup><!-- cast of female characters. Source text does not declare, so we forgo <head>Women</head> -->
-                 <castItem><role><hi rend="uppercase">Lady Bracknell</hi></role></castItem>
-                 <castItem><role><hi rend="uppercase">Hon. Gwendolen Fairfax</hi></role></castItem>
-                 <castItem><role><hi rend="uppercase">Cecily Cardew</hi></role></castItem>
-                 <castItem><role><hi rend="uppercase">Miss Prism</hi></role>, <roleDesc>Governess</roleDesc></castItem>
+                 <castItem><role style="text-transform: uppercase;">Lady Bracknell</role></castItem>
+                 <castItem><role style="text-transform: uppercase;">Hon. Gwendolen Fairfax</role></castItem>
+                 <castItem><role style="text-transform: uppercase;">Cecily Cardew</role></castItem>
+                 <castItem><role style="text-transform: uppercase;">Miss Prism</role>, <roleDesc>Governess</roleDesc></castItem>
               </castGroup>
            </castList>
         </div>
@@ -66,33 +66,33 @@
         <div type="contents">
            <head rend="upper-case">The Scenes of the Play</head>
            <list>
-              <item><label>Act I.</label><hi rend="italic">Algernon Moncrieff's flat in Half-Moon Street, W.</hi></item>
-              <item><label>Act II.</label><hi rend="italic">The Garden at the Manor House, Woolton.</hi></item>
-              <item><label>Act III.</label><hi rend="italic">Drawing-Room at the Manor House, Woolton.</hi></item>
-              <item><label>Time</label> <hi rend="italic">The Present.</hi></item>
+              <item><label>Act I.</label><hi style="font-style: italic;">Algernon Moncrieff's flat in Half-Moon Street, W.</hi></item>
+              <item><label>Act II.</label><hi style="font-style: italic;">The Garden at the Manor House, Woolton.</hi></item>
+              <item><label>Act III.</label><hi style="font-style: italic;">Drawing-Room at the Manor House, Woolton.</hi></item>
+              <item><label>Time</label> <hi style="font-style: italic;">The Present.</hi></item>
            </list>
         </div>
         <pb n="9" facs="tapas-sample-drama-page9.jpg"/>
         <div type="actorlist">
-           <head rend="uppercase"><placeName>London</placeName>: St James's Theatre</head>
-           <p><hi rend="italic">Lessee and Manager: <persName>Mr. George Alexander</persName><lb/><date>February 14th, 1895</date></hi></p>
+           <head style="text-transform: uppercase;"><placeName>London</placeName>: St James's Theatre</head>
+           <p><hi style="font-style: italic;">Lessee and Manager: <persName>Mr. George Alexander</persName><lb/><date>February 14th, 1895</date></hi></p>
            <list>
-              <item><hi rend="uppercase">John Worthington, J.P.</hi> ... <persName><hi rend="italic">Mr. George Alexander</hi>.</persName></item>
-              <item><hi rend="uppercase">Algernon Moncrieff</hi>.. <persName><hi rend="italic">Mr. Allen Aynesworth</hi>.</persName></item>
-              <item><hi rend="uppercase">Rev. Canon Chasuble, D.D.</hi> <persName><hi rend="italic">Mr. H. H. Vincent</hi>.</persName></item>
-              <item><hi rend="uppercase">Merriman </hi>(<hi rend="italic">Butler</hi>) ... <persName><hi rend="italic">Mr. Frank Dyall</hi>.</persName></item>
-              <item><hi rend="uppercase">Lane </hi>(<hi rend="italic">Manservant</hi>)... <persName><hi rend="italic">Mr. F. Kinsey Peile</hi>.</persName></item>
-              <item><hi rend="uppercase">Lady Bracknell</hi> .... <persName><hi rend="italic">Miss Rose Leclercq</hi>.</persName></item>
-              <item><hi rend="uppercase">Hon. Gwendolen Fairfax</hi> . <persName><hi rend="italic">Miss Irene Vanbrugh</hi>.</persName></item>
-              <item><hi rend="uppercase">Cecily Cardew</hi> .... <persName><hi rend="italic">Miss Evelyn Millard</hi>.</persName></item>
-              <item><hi rend="uppercase">Miss Prism</hi> (<hi rend="italic">Governess</hi>) .. <persName><hi rend="italic">Mrs. George Canninge Irene Vanbrugh</hi>.</persName></item>
+              <item><hi style="text-transform: uppercase;">John Worthington, J.P.</hi> ... <persName><hi style="font-style: italic;">Mr. George Alexander</hi>.</persName></item>
+              <item><hi style="text-transform: uppercase;">Algernon Moncrieff</hi>.. <persName><hi style="font-style: italic;">Mr. Allen Aynesworth</hi>.</persName></item>
+              <item><hi style="text-transform: uppercase;">Rev. Canon Chasuble, D.D.</hi> <persName><hi style="font-style: italic;">Mr. H. H. Vincent</hi>.</persName></item>
+              <item><hi style="text-transform: uppercase;">Merriman </hi>(<hi style="font-style: italic;">Butler</hi>) ... <persName><hi style="font-style: italic;">Mr. Frank Dyall</hi>.</persName></item>
+              <item><hi style="text-transform: uppercase;">Lane </hi>(<hi style="font-style: italic;">Manservant</hi>)... <persName><hi style="font-style: italic;">Mr. F. Kinsey Peile</hi>.</persName></item>
+              <item><hi style="text-transform: uppercase;">Lady Bracknell</hi> .... <persName><hi style="font-style: italic;">Miss Rose Leclercq</hi>.</persName></item>
+              <item><hi style="text-transform: uppercase;">Hon. Gwendolen Fairfax</hi> . <persName><hi style="font-style: italic;">Miss Irene Vanbrugh</hi>.</persName></item>
+              <item><hi style="text-transform: uppercase;">Cecily Cardew</hi> .... <persName><hi style="font-style: italic;">Miss Evelyn Millard</hi>.</persName></item>
+              <item><hi style="text-transform: uppercase;">Miss Prism</hi> (<hi style="font-style: italic;">Governess</hi>) .. <persName><hi style="font-style: italic;">Mrs. George Canninge Irene Vanbrugh</hi>.</persName></item>
            </list>
         </div>
         <pb n="10" facs="tapas-sample-drama-page10.jpg"/>
      </front>
      <body>
         <div type="Act" n="I">
-           <head><hi rend="uppercase">First Act</hi></head>
+           <head><hi style="text-transform: uppercase;">First Act</hi></head>
            <pb n="11" facs="tapas-sample-drama-page11.jpg"/>
            <pb n="12" facs="tapas-sample-drama-page12.jpg"/>
            <head>First Act</head>
@@ -102,15 +102,15 @@
               <stage type="setting"><!-- for stage directions or scene descriptions, we can use <stage> with a custom typology for @type value. In this case, we have a description of the "setting" -->Morning-room in Algernons flat in Half-Moon Street. The room is luxuriously and artistically furnished. The sound of a piano is heard in the adjoining room. </stage>
               <stage type="action"><!-- in this case, we designated "action" as @type on <stage> to mark the actions of character(s) when scene opens -->[LANE is arranging afternoon tea on the table, and after the music has ceased, ALGERNON enters.] </stage>
               <sp>
-                 <speaker rend="uppercase">Algernon</speaker>
+                 <speaker style="text-transform: uppercase;">Algernon</speaker>
                  <p>Did you hear what I was playing, Lane?</p>
               </sp>
               <sp>
-                 <speaker rend="uppercase">Lane</speaker>
+                 <speaker style="text-transform: uppercase;">Lane</speaker>
                  <p>I don't think it polite to listen, sir.</p>
               </sp>
               <sp>
-                 <speaker rend="uppercase">Algernon</speaker>
+                 <speaker style="text-transform: uppercase;">Algernon</speaker>
                  <p>I 'm sorry for that, for your sake. I don't play accurately any one can play accurately but I play with wonderful expression. As far as the piano is concerned, sentiment is my forte. I keep science for Life.</p>
               </sp>
               <pb n="13" facs="tapas-sample-drama-page13.jpg"/>

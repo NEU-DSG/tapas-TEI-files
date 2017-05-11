@@ -3,62 +3,62 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-   <teiHeader type="text">
+   <teiHeader>
       <fileDesc>
          <titleStmt>
             <title/>
             <author>
-               <orgName instant="false" full="yes"/>
+               <orgName/>
             </author>
             <respStmt>
                <resp/>
-               <persName instant="false" full="yes"/>
+               <persName/>
             </respStmt>
          </titleStmt>
          <publicationStmt>
             <publisher>
-               <orgName instant="false" full="yes"/>
+               <orgName/>
             </publisher>
             <address>
                <addrLine/>
                <addrLine/>
                <addrLine/>
             </address>
-            <date instant="false"/>
-            <availability default="false" status="unknown">
-               <p part="N"/>
+            <date/>
+            <availability>
+               <p/>
             </availability>
          </publicationStmt>
-         <sourceDesc default="false">
-            <p part="N"/>
+         <sourceDesc>
+            <p/>
          </sourceDesc>     
       </fileDesc>
    </teiHeader>
    <text>
       <body><!-- this template has been based off the following publicly available TEI resources: Women Writers Project Online: https://www.wwp.northeastern.edu/research/publications/guide/html/verse_outline.html;TEI By Example: http://teibyexample.org/modules/TBED04v00.htm -->
-         <lg type="poem.sonnet-shakespearean" part="N" org="uniform" sample="complete"><!-- To capture one or more lines of verse, nest 'l' in 'lg'. Like 'div', 'lg' can include '@type=attribute' to declare its type of grouping; in this example, 'poem.sonnet-shakespearean' declares the outer most grouping as a poem, composed in style of Sharespearean sonnet. One could declare this as a 'poem' or a 'sonnet,' but we know this to be a Shakespearean sonnet, divided into three 'lg's' with @type='quatrain' and one 'lg' with @type="couplet". (see for more detail on handling poetry: https://www.wwp.northeastern.edu/research/publications/guide/html/verse_wholepoem.html; see for more on @type="attribute" for verse: https://www.wwp.northeastern.edu/research/publications/guide/html/verse_stanzas.html) -->
+         <lg type="poem.sonnet-shakespearean"><!-- To capture one or more lines of verse, nest 'l' in 'lg'. Like 'div', 'lg' can include '@type=attribute' to declare its type of grouping; in this example, 'poem.sonnet-shakespearean' declares the outer most grouping as a poem, composed in style of Sharespearean sonnet. One could declare this as a 'poem' or a 'sonnet,' but we know this to be a Shakespearean sonnet, divided into three 'lg's' with @type='quatrain' and one 'lg' with @type="couplet". (see for more detail on handling poetry: https://www.wwp.northeastern.edu/research/publications/guide/html/verse_wholepoem.html; see for more on @type="attribute" for verse: https://www.wwp.northeastern.edu/research/publications/guide/html/verse_stanzas.html) -->
             <head/><!-- 'head' for capturing poem title or stanza heading -->
-            <lg type="quatrain" n="1" part="N" org="uniform" sample="complete"><!-- @n='attribute' can be used to number/count lg's and individual l's -->
-               <l n="1" part="N"/>
-               <l n="2" part="N"/>
-               <l n="3" part="N"/>
-               <l n="4" part="N"/>
+            <lg type="quatrain" n="1"><!-- @n='attribute' can be used to number/count lg's and individual l's -->
+               <l n="1"/>
+               <l n="2"/>
+               <l n="3"/>
+               <l n="4"/>
             </lg>
-            <lg type="quatrain" n="2" part="N" org="uniform" sample="complete">
-               <l n="5" part="N"/>
-               <l n="6" part="N"/>
-               <l n="7" part="N"/>
-               <l n="8" part="N"/>
+            <lg type="quatrain" n="2">
+               <l n="5"/>
+               <l n="6"/>
+               <l n="7"/>
+               <l n="8"/>
             </lg>
-            <lg type="quatrain" n="3" part="N" org="uniform" sample="complete">
-               <l n="9" part="N"/>
-               <l n="10" part="N"/>
-               <l n="11" part="N"/>
-               <l n="12" part="N"/>
+            <lg type="quatrain" n="3">
+               <l n="9"/>
+               <l n="10"/>
+               <l n="11"/>
+               <l n="12"/>
             </lg>
-            <lg type="couplet" n="4" part="N" org="uniform" sample="complete">
-               <l n="13" part="N"/>
-               <l n="14" part="N"/>
+            <lg type="couplet" n="4">
+               <l n="13"/>
+               <l n="14"/>
             </lg>
          </lg>
       </body>

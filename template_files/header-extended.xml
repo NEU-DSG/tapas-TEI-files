@@ -3,36 +3,36 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-   <teiHeader type="text"><!-- the tei header records information about the encoded document under <fileDesc>, <encodingDesc>, <profileDesc>. TEI headers come in all shapes and sizes, and include a widerange of information based on the source document or purpose of project to which it belongs. However, in all cases, headers must include at a minimum a fileDesc. -->
+   <teiHeader><!-- the tei header records information about the encoded document under <fileDesc>, <encodingDesc>, <profileDesc>. TEI headers come in all shapes and sizes, and include a widerange of information based on the source document or purpose of project to which it belongs. However, in all cases, headers must include at a minimum a fileDesc. -->
       <fileDesc><!-- fileDesc is a required header section. It is where we record bibliographic information of the encoded document. For <fileDesc> to be valid, it must include at a minumum <titleStmt>, <publicationStmt>, and <sourceDesc> subsections -->
          <titleStmt><!-- titleStmt is mandatory. It groups elements for recording information about the title of a work and those responsible, at various levels, for the creation or editorial work of its content.-->
             <title><!-- title of the document. The format of our title will depend on whether the document is the first of its kind (e.g., this is the  first edition of the "TAPAS Templates: a Minimally Encoded Header") or an encoded edition of a historical source document (e.g., Oscar Wilde's "The Importance of Being Earnest"). In the former, the title is straightforward in so far as the originator decides the document title; in the latter, one may choose to preserve the orginal historical title (e.g., "The Importance of Being Earnest") to emphasize the historical object being encoded. However, as one would be creating a new edition (of many other possible editions) of the source work in the TEI, it is considered best practice to reflect that the new object is an iteration of a source object: e.g., "Oscar Wilde's The Importance of Being Earnest: a TEI Edition." To record the original source title (and other bibliographic data), we can use <bibl> under <sourceDesc>. In this case, we would include the original source creator under <author> (e.g., Oscar Wilde), and record the TEI edition's creator/encoder under <respStmt>. --></title>
             <title/>
             <title/>
             <author><!-- name of source object author or an organization reseponsible for producing the work; repeat <author> for multiauthored works; we can also nest <persName> in <author> for asssociating author with a personography -->
-               <persName ref="#pers_oscarwilde" instant="false" full="yes"/>
+               <persName ref="#pers_oscarwilde"/>
             </author>
             <sponsor><!-- person(s)/group(s) responsible for providing intellectual sponsorship -->
-               <name full="yes" instant="false"/>
+               <name/>
             </sponsor>
             <funder><!--  person(s)/group(s) responsible for providing money -->
-               <name full="yes" instant="false"/>
+               <name/>
             </funder>
             <editor><!-- in the case of document being part of an edition -->
-               <name full="yes" instant="false"/>
+               <name/>
             </editor>
             <principal><!-- in the case document is the product of formal research -->
-               <persName instant="false" full="yes"/>
+               <persName/>
             </principal>
             <respStmt><!-- groups elements for recording information on creators and contributors in the creation of the TEI edition (e.g., those on an encoding team who contributed to creation or editing of the TEI edition) not already named in above sections-->
-               <name full="yes" instant="false"><!-- the name of contributor; we can also wrap in <persName> if we have an accompanying personography--></name>
+               <name><!-- the name of contributor; we can also wrap in <persName> if we have an accompanying personography--></name>
                <resp><!-- the role of contributor in creation of TEI edition (e.g., primary encoder; or editor of original transcription)--></resp>
             </respStmt><!-- we can add multiple <respStmt> sections where there are multiple contributors <respStmt><name></name><resp></resp></respStmt> -->
          </titleStmt>
          <editionStmt><!-- editionStmt is optional, but recommended by TEI-C guidelines if in case of multiple editions. It is used to group information on a single edition of text -->
             <edition/>
             <respStmt><!-- used to record primary contributors of edition; add addition <respStmt> where there is more than one contributor to the edition -->
-               <name full="yes" instant="false"><!-- responsible for task or role noted below --></name>
+               <name><!-- responsible for task or role noted below --></name>
                <resp><!-- description of task or role --></resp>
             </respStmt>
          </editionStmt>
@@ -46,58 +46,58 @@
                <addrLine><!-- repeat addrLine as needed --></addrLine> 
             </address> 
             <idno type="ISBN"><!-- Use <idno> for ISBN or any other identifying numbers that are relevant --></idno>
-            <availability default="false" status="unknown"><!-- availability statement clarifies a general copyright and fair use policy governing reuse of the TEI edition -->
+            <availability><!-- availability statement clarifies a general copyright and fair use policy governing reuse of the TEI edition -->
                <licence target="URL_of_full_license"/>
-               <p part="N"><!-- okay to add <p> to include other related but necessary blocks of information --></p>
+               <p><!-- okay to add <p> to include other related but necessary blocks of information --></p>
             </availability>
-            <date when="2017-01-01" instant="false"><!-- the date of publication of the TEI edition --></date>
+            <date when="2017-01-01"><!-- the date of publication of the TEI edition --></date>
             <distributor><!-- you can identify organization responsible for the distribution or purchase handling of the TEI edition --></distributor>
-            <date instant="false"><!-- provide a date for update on availability statement if different than publication date --></date>
+            <date><!-- provide a date for update on availability statement if different than publication date --></date>
          </publicationStmt>
          <seriesStmt><!-- seriesStmt is optional. It records the relation between separate documents understood as each part of a series (e.g., collected works (essays, lectures, articles, etc.), document volumes, etc.) by declaring its parent work/identity -->
             <title level="s"/>
             <respStmt><!-- name of person responsible for series, e.g., editor or organization -->
                <resp/>
-               <name full="yes" instant="false"/> 
+               <name/> 
             </respStmt>
             <biblScope unit="vol"/>
             <idno type="ISSN"/>
          </seriesStmt>
          <notesStmt><!-- notesStmt is optional. It adds multiple notes for additional information or discussion of document -->
-            <note anchored="true"><!-- repeat <note> as needed --></note>
+            <note><!-- repeat <note> as needed --></note>
          </notesStmt>
-         <sourceDesc default="false"><!-- sourceDesc is mandatory. It describes the source from which an electronic text was derived or generated, typically a bibliographic description <bibl> in the case of a digitized edition of a print text; in the case where the TEI file is born digital,we can include <p>"born digital"</p> -->
-            <bibl default="false" status="draft">
+         <sourceDesc><!-- sourceDesc is mandatory. It describes the source from which an electronic text was derived or generated, typically a bibliographic description <bibl> in the case of a digitized edition of a print text; in the case where the TEI file is born digital,we can include <p>"born digital"</p> -->
+            <bibl>
                <title/>
                <author/>
                <pubPlace/>
                <publisher/>
-               <date instant="false"/></bibl>
+               <date/></bibl>
             <!-- sourceDesc can also include Ography data of source Work; for more detailed discussion of internal and external Ography handling see: http://beta.tapasproject.org/guides/ographies-->
-            <listPerson default="false">
-               <person instant="false">
-                  <persName instant="false" full="yes"><!-- ... --></persName>
+            <listPerson>
+               <person>
+                  <persName><!-- ... --></persName>
                </person>
             </listPerson>
-            <listOrg default="false">
-               <org xml:id="org-tapas" instant="false">  
-                  <orgName instant="false" full="yes"/>
+            <listOrg>
+               <org xml:id="org-tapas">  
+                  <orgName/>
                   <desc>
                      <ref target="http://beta.tapasproject.org/"/>
                   </desc>
                </org>
             </listOrg>
-            <listPlace default="false">
-               <place xml:id="bos-ma-us" instant="false">
-                  <placeName instant="false" full="yes"/>
-                  <location instant="false">
+            <listPlace>
+               <place xml:id="bos-ma-us">
+                  <placeName/>
+                  <location>
                      <country key="US"/>
                      <geo/>
                   </location>
-                  <listPlace default="false">
-                     <place xml:id="nu-bos-ma-us" instant="false">
-                        <placeName instant="false" full="yes"/>
-                        <location instant="false">
+                  <listPlace>
+                     <place xml:id="nu-bos-ma-us">
+                        <placeName/>
+                        <location>
                            <country key="US"/>
                            <geo/>
                            <address>
@@ -112,31 +112,31 @@
          </sourceDesc>
       </fileDesc>
       <encodingDesc><!-- encodingDesc section is optional, but recommended. It groups elements for recording information on the encoding practices used in relation to source work's orginal formatting; this section can range from a brief statement on encoding approach under <projectDesc> to a more detailed overview of editorial decisions under <editorialDesc> -->
-         <projectDesc default="false"><!-- a statment on purpose of TEI edition, project objectives, teams, etc -->
-         <p part="N"/>
+         <projectDesc><!-- a statment on purpose of TEI edition, project objectives, teams, etc -->
+         <p/>
             </projectDesc>
-         <samplingDecl default="false"><!-- can use this section to provide details on how text(s) at project level were selected -->
-            <p part="N"/>
+         <samplingDecl><!-- can use this section to provide details on how text(s) at project level were selected -->
+            <p/>
          </samplingDecl>
-         <editorialDecl default="false">
+         <editorialDecl>
             
-            <correction default="false" status="unknown" method="silent"><!-- one might wish to note any "corrections" or alterations -->
-               <p part="N"/>
+            <correction><!-- one might wish to note any "corrections" or alterations -->
+               <p/>
             </correction>
-            <normalization default="false" method="silent"><!-- we can also record any regularization decisions made to source work in translating into a digital format -->
-               <p part="N"/>
+            <normalization><!-- we can also record any regularization decisions made to source work in translating into a digital format -->
+               <p/>
             </normalization>
-            <quotation default="false">
-               <p part="N"/>
+            <quotation>
+               <p/>
             </quotation>
-            <hyphenation eol="hard" default="false">
-               <p part="N"/>
+            <hyphenation eol="hard">
+               <p/>
             </hyphenation>
-            <segmentation default="false">
-               <p part="N"/>
+            <segmentation>
+               <p/>
             </segmentation>
-            <interpretation default="false">
-               <p part="N"/>
+            <interpretation>
+               <p/>
             </interpretation>
          </editorialDecl>
          <tagsDecl>
@@ -151,7 +151,7 @@
          </tagsDecl>
          <classDecl>
             <taxonomy xml:id="DDC22">
-               <bibl default="false" status="draft">
+               <bibl>
                   <title/>
                   <edition/>
                   <publisher/>
@@ -188,16 +188,16 @@
             <handNote xml:id="hosdb" medium="pencil" scope="minor" scribe="SDBauman" script="sloppy"/>
          </handNotes>
          <creation><!-- where we recorded publication data of source work under <sourceDesc> above, here we can track information known of the creation of source work -->
-            <date instant="false"/>
-            <listChange ordered="true"><!-- records information on changes/revisions to source work during stages of its creation; <revisionDesc> can be used after <listChange> to record information on changes/revisions to the TEI edition; can add more <change/> sections to track multiple changes/revisions -->
-               <change status="draft"/>
+            <date/>
+            <listChange><!-- records information on changes/revisions to source work during stages of its creation; <revisionDesc> can be used after <listChange> to record information on changes/revisions to the TEI edition; can add more <change/> sections to track multiple changes/revisions -->
+               <change/>
             </listChange>
          </creation>
-         <langUsage default="false">
+         <langUsage>
             <language ident="en-US"><!-- a good online resource for language subtags can be found here: http://r12a.github.io/apps/subtags/ --></language>
          </langUsage>
-         <abstract><!-- add a description or abstract of source work --><p part="N"/></abstract>
-         <textDesc default="false"><!--  provides a full description of the situation within which a text was produced or experienced; this is a commonly occuring yet complex section of the header, and its attributes and values; see the following for a detailed overview of each grouped element in this section: http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CC.html#CCAHTD -->
+         <abstract><!-- add a description or abstract of source work --><p/></abstract>
+         <textDesc><!--  provides a full description of the situation within which a text was produced or experienced; this is a commonly occuring yet complex section of the header, and its attributes and values; see the following for a detailed overview of each grouped element in this section: http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CC.html#CCAHTD -->
             <channel mode="x"><!-- allowed values of "mode" include: s (spoken); w (written); sw (spoken to be written) e.g. dictation; ws (written to be spoken) e.g. a script; m (mixed); x
 (unknown or inapplicable) [Default] --></channel>
             <constitution type="single"><!-- allowed values of "constitution" include: single (a single complete text [Default]); composite (a text made by combining several smaller items, each individually complete); frags (fragments, a text made by combining several smaller, not necessarily complete, items); unknown (composition unknown or unspecified) --></constitution>
@@ -209,35 +209,35 @@
 revised (polished or revised before presentation) --></preparedness>
             <purpose type="inform" degree="high"><!-- for a full description of these optional attributes and their suggested or allowed values, see: http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-purpose.html --></purpose>
          </textDesc>
-         <settingDesc default="false"><!-- this section is used to describe the setting or settings in which language interaction takes place in the source work. We can write out a prose description using <p> or the following elements grouped by <setting>. We can use additional <setting> sections to record information where there is more than one setting -->
+         <settingDesc><!-- this section is used to describe the setting or settings in which language interaction takes place in the source work. We can write out a prose description using <p> or the following elements grouped by <setting>. We can use additional <setting> sections to record information where there is more than one setting -->
             <setting>
-               <name full="yes" instant="false"><!-- often used to refer to location of setting (e.g., paris); the accompanying attribute @type on <name> may include "person," "place," or one may use <perName>, <placeName>, <orgName> alternatively to <name> --></name>
-               <date instant="false"><!-- any identifiable date associated with the setting --></date>
-               <time instant="false"><!-- a phrase describing the setting's time of day --></time>
+               <name><!-- often used to refer to location of setting (e.g., paris); the accompanying attribute @type on <name> may include "person," "place," or one may use <perName>, <placeName>, <orgName> alternatively to <name> --></name>
+               <date><!-- any identifiable date associated with the setting --></date>
+               <time><!-- a phrase describing the setting's time of day --></time>
                <locale><!-- a brief informal description of the setting's location  --></locale>
                <activity><!-- a brief informal description of the actions (other than speaking) of participants in setting --></activity>
             </setting>   
          </settingDesc>
          
-        <particDesc default="false"><!-- Personography and Orgography data may go here as well; for a more detailed example of internal and external ography handling, please see: -->
-           <listPerson default="false">
-              <person xml:id="pers_oscarwilde" instant="false">
-                 <persName instant="false" full="yes"/>
+        <particDesc><!-- Personography and Orgography data may go here as well; for a more detailed example of internal and external ography handling, please see: -->
+           <listPerson>
+              <person xml:id="pers_oscarwilde">
+                 <persName/>
               </person>
            </listPerson>
-            <listOrg default="false">
-               <org xml:id="idorgs" instant="false"/>
+            <listOrg>
+               <org xml:id="idorgs"/>
                <!-- ... -->
             </listOrg>
          </particDesc>
       </profileDesc>
-      <revisionDesc status="draft"><!-- Optional. revisionDesc tracks the revision history of the encoded document -->
-         <change when="2016-11-11" who="#BJD" status="draft"/>
+      <revisionDesc><!-- Optional. revisionDesc tracks the revision history of the encoded document -->
+         <change when="2016-11-11" who="#BJD"/>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
-        <p part="N"><!--document body content goes here--></p>
+        <p><!--document body content goes here--></p>
       </body>
    </text>
 </TEI>

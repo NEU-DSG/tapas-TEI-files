@@ -3,55 +3,55 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader type="text">
+  <teiHeader>
       <fileDesc>
          <titleStmt>
             <title/>
             <author>
-               <orgName instant="false" full="yes"/>
+               <orgName/>
             </author>
             <respStmt>
                <resp/>
-               <persName instant="false" full="yes"/>
+               <persName/>
             </respStmt>
          </titleStmt>
          <publicationStmt>
             <publisher>
-               <orgName instant="false" full="yes"/>
+               <orgName/>
             </publisher>
             <address>
                <addrLine/>
                <addrLine/>
                <addrLine/>
             </address>
-            <date instant="false"/>
-            <availability default="false" status="unknown">
-               <p part="N"/>
+            <date/>
+            <availability>
+               <p/>
             </availability>
          </publicationStmt>
-         <sourceDesc default="false">
-            <p part="N"/>
+         <sourceDesc>
+            <p/>
          </sourceDesc>     
       </fileDesc>
      <profileDesc>
-        <particDesc default="false">
+        <particDesc>
            <!-- learn more about internal 
               and external ography data 
               http://tapasproject.org/tapas-learn/ographies -->
            <!-- orgography may 
               be stashed here -->
-           <listOrg default="false">
-              <org xml:id="org_TAPAS" instant="false">
-                 <orgName instant="false" full="yes"/>
-                 <note anchored="true"/>
+           <listOrg>
+              <org xml:id="org_TAPAS">
+                 <orgName/>
+                 <note/>
               </org>
            </listOrg>
            <!-- personography may 
               be stashed here -->
-           <listPerson default="false">
-              <person xml:id="pers_tapasuser" instant="false">
-                 <persName instant="false" full="yes"/>
-                 <note anchored="true"/>
+           <listPerson>
+              <person xml:id="pers_tapasuser">
+                 <persName/>
+                 <note/>
               </person>
            </listPerson>
         </particDesc>
@@ -63,34 +63,34 @@
             <!-- groups dateline, 
                byline, salutation -->
             <dateline>
-               <placeName ref="#place_boston-ma" instant="false" full="yes"/>
-               <date when="2016-08-05" instant="false"/>
+               <placeName ref="#place_boston-ma"/>
+               <date when="2016-08-05"/>
             </dateline>
-            <salute><persName ref="#pers_tapasuser" instant="false" full="yes"/></salute>
+            <salute><persName ref="#pers_tapasuser"/></salute>
          </opener>
-         <p part="N"><orgName ref="#org_teic" instant="false" full="yes"/><ref target="http://www.tei-c.org/Guidelines/"/><ref target="https://www.wwp.northeastern.edu/research/publications/guide/html/letters_outline.html"/></p>
-         <p part="N"/>
+         <p><orgName ref="#org_teic"/><ref target="http://www.tei-c.org/Guidelines/"/><ref target="https://www.wwp.northeastern.edu/research/publications/guide/html/letters_outline.html"/></p>
+         <p/>
          <closer>
             <!-- groups together 
                salute and signed -->
             <salute/>
             <signed>
-               <orgName ref="#org_TAPAS" instant="false" full="yes"/>
+               <orgName ref="#org_TAPAS"/>
             </signed>
          </closer>
          <postscript>
             <label/>
-            <p part="N"><ref target="http://tapasproject.org/tapas-learn/letters"/><ref target="http://tapasproject.org/forums/letters"/></p>
+            <p><ref target="http://tapasproject.org/tapas-learn/letters"/><ref target="http://tapasproject.org/forums/letters"/></p>
          </postscript>
       </body>
      <back>
-        <listPlace default="false">
+        <listPlace>
            <!-- learn more about internal and 
               external ography data 
               http://tapasproject.org/tapas-learn/ographies -->
-              <place xml:id="place_boston-ma" instant="false">
-                 <placeName instant="false" full="yes"/>
-                 <location instant="false">
+              <place xml:id="place_boston-ma">
+                 <placeName/>
+                 <location>
                     <geo/>
                     <country key="US"/>
                  </location>
