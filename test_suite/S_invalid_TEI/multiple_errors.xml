@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     version="3.2.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+	<title>A Hard Day's Night</title>
+	<author>
+	  <persName>Lennon</persName>
+	  and
+	  <persName>McCartney</persName>
+	</author>
+      </titleStmt>
+      <publicationStmt>
+	<authority>
+	  <orgName>TAPAS</orgName>
+	  <address>
+	    <addrLine>SL 213</addrLine>
+	    <addrLine>Northeastern University</addrLine>
+	    <addrLine>360 Huntington Avenue</addrLine>
+	    <addrLine>Boston, MA  02115-5005</addrLine>
+	    <addrLine>USA</addrLine>
+	  </address>
+	</authority>
+	<availability>
+	  <licence>CC-BY-SA-4.0</licence>
+	</availability>
+      </publicationStmt>
+      <sourceDesc>
+	<bibl>
+	  <ptr target="http://lyrics.wikia.com/wiki/The_Beatles:A_Hard_Day%27s_Night"/>
+	  <date type="accessed" when="2017-10-24"/>
+	</bibl>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text xml:id="a hard days night">
+    <body xml:id="a_hard_day's_night">
+      <lg type="song" xml:id="8daysaweek-NOT" org="complete" ana="{not%a%valid%url}">
+	<head blort="fubar" type="{}" xml:lang="Music">A Hard Day’s Night</head>
+	<lg type="verse" ana="#A">
+	  <songline>It’s been a hard day’s night</songline>
+	  <l>And I’ve been working like a dog</l>
+	  <l>It’s been a hard day’s night</l>
+	  <l>I should be sleeping like a log</l>
+	</lg>
+	<lg type="refrain" ana="#A">
+	  <person/>
+	  <l>But when I get home to you</l>
+	  <l>I ﬁnd the things that you do</l>
+	  <l>Will make me feel all right</l>
+	</lg>
+	<lg type="verse" ana="#A">
+	  <lb/>You know I work all day
+	  <lb/>To get you money to buy you things
+	  <lb/>And it’s worth it just to hear you say
+	  <lb/>You’re gonna give me everything
+	</lg>
+	<lg type="refrain" ana="#B">
+	  <lb>So why on earth should I moan?</lb>
+	  <lb>’Cause when I get you alone</lb>
+	  <lb>You know I’ll feel okay</lb>
+	</lg>
+	<lg type="verse" ana="#B">
+	  <l>When <lb>I’m</lb> home</l>
+	  <l>Everything seems to be right</l>
+	  <l>When I’m home</l>
+	  <l>Feeling you holding me tight</l>
+	  <l>Tight, yeah</l>
+	</lg>
+	<lg type="verse" ana="#A">
+	  <l>It’s been a hard day’s night</l>
+	  <l>And I’ve been working like a dog</l>
+	  <l>It’s been a hard day’s night</l>
+	  <l>I should be sleeping like a log</l>
+	</lg>
+	<lg type="refrain" ana="#A">
+	  <l>But when I get home to you</l>
+	  <l>I ﬁnd the things that you do</l>
+	  <l>Will make me feel all right</l>
+	  <l>Ow!</l>
+	</lg>
+	<lg type="refrain" ana="#B">
+	  <l>So why on earth should I moan?</l>
+	  <l>’Cause when I get you alone</l>
+	  <l>You know I feel okay</l>
+	</lg>
+	<lg type="verse" ana="#B">
+	  <l>When I’m home</l>
+	  <l>Everything seems to be right</l>
+	  <l>When I’m home</l>
+	  <l>Feeling you holding me tight</l>
+	  <l>Tight, yeah</l>
+	</lg>
+	<lg type="verse" ana="#A">
+	  <l>Ooh, it’s been a hard day’s night</l>
+	  <l>And I’ve been working like a dog</l>
+	  <l>It’s been a hard day’s night</l>
+	  <l>I should be sleeping like a log</l>
+	</lg>
+	<lg type="refrain" ana="#A">
+	  <l>But when I get home to you</l>
+	  <l>I ﬁnd the things that you do</l>
+	  <l>Will make me feel all right</l>
+	  <l>You know, I feel all right</l>
+	  <l>You know, I feel all right</l>
+	</lg>
+      </lg>
+    </body>
+  </text>
+</TEI>
