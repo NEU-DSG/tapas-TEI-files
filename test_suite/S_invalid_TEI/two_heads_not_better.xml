@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>tapas test of TEI validity: two teiHeaders</title>
+        <author>Syd</author>
+      </titleStmt>
+      <publicationStmt>
+	<p>unpublished test file</p>
+      </publicationStmt>
+      <sourceDesc>
+	<p>born digital</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Dearg Doom</title>
+        <author>Horslips</author>
+      </titleStmt>
+      <publicationStmt>
+        <p>Publication Information</p>
+      </publicationStmt>
+      <sourceDesc>
+	<p>Song is from <title>The Táin</title>. Lyrics copied from
+	<bibl><ref
+	target="http://www.lyricsmania.com/trouble_with_a_capital_t_lyrics_horslips.html"
+	>Lyrcsmania, retrieved 2016-01-25</ref></bibl></p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>The Hitchhiker's Guide to the Galaxy</title>
+	<author>Douglas Adams</author>
+      </titleStmt>
+      <publicationStmt>
+	<p>unpublished test file</p>
+      </publicationStmt>
+      <sourceDesc>
+	<p>I'm not actually sure which editions this quote is from</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <!-- Zaphod Beeblebrox or Donald Trump? -->
+      <list>
+	<item><quote>He had rather liked Zaphod Beeblebrox in a
+	strange sort of way. He was clearly a man of many quallities,
+	even if they were mostly bad ones.</quote></item>
+	<item><quote>One of the major difficulties Trillian
+	experienced in her relationship with Zaphod was learning to
+	distinguish between him pretending to be stupid just to get
+	people off their guard, pretending to be stupid because he
+	couldn't be bothered to think and wanted someone else to do it
+	for him, pretending to be outrageously stupid to hide the fact
+	that he actually didn’t understand what was going on, and
+	really being genuinely stupid. He was renowned for being
+	amazingly clever and quite clearly was so—but not all the
+	time, which obviously worried him, hence, the act. He
+	preferred people to be puzzled rather than
+	contemptuous.</quote></item>
+	<item><quote
+	source="https://en.wikipedia.org/wiki/Zaphod_Beeblebrox#As_a_character">As
+	a character, Zaphod is hedonistic and irresponsible,
+	narcissistic almost to the point of solipsism, and often
+	extremely insensitive to the feelings of those around him. In
+	the books and radio series, he is nevertheless quite
+	charismatic which causes many characters to ignore his other
+	flaws.</quote></item>
+      </list>
+      <div type="song">
+	<head>Dearg Doom</head>
+	<lg type="stanza">
+	  <l>My love is colder than black marble by the sea.</l>
+	  <l>My heart is older than the cold oak tree.</l>
+	  <l>I am the flash of silver in the sun.</l>
+	  <l>When you see me coming you had better</l>
+	  <l>Run, run, run</l>
+	  <l>From Dearg Doom.</l>
+	  <l>From Dearg Doom.</l>
+	  <l>From Dearg Doom.</l>
+	  <l>From Dearg Doom.</l>
+	</lg>
+	<lg type="stanza">
+	  <l>You speak in whispers of the devils I have slain</l>
+	  <l>By the fire of my silver Devil’s Blade,</l>
+	  <l>And still you dare to flaunt yourself at me.</l>
+	  <l>I don’t want you, I don’t need you,</l>
+	  <l>I don’t love you, can’t you see</l>
+	  <l>I’m Dearg Doom.</l>
+	  <l>I’m Dearg Doom.</l>
+	  <l>I’m Dearg Doom.</l>
+	  <l>I’m Dearg Doom.</l>
+	</lg>
+	<lg type="refrain">
+	  <l>And when the stars go out</l>
+	  <l>You can hear me shout</l>
+	  <l>“Two heads are better than none,</l>
+	  <l>One hundred heads are so much better than one”.</l>
+	</lg>
+	<lg type="refrain">
+	  <l>And when the stars go out</l>
+	  <l>You can hear me shout</l>
+	  <l>“Two heads are better than none,</l>
+	  <l>One hundred heads are so much better than one”.</l>
+	</lg>
+	<lg type="stanza">
+	  <l>I’m a boy who was born blind to pain</l>
+	  <l>And, like a hawk, I’ll swoop and swoop again.</l>
+	  <l>I am the flash of Hawkeye in the sun.</l>
+	  <l>When you see me coming you had better</l>
+	  <l>Run, run, run</l>
+	  <l>From Dearg Doom.</l>
+	  <l>From Dearg Doom.</l>
+	  <l>From Dearg Doom.</l>
+	  <l>From Dearg Doom.</l>
+	</lg>
+      </div>
+    </body>
+  </text>
+</TEI>
