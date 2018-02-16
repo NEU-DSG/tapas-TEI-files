@@ -67,7 +67,8 @@ There are two parameters you can, but do not need, to set.
 
 1. **debug** (a boolean): Currently unused, as there is no debugging
 output. But there may be in future versions of the program. If set to
-`true()` debugging output is generated; otherwise it is not.
+`true()` debugging output is generated; if set to `false()` (the
+defult) it is not.
 
 1. **keepFirst** (an integer): the number of sibling elements of the
 same type that should be copied over into the template output. The
