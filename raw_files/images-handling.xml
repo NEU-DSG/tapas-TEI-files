@@ -1,78 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
-	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
-      <fileDesc>
-         <titleStmt>
-            <title>Handling of Image files in TAPAS Records</title>
-            <author>
-               <orgName>TAPAS Project</orgName>
-            </author>
-            <respStmt>
-               <resp>Encoded by, </resp>
-               <persName>Benjamin J. Doyle</persName>
-            </respStmt>
-         </titleStmt>
-         <publicationStmt>
-            <publisher>
-               <orgName>the TEI Archiving, Publishing, and Access Service (TAPAS)</orgName>
-            </publisher>
-            <address>
-               <addrLine>360 Huntington Avenue</addrLine>
-               <addrLine>Northeastern University</addrLine>
-               <addrLine>Boston, MA 02115</addrLine>
-            </address>
-            <date>2017-01-17</date>
-            <availability>
-               <p>This file is free to download, share, or repurpose for educational and project development purposes.</p>
-            </availability>
-         </publicationStmt>
-         <sourceDesc>
-            <p>Born digital</p>
-         </sourceDesc>
-      </fileDesc>
-     <encodingDesc><p>Basic encoding, modeling handling of image files in TAPAS for TEI Records.</p></encodingDesc>
-     <profileDesc>
-     </profileDesc>
-     <revisionDesc>
-        <change when="2016-11-11" who="#BJD"> added header </change>
-     </revisionDesc>
+    <fileDesc>
+      <titleStmt>
+        <title>Handling of Image files in TAPAS Records</title>
+        <author>
+          <orgName>TAPAS Project</orgName>
+        </author>
+        <respStmt>
+          <resp>Encoded by, </resp>
+          <persName>Benjamin J. Doyle</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>
+          <orgName>the TEI Archiving, Publishing, and Access Service (TAPAS)</orgName>
+        </publisher>
+        <address>
+          <addrLine>360 Huntington Avenue</addrLine>
+          <addrLine>Northeastern University</addrLine>
+          <addrLine>Boston, MA 02115</addrLine>
+        </address>
+        <date>2017-01-17</date>
+        <availability>
+          <licence target="https://mit-license.org/">
+            <!-- 
+                 Put a short paragraph describing the terms under which
+                 other people may copy, use, modify, and publish this
+                 TEI document. Commonly, an existing open-source license
+                 is used, with only a brief reference to it here, and
+                 a pointer to its web address on the @target attribute.
+            -->Copyleft 2017 by the TAPAS Project, available under the terms of
+            the MIT license.
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Born digital</p>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc><p>Basic encoding, modeling handling of image files in TAPAS for TEI Records.</p></encodingDesc>
+    <profileDesc>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2016-11-11" who="#BJD"> added header </change>
+    </revisionDesc>
   </teiHeader>
   <text>
-      <body>
-         <div>
-            <head>BASIC ENCODING SCENARIOS</head>
-         <p>TAPAS supports the display of image files in two ways:</p>
-         <p>1.<![CDATA[<figure>]]></p>
-         <p>In the following case, we have an image file, "image1.jpg," which we've uploaded via the TAPAS Record form for this TEI file under "Auxillary Files." <note>TAPAS Records support upload of multiple image files.</note> To encode this image into our TEI file, we would reference the file and its path on the @url value on <![CDATA[graphic]]>: <![CDATA[<graphic url="image1.jpg"/>]]>. <note>In this case, our image file is loaded along with file as part of the TAPAS Record, so we only need to include the file name and corresponding file type. If you wanted to reference an image file that lived on another web server, you would simply add the full url path on the @url value</note></p> 
-         <p>We then wrap <![CDATA[<graphic/>]]> with <![CDATA[<figure>]]>. We can also add a title to this image using <![CDATA[<head>]]> and a description using <![CDATA[<figDesc>]]>:</p> 
-         <p>The full markup might look like the following: <![CDATA[<figure><graphic url="image1.jpg"/><head>Figure Title</head><figDesc>Description of figure file</figDesc></figure>]]></p>
-         <figure>
-            <graphic url="image1.jpg"/>
-            <head>Figure Title</head>
-            <figDesc>Description of figure file</figDesc>
-         </figure>
- 
-         <p>2.<![CDATA[@facs on <pb/>]]></p>
-         <p>We may also wish to add page images of our markup up text. We can do this by uploading our page images as "Auxillary Files" for our TAPAS Record. We would then call on these files following a similar approach as putlined above, except we add the file name and path as a value of @facs on <![CDATA[<pb/>]]>:</p> <p><![CDATA[<pb n="1" facs="page1.png"/>]]></p>
-         <pb n="1" facs="page1.png"/>
-         </div>
-         <div>
-            <head rend="bold">OTHER USE CASES</head>
-            <p>1. Adding images through <![CDATA[<figure>]]> in a <![CDATA[<note>]]>: you can add images into your notes by using same setup as scenario 1 in Basic Encoding above:</p>
-            <p><![CDATA[<figure><graphic url="image1.jpg"/><head>Figure Title</head><figDesc>Description of figure file</figDesc></figure>]]></p>
-            <p>Click the note below:</p>
-               <note>Here's an image contained within a note: 
-               <figure>
-                  <graphic url="image1.jpg"/>
-                  <head>Figure Title</head>
-                  <figDesc>Description of figure file</figDesc>
-               </figure>
-               </note>
-            <p>2. Adding images to your -Ography support files: Yes, you can add images to your ography files using <![CDATA[<figure>]]>. These will display in the TAPAS Reader. See an example here: <ref target="http://www.tapasproject.org/tapas-commons/files/sample-personography">http://www.tapasproject.org/tapas-commons/files/sample-personography</ref> *Currently we do not support the display of image files in ography support files in the dynamic popups of source Records.</p>
-         </div>
-      </body>
+    <body>
+      <div>
+        <head>BASIC ENCODING SCENARIOS</head>
+        <p>TAPAS supports the display of image files in two ways:</p>
+        <p>1.<![CDATA[<figure>]]></p>
+        <p>In the following case, we have an image file, "image1.jpg," which we've uploaded via the TAPAS Record form for this TEI file under "Auxillary Files." <note>TAPAS Records support upload of multiple image files.</note> To encode this image into our TEI file, we would reference the file and its path on the @url value on <![CDATA[graphic]]>: <![CDATA[<graphic url="image1.jpg"/>]]>. <note>In this case, our image file is loaded along with file as part of the TAPAS Record, so we only need to include the file name and corresponding file type. If you wanted to reference an image file that lived on another web server, you would simply add the full url path on the @url value</note></p> 
+        <p>We then wrap <![CDATA[<graphic/>]]> with <![CDATA[<figure>]]>. We can also add a title to this image using <![CDATA[<head>]]> and a description using <![CDATA[<figDesc>]]>:</p> 
+        <p>The full markup might look like the following: <![CDATA[<figure><graphic url="image1.jpg"/><head>Figure Title</head><figDesc>Description of figure file</figDesc></figure>]]></p>
+        <figure>
+          <graphic url="image1.jpg"/>
+          <head>Figure Title</head>
+          <figDesc>Description of figure file</figDesc>
+        </figure>
+        
+        <p>2.<![CDATA[@facs on <pb/>]]></p>
+        <p>We may also wish to add page images of our markup up text. We can do this by uploading our page images as "Auxillary Files" for our TAPAS Record. We would then call on these files following a similar approach as putlined above, except we add the file name and path as a value of @facs on <![CDATA[<pb/>]]>:</p> <p><![CDATA[<pb n="1" facs="page1.png"/>]]></p>
+        <pb n="1" facs="page1.png"/>
+      </div>
+      <div>
+        <head rend="bold">OTHER USE CASES</head>
+        <p>1. Adding images through <![CDATA[<figure>]]> in a <![CDATA[<note>]]>: you can add images into your notes by using same setup as scenario 1 in Basic Encoding above:</p>
+        <p><![CDATA[<figure><graphic url="image1.jpg"/><head>Figure Title</head><figDesc>Description of figure file</figDesc></figure>]]></p>
+        <p>Click the note below:</p>
+        <note>Here's an image contained within a note: 
+        <figure>
+          <graphic url="image1.jpg"/>
+          <head>Figure Title</head>
+          <figDesc>Description of figure file</figDesc>
+        </figure>
+        </note>
+        <p>2. Adding images to your -Ography support files: Yes, you can add images to your ography files using <![CDATA[<figure>]]>. These will display in the TAPAS Reader. See an example here: <ref target="http://www.tapasproject.org/tapas-commons/files/sample-personography">http://www.tapasproject.org/tapas-commons/files/sample-personography</ref> *Currently we do not support the display of image files in ography support files in the dynamic popups of source Records.</p>
+      </div>
+    </body>
   </text>
 </TEI>

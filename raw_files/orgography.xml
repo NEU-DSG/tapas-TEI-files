@@ -1,45 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
-	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-   <teiHeader>
-      <fileDesc>
-         <titleStmt>
-            <title>TAPAS Template Orgography</title>
-         </titleStmt>
-         <publicationStmt>
-            <publisher>Northeastern University TAPAS project</publisher>
-            <availability>
-               <ab>
-                  Freely available for download and redistribution for educational, non-commercial use.
-               </ab>
-            </availability>
-         </publicationStmt>
-         <sourceDesc>
-            <p>Born Digital</p>
-         </sourceDesc>
-      </fileDesc>
-   </teiHeader>
-   <text>
-      <body>
-         <listOrg>
-            <!-- reapeat '<org></org>' container for new entry -->
-            <org xml:id="org_name">
-               <orgName>Northeastern University</orgName>
-               <desc>A North American private university located in Boston, Massachusetts.</desc>
-               <listOrg>
-                  <org xml:id="org_dsg">
-                     <orgName>Digital Scholarship Group</orgName>
-                     <desc>A community of digital scholars, practitioners, and developers who educate and support the Northeastern Community in using digital resources and technologies for designing, implementing, and managing digital scholarly projects</desc>
-                  </org>
-                  <org xml:id="org_tapas">
-                     <orgName>The TEI Archiving, Publishing, and Access Service</orgName>
-                     <desc>A digital project platform and repository for the public to store, publish, and research TEI data. </desc>
-                  </org>
-               </listOrg>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>TAPAS Template Orgography</title>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Northeastern University TAPAS project</publisher>
+        <availability>
+          <licence target="https://mit-license.org/">
+            <!-- 
+                 Put a short paragraph describing the terms under which
+                 other people may copy, use, modify, and publish this
+                 TEI document. Commonly, an existing open-source license
+                 is used, with only a brief reference to it here, and
+                 a pointer to its web address on the @target attribute.
+            -->Copyleft 2017 by the TAPAS Project, available under the terms of
+            the MIT license.
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Born Digital</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <listOrg>
+        <!-- reapeat '<org></org>' container for new entry -->
+        <org xml:id="org_name">
+          <orgName>Northeastern University</orgName>
+          <desc>A North American private university located in Boston, Massachusetts.</desc>
+          <listOrg>
+            <org xml:id="org_dsg">
+              <orgName>Digital Scholarship Group</orgName>
+              <desc>A community of digital scholars, practitioners, and developers who educate and support the Northeastern Community in using digital resources and technologies for designing, implementing, and managing digital scholarly projects</desc>
             </org>
-         </listOrg>
-      </body>
-   </text>
+            <org xml:id="org_tapas">
+              <orgName>The TEI Archiving, Publishing, and Access Service</orgName>
+              <desc>A digital project platform and repository for the public to store, publish, and research TEI data. </desc>
+            </org>
+          </listOrg>
+        </org>
+      </listOrg>
+    </body>
+  </text>
 </TEI>

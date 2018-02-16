@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
-	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -26,7 +24,14 @@
             </address>
             <date/>
             <availability>
-               <p/>
+              <licence target="https://mit-license.org/">
+                <!-- 
+                  Put a short paragraph describing the terms under which
+                  other people may copy, use, modify, and publish this
+                  TEI document. Commonly, an existing open-source license
+                  is used, with only a brief reference to it here, and
+                  a pointer to its web address on the @target attribute.
+                --></licence>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -35,10 +40,10 @@
       </fileDesc>
    </teiHeader>
    <text>
-      <body><!-- this template has been based off the following publicly available TEI resources: Women Writers Project Online: https://www.wwp.northeastern.edu/research/publications/guide/html/verse_outline.html;TEI By Example: http://teibyexample.org/modules/TBED04v00.htm -->
-         <lg type="poem.sonnet-shakespearean"><!-- To capture one or more lines of verse, nest 'l' in 'lg'. Like 'div', 'lg' can include '@type=attribute' to declare its type of grouping; in this example, 'poem.sonnet-shakespearean' declares the outer most grouping as a poem, composed in style of Sharespearean sonnet. One could declare this as a 'poem' or a 'sonnet,' but we know this to be a Shakespearean sonnet, divided into three 'lg's' with @type='quatrain' and one 'lg' with @type="couplet". (see for more detail on handling poetry: https://www.wwp.northeastern.edu/research/publications/guide/html/verse_wholepoem.html; see for more on @type="attribute" for verse: https://www.wwp.northeastern.edu/research/publications/guide/html/verse_stanzas.html) -->
-            <head/><!-- 'head' for capturing poem title or stanza heading -->
-            <lg type="quatrain" n="1"><!-- @n='attribute' can be used to number/count lg's and individual l's -->
+      <body><!-- This template is based off the following publicly available TEI resources: Women Writers Project Online: https://www.wwp.northeastern.edu/research/publications/guide/html/verse_outline.html;TEI By Example: http://teibyexample.org/modules/TBED04v00.htm -->
+         <lg type="poem.sonnet-shakespearean"><!-- To capture one or more lines of verse, nest <l> in <lg>. Like <div>, <lg> can include a @type attribute to declare its type of grouping; in this example, "poem.sonnet-shakespearean" declares the outer most grouping as a poem, composed in style of Sharespearean sonnet. One could declare this as a ‘poem' or a ‘sonnet,' but we know this to be a Shakespearean sonnet, divided into three <lg>s with a @type of "quatrain" and one <lg> with a type of "couplet". (see for more detail on handling poetry: https://www.wwp.northeastern.edu/research/publications/guide/html/verse_wholepoem.html; for more on the @type attribute for verse see  https://www.wwp.northeastern.edu/research/publications/guide/html/verse_stanzas.html) -->
+            <head><!-- poem title or stanza heading --></head>
+            <lg type="quatrain" n="1"><!-- the @n attribute may be used to number or count the <lg>s or individual <l>s -->
                <l n="1"/>
                <l n="2"/>
                <l n="3"/>

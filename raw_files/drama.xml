@@ -1,94 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
-	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
-     <fileDesc>
-        <titleStmt>
-           <title>The Importance of Being Earnest: a TEI Edition to Model A Minimally Encoded Document Drama in the TEI</title>
-           <author>
-              <persName>Oscar Wilde</persName>
-           </author>
-           <respStmt>
-              <resp>Encoded by, </resp>
-              <persName>Benjamin J. Doyle</persName>
-           </respStmt>
-        </titleStmt>
-        <publicationStmt>
-           <publisher>
-              <orgName>the TEI Archiving, Publishing, and Access Service (TAPAS)</orgName>
-           </publisher>
-           <address>
-               <addrLine>360 Huntington Avenue</addrLine>
-               <addrLine>Northeastern University</addrLine>
-               <addrLine>Boston, MA 02115</addrLine>
-            </address>
-           <date>2017-01-17</date>
-           <availability>
-              <p>This file is free to download, share, or repurpose for educational and project development purposes.</p>
-           </availability>
-        </publicationStmt>
-        <sourceDesc>       
-           <bibl>
-              <title>The Importance of Being Earnest: A Trivial Comedy for Serious People</title>
-              <author>Oscar Wilde</author>
-              <pubPlace>London</pubPlace>
-              <publisher>Methuen and Co. Ltd.</publisher>
-              <date>1915</date>
-           </bibl>
-        </sourceDesc>     
-     </fileDesc>
+    <fileDesc>
+      <titleStmt>
+        <title>The Importance of Being Earnest: a TEI Edition to Model A Minimally Encoded Document Drama in the TEI</title>
+        <author>
+          <persName>Oscar Wilde</persName>
+        </author>
+        <respStmt>
+          <resp>Encoded by</resp>
+          <persName>Benjamin J. Doyle</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>
+          <orgName>the TEI Archiving, Publishing, and Access Service (TAPAS)</orgName>
+        </publisher>
+        <address>
+          <addrLine>360 Huntington Avenue</addrLine>
+          <addrLine>Northeastern University</addrLine>
+          <addrLine>Boston, MA 02115</addrLine>
+        </address>
+        <date>2017-01-17</date>
+        <availability>
+          <licence target="https://mit-license.org/">
+            <!-- 
+                 Put a short paragraph describing the terms under which
+                 other people may copy, use, modify, and publish this
+                 TEI document. Commonly, an existing open-source license
+                 is used, with only a brief reference to it here, and
+                 a pointer to its web address on the @target attribute.
+            -->Copyleft 2017 by the TAPAS Project, available under the terms of
+            the MIT license.
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>       
+        <bibl>
+          <title>The Importance of Being Earnest: A Trivial Comedy for Serious People</title>
+          <author>Oscar Wilde</author>
+          <pubPlace>London</pubPlace>
+          <publisher>Methuen and Co. Ltd.</publisher>
+          <date>1915</date>
+        </bibl>
+      </sourceDesc>     
+    </fileDesc>
   </teiHeader>
-   <text><!-- this template has been based off the following publicly available TEI resources: Women Writers Project Online: http://www.wwp.northeastern.edu/research/publications/guide/html/drama_outline.html -->
-     <front>
-        <div type="castlist"><!-- in most cases, works of drama will include a Cast List, or Dramatis Personae, in the front matter of the published work. We can mark this section of source document under a custom <div> with @type value of "castlist." It is recommended and often the practice to add a Cast List in cases even where there isn't one in published edition: see WWP's recommendations and <hyperDiv> discussion: http://www.wwp.northeastern.edu/research/publications/guide/html/drama_castList.html  -->
-           <castList><!-- the TEI offers an element <castList> to markup the Cast List, and includes a <head> followed by a <castItem> for each character entry, and often grouped together under each <castGroup>. -->
-              <head style="text-transform: uppercase;"><!-- Dramatis Personae -->The Persons of the Play</head>
-              <castGroup><!-- Cast Lists are often divided into Cast Groups, often by gender. We can add <castGroup> as a child of <castList>, with <head> under each <castGroup> to declare the grouping type: <castList><castGroup><head>Women</head><castItem> ... </castItem></castGroup></castList> In our example here, however, we find a divided cast list by gender that is not directly stated by a grouping title, so we will forgo the use of <head>...</head> in each <castGroup>. In cases where a description is offered for each character grouping, use <trailer>...</trailer> after <head>-->
-                 <castItem><!-- used for each character entry in Cast List -->
-                    <role><!-- declares character role played by actor -->John Worthington, J.P.</role>
-                 </castItem>
-                 <castItem><role style="text-transform: uppercase;">Algernon Moncrieff</role></castItem>
-                 <castItem><role style="text-transform: uppercase;">Rev. Canon Chasuble, D.D.</role></castItem>
-                 <castItem><role style="text-transform: uppercase;">Merriman</role>,<roleDesc><!-- add <roleDesc> as a sibling of <role> to include role descriptions. --> Butler</roleDesc></castItem>
-                 <castItem><role style="text-transform: uppercase;">Lane</role>, <roleDesc>Manservant</roleDesc></castItem>
-              </castGroup>
-              <castGroup><!-- cast of female characters. Source text does not declare, so we forgo <head>Women</head> -->
-                 <castItem><role style="text-transform: uppercase;">Lady Bracknell</role></castItem>
-                 <castItem><role style="text-transform: uppercase;">Hon. Gwendolen Fairfax</role></castItem>
-                 <castItem><role style="text-transform: uppercase;">Cecily Cardew</role></castItem>
-                 <castItem><role style="text-transform: uppercase;">Miss Prism</role>, <roleDesc>Governess</roleDesc></castItem>
-              </castGroup>
-           </castList>
-        </div>
-        <pb n="8" facs="tapas-sample-drama-page8.jpg"/>
-        <div type="contents">
-           <head rend="upper-case">The Scenes of the Play</head>
-           <list>
-              <item><label>Act I.</label><hi style="font-style: italic;">Algernon Moncrieff's flat in Half-Moon Street, W.</hi></item>
-              <item><label>Act II.</label><hi style="font-style: italic;">The Garden at the Manor House, Woolton.</hi></item>
-              <item><label>Act III.</label><hi style="font-style: italic;">Drawing-Room at the Manor House, Woolton.</hi></item>
-              <item><label>Time</label> <hi style="font-style: italic;">The Present.</hi></item>
-           </list>
-        </div>
-        <pb n="9" facs="tapas-sample-drama-page9.jpg"/>
-        <div type="actorlist">
-           <head style="text-transform: uppercase;"><placeName>London</placeName>: St James's Theatre</head>
-           <p><hi style="font-style: italic;">Lessee and Manager: <persName>Mr. George Alexander</persName><lb/><date>February 14th, 1895</date></hi></p>
-           <list>
-              <item><hi style="text-transform: uppercase;">John Worthington, J.P.</hi> ... <persName><hi style="font-style: italic;">Mr. George Alexander</hi>.</persName></item>
-              <item><hi style="text-transform: uppercase;">Algernon Moncrieff</hi>.. <persName><hi style="font-style: italic;">Mr. Allen Aynesworth</hi>.</persName></item>
-              <item><hi style="text-transform: uppercase;">Rev. Canon Chasuble, D.D.</hi> <persName><hi style="font-style: italic;">Mr. H. H. Vincent</hi>.</persName></item>
-              <item><hi style="text-transform: uppercase;">Merriman </hi>(<hi style="font-style: italic;">Butler</hi>) ... <persName><hi style="font-style: italic;">Mr. Frank Dyall</hi>.</persName></item>
-              <item><hi style="text-transform: uppercase;">Lane </hi>(<hi style="font-style: italic;">Manservant</hi>)... <persName><hi style="font-style: italic;">Mr. F. Kinsey Peile</hi>.</persName></item>
-              <item><hi style="text-transform: uppercase;">Lady Bracknell</hi> .... <persName><hi style="font-style: italic;">Miss Rose Leclercq</hi>.</persName></item>
-              <item><hi style="text-transform: uppercase;">Hon. Gwendolen Fairfax</hi> . <persName><hi style="font-style: italic;">Miss Irene Vanbrugh</hi>.</persName></item>
-              <item><hi style="text-transform: uppercase;">Cecily Cardew</hi> .... <persName><hi style="font-style: italic;">Miss Evelyn Millard</hi>.</persName></item>
-              <item><hi style="text-transform: uppercase;">Miss Prism</hi> (<hi style="font-style: italic;">Governess</hi>) .. <persName><hi style="font-style: italic;">Mrs. George Canninge Irene Vanbrugh</hi>.</persName></item>
-           </list>
-        </div>
-        <pb n="10" facs="tapas-sample-drama-page10.jpg"/>
+  <text><!-- This template is based off the following publicly available TEI resources: Women Writers Project Online: http://www.wwp.northeastern.edu/research/publications/guide/html/drama_outline.html -->
+    <front>
+      <div type="castlist"><!-- In most cases, works of drama will include a Cast List, or Dramatis Personae, in the front matter of the published work. We can mark this section of source document under a custom <div> with @type value of "castlist." -->
+        <!-- The WWP recommends adding a <castList> in cases even where there isn't one in the published source edition (see WWP’s recommendations and <hyperDiv> discussion: http://www.wwp.northeastern.edu/research/publications/guide/html/drama_castList.html). As of this writing, the TEI does not provide a place for a <castList> that represents roles not in the published sourceedition. For now, a @type value of "editorial" or "supplied" may be used to differentiate a <castList> used for this purpose. -->
+        <castList><!-- The TEI offers an element <castList> to markup the Cast List, and includes a <head> followed by a <castItem> for each character entry, and often grouped together under each <castGroup>. -->
+          <head style="text-transform: uppercase;"><!-- Put the heading for the cast list here, e.g. “Dramatis Personae” -->The Persons of the Play</head>
+          <castGroup><!-- Some of the entries of a cast list may be grouped, often by gender. We can add <castGroup> as a child of <castList>, with <head> under each <castGroup> to declare the grouping type: <castList><castGroup><head>Women</head><castItem> ... </castItem></castGroup></castList>. In our example here, however, we find a divided cast list by gender that is not directly stated by a grouping title, so we will forgo the use of <head>...</head> in each <castGroup>. In cases where a description is offered for each character grouping, use <trailer>...</trailer> after <head>-->
+            <castItem><!-- used for each character entry in Cast List -->
+              <role><!-- declares character role played by actor -->John Worthington, J.P.</role>
+            </castItem>
+            <castItem><role style="text-transform: uppercase;">Algernon Moncrieff</role></castItem>
+            <castItem><role style="text-transform: uppercase;">Rev. Canon Chasuble, D.D.</role></castItem>
+            <castItem><role style="text-transform: uppercase;">Merriman</role>,<roleDesc><!-- add <roleDesc> as a sibling of <role> to include role descriptions. --> Butler</roleDesc></castItem>
+            <castItem><role style="text-transform: uppercase;">Lane</role>, <roleDesc>Manservant</roleDesc></castItem>
+          </castGroup>
+          <castGroup><!-- cast of female characters. Source text does not declare, so we forgo <head>Women</head> -->
+            <castItem><role style="text-transform: uppercase;">Lady Bracknell</role></castItem>
+            <castItem><role style="text-transform: uppercase;">Hon. Gwendolen Fairfax</role></castItem>
+            <castItem><role style="text-transform: uppercase;">Cecily Cardew</role></castItem>
+            <castItem><role style="text-transform: uppercase;">Miss Prism</role>, <roleDesc>Governess</roleDesc></castItem>
+          </castGroup>
+        </castList>
+      </div>
+      <pb n="8" facs="tapas-sample-drama-page8.jpg"/>
+      <div type="contents">
+        <head rend="upper-case">The Scenes of the Play</head>
+        <list>
+          <item><label>Act I.</label><hi style="font-style: italic;">Algernon Moncrieff's flat in Half-Moon Street, W.</hi></item>
+          <item><label>Act II.</label><hi style="font-style: italic;">The Garden at the Manor House, Woolton.</hi></item>
+          <item><label>Act III.</label><hi style="font-style: italic;">Drawing-Room at the Manor House, Woolton.</hi></item>
+          <item><label>Time</label> <hi style="font-style: italic;">The Present.</hi></item>
+        </list>
+      </div>
+      <pb n="9" facs="tapas-sample-drama-page9.jpg"/>
+      <div type="actorlist">
+        <head style="text-transform: uppercase;"><placeName>London</placeName>: St James's Theatre</head>
+        <p><hi style="font-style: italic;">Lessee and Manager: <persName>Mr. George Alexander</persName><lb/><date>February 14th, 1895</date></hi></p>
+        <list>
+          <item><hi style="text-transform: uppercase;">John Worthington, J.P.</hi> ... <persName><hi style="font-style: italic;">Mr. George Alexander</hi>.</persName></item>
+          <item><hi style="text-transform: uppercase;">Algernon Moncrieff</hi>.. <persName><hi style="font-style: italic;">Mr. Allen Aynesworth</hi>.</persName></item>
+          <item><hi style="text-transform: uppercase;">Rev. Canon Chasuble, D.D.</hi> <persName><hi style="font-style: italic;">Mr. H. H. Vincent</hi>.</persName></item>
+          <item><hi style="text-transform: uppercase;">Merriman </hi>(<hi style="font-style: italic;">Butler</hi>) ... <persName><hi style="font-style: italic;">Mr. Frank Dyall</hi>.</persName></item>
+          <item><hi style="text-transform: uppercase;">Lane </hi>(<hi style="font-style: italic;">Manservant</hi>)... <persName><hi style="font-style: italic;">Mr. F. Kinsey Peile</hi>.</persName></item>
+          <item><hi style="text-transform: uppercase;">Lady Bracknell</hi> .... <persName><hi style="font-style: italic;">Miss Rose Leclercq</hi>.</persName></item>
+          <item><hi style="text-transform: uppercase;">Hon. Gwendolen Fairfax</hi> . <persName><hi style="font-style: italic;">Miss Irene Vanbrugh</hi>.</persName></item>
+          <item><hi style="text-transform: uppercase;">Cecily Cardew</hi> .... <persName><hi style="font-style: italic;">Miss Evelyn Millard</hi>.</persName></item>
+          <item><hi style="text-transform: uppercase;">Miss Prism</hi> (<hi style="font-style: italic;">Governess</hi>) .. <persName><hi style="font-style: italic;">Mrs. George Canninge Irene Vanbrugh</hi>.</persName></item>
+        </list>
+      </div>
+      <pb n="10" facs="tapas-sample-drama-page10.jpg"/>
      </front>
      <body>
         <div type="Act" n="I">

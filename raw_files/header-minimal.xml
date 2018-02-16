@@ -1,55 +1,69 @@
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-   <teiHeader><!-- the tei header records information about the encoded document under <fileDesc>, <encodingDesc>, <profileDesc>. TEI headers come in all shapes and sizes, and include a widerange of information based on the source document or purpose of project to which it belongs. However, in all cases, headers must include at a minimum a fileDesc. -->
-      <fileDesc><!-- (Required) Records bibliographic information of the encoded document. For <fileDesc> to be valid, it must include at a minumum <titleStmt>, <publicationStmt>, and <sourceDesc> subsections -->
-         <titleStmt><!-- (Required) Groups elements for recording information about the title of a work and those responsible (<author>,<funder>,<editor>,etc), at various levels, for the creation or editorial work of its content-->
-            <title></title>
-         </titleStmt>
-         <editionStmt><!-- (Optional) recommended by TEI-C guidelines if in case of multiple editions. Used to group information on a single edition of text -->
-            <p></p>
-         </editionStmt>
-         <extent><!-- (Optional) Documents the size of the textual medium as a digital object --></extent>
-         <publicationStmt><!-- (Required) groups information concerning the publication or distribution of the digital TEI object; use <sourceDesc> section below to record publication data that may be different than TEI edition, say for a historical source work. -->
-            <publisher></publisher>
-         </publicationStmt>
-         <seriesStmt><!-- (Optional) Records the relation between separate documents understood as each part of a series (e.g., collected works: essays, lectures, articles, document volumes, etc.) by declaring its parent work/identity -->
-            <title></title>
-            <respStmt><!-- name of person responsible for series, e.g., editor or organization -->
-               <resp></resp>
-               <name></name> 
-            </respStmt>
-         </seriesStmt>
-         <notesStmt><!-- (Optional) Adds notes for additional information or discussion of document -->
-            <note></note>
-         </notesStmt>
-         <sourceDesc><!-- (Required) Describes the source from which an electronic text was derived or generated, typically a bibliographic description <bibl> in the case of a digitized edition of a print text; in the case where the TEI file is born digital,we can include <p>"born digital"</p> -->
-            <bibl>
-               <title></title>
-               <author></author>
-               <pubPlace></pubPlace>
-               <publisher></publisher>
-               <date></date>. 
-            </bibl>
-         </sourceDesc>
-      </fileDesc>
-      <encodingDesc><!-- (Optional) Groups elements for recording information on the encoding practices used in relation to source work's orginal formatting; this section can range from a brief statement on encoding approach under <projectDesc> to a more detailed overview of editorial decisions under <editorialDesc>, <tagsDecl>, <classDecl>, <charDecl> -->
-         <projectDesc>
-            <p></p>
-         </projectDesc>
-     </encodingDesc>
-      <profileDesc><!-- (Optional) Groups elements that record such information as creation data (<creation/>), language (<langUsage/>), abstract (<abstract/>), description of text (<textDesc/>), description of setting of text (<settingDesc/>), personography data (<particDesc/>) --></profileDesc>
-     <xenoData><!-- (Optional) Documents nonTEI metadata formats--></xenoData>
-      <revisionDesc><!-- (Optional) Tracks the revision history of the encoded document -->
-         <listChange>
-            <change></change>
-            <change></change>
-         </listChange>
-     </revisionDesc>
+  <teiHeader><!-- the tei header records information about the encoded document under <fileDesc>, <encodingDesc>, <profileDesc>. TEI headers come in all shapes and sizes, and include a widerange of information based on the source document or purpose of project to which it belongs. However, in all cases, headers must include at a minimum a fileDesc. -->
+    <fileDesc><!-- (Required) Records bibliographic information of the encoded document. For <fileDesc> to be valid, it must include at a minumum <titleStmt>, <publicationStmt>, and <sourceDesc> subsections -->
+      <titleStmt><!-- (Required) Groups elements for recording information about the title of a work and those responsible (<author>,<funder>,<editor>,etc), at various levels, for the creation or editorial work of its content-->
+        <title></title>
+      </titleStmt>
+      <editionStmt><!-- (Optional) recommended by TEI-C guidelines if in case of multiple editions. Used to group information on a single edition of text -->
+        <p></p>
+      </editionStmt>
+      <extent><!-- (Optional) Documents the size of the textual medium as a digital object --></extent>
+      <publicationStmt><!-- (Required) groups information concerning the publication or distribution of the digital TEI object; use <sourceDesc> section below to record publication data that may be different than TEI edition, say for a historical source work. -->
+        <publisher></publisher>
+        <availability>
+          <licence target="https://mit-license.org/">
+            <!-- 
+                 Put a short paragraph describing the terms under which
+                 other people may copy, use, modify, and publish this
+                 TEI document. Commonly, an existing open-source license
+                 is used, with only a brief reference to it here, and
+                 a pointer to its web address on the @target attribute.
+            -->Copyleft 2017 by the TAPAS Project, available under the terms of
+            the MIT license.
+          </licence>
+        </availability>
+      </publicationStmt>
+      <seriesStmt><!-- (Optional) Records the relation between separate documents understood as each part of a series (e.g., collected works: essays, lectures, articles, document volumes, etc.) by declaring its parent work/identity -->
+        <title></title>
+        <respStmt><!-- name of person responsible for series, e.g., editor or organization -->
+          <resp></resp>
+          <name></name> 
+        </respStmt>
+      </seriesStmt>
+      <notesStmt><!-- (Optional) Adds notes for additional information or discussion of document -->
+        <note></note>
+      </notesStmt>
+      <sourceDesc><!-- (Required) Describes the source from which an electronic text was derived or generated, typically a bibliographic description <bibl> in the case of a digitized edition of a print text; in the case where the TEI file is born digital,we can include <p>"born digital"</p> -->
+        <bibl>
+          <title></title>
+          <author></author>
+          <pubPlace></pubPlace>
+          <publisher></publisher>
+          <date></date>. 
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc><!-- (Optional) Groups elements for recording information on the encoding practices used in relation to source work's orginal formatting; this section can range from a brief statement on encoding approach under <projectDesc> to a more detailed overview of editorial decisions under <editorialDesc>, <tagsDecl>, <classDecl>, <charDecl> -->
+      <projectDesc>
+        <p></p>
+      </projectDesc>
+    </encodingDesc>
+    <profileDesc><!-- (Optional) Groups elements that record such information as creation data (<creation/>), language (<langUsage/>), abstract (<abstract/>), description of text (<textDesc/>), description of setting of text (<settingDesc/>), personography data (<particDesc/>) --></profileDesc>
+    <xenoData><!-- (Optional) Documents nonTEI metadata formats--></xenoData>
+    <revisionDesc><!-- (Optional) Tracks the revision history of the encoded document -->
+      <listChange>
+        <change></change>
+        <change></change>
+      </listChange>
+    </revisionDesc>
   </teiHeader>
   <text>
-      <front></front>
-      <body>
-         <p>Body of encoded work here ...</p>
-      </body>
-      <back></back>
+    <front></front>
+    <body>
+      <p>Body of encoded work here ...</p>
+    </body>
+    <back></back>
   </text>
 </TEI>

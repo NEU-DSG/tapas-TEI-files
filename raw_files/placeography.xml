@@ -1,71 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
-	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-   <teiHeader>
-      <fileDesc>
-         <titleStmt>
-            <title>TAPAS Template Placeography</title>
-         </titleStmt>
-         <publicationStmt>
-            <publisher>Northeastern University TAPAS project</publisher>
-            <availability>
-               <ab>
-                  Freely available for download and redistribution for educational, non-commercial use.
-               </ab>
-            </availability>
-         </publicationStmt>
-         <sourceDesc>
-            <p>Born Digital</p>
-         </sourceDesc>
-      </fileDesc>
-   </teiHeader>
-   <text>
-      <body>
-         <listPlace>
-            <!-- reapeat '<place></place>' container for new entry -->
-            <place xml:id="place_ma_usa">
-               <placeName>Massachusetts</placeName>
-               <location>
-                  <geo>42.407211,-71.382437</geo>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>TAPAS Template Placeography</title>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Northeastern University TAPAS project</publisher>
+        <availability>
+          <licence target="https://mit-license.org/">
+            <!-- 
+                 Put a short paragraph describing the terms under which
+                 other people may copy, use, modify, and publish this
+                 TEI document. Commonly, an existing open-source license
+                 is used, with only a brief reference to it here, and
+                 a pointer to its web address on the @target attribute.
+            -->Copyleft 2017 by the TAPAS Project, available under the terms of
+            the MIT license.
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Born Digital</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <listPlace>
+        <!-- reapeat '<place></place>' container for new entry -->
+        <place xml:id="place_ma_usa">
+          <placeName>Massachusetts</placeName>
+          <location>
+            <geo>42.407211,-71.382437</geo>
+            <country key="US">United States</country>
+          </location>
+          <place xml:id="place_bos_ma_usa">
+            <placeName>Boston</placeName>
+            <location>
+              <geo>42.3600825,-71.05888010000001</geo>
+              <country key="US">United States</country>
+            </location>
+            <listPlace>
+              <place xml:id="place_nu_bos_ma_usa">
+                <placeName>Northeastern University</placeName>
+                <location>
+                  <geo>42.3398067,-71.08917170000001</geo>
                   <country key="US">United States</country>
-               </location>
-               <place xml:id="place_bos_ma_usa">
-                  <placeName>Boston</placeName>
-                  <location>
-                     <geo>42.3600825,-71.05888010000001</geo>
-                     <country key="US">United States</country>
-                  </location>
-                  <listPlace>
-                     <place xml:id="place_nu_bos_ma_usa">
-                        <placeName>Northeastern University</placeName>
-                        <location>
-                           <geo>42.3398067,-71.08917170000001</geo>
-                           <country key="US">United States</country>
-                           <address>
-                              <addrLine>360 Huntington Ave</addrLine>
-                              <addrLine>Boston, MA 02115</addrLine>
-                           </address>
-                        </location>
-                        <listPlace>
-                           <place xml:id="place_snell_nu_bos_ma_us">
-                              <placeName>Snell Library</placeName>
-                              <location>
-                                 <geo>42.3383962,-71.08807130000002</geo>
-                                 <country key="US">United States</country>
-                                 <address>
-                                    <addrLine>360 Huntington Ave</addrLine>
-                                    <addrLine>Boston, MA 02115</addrLine>
-                                 </address>
-                              </location>
-                           </place>
-                        </listPlace>
-                     </place>
-                  </listPlace>
-               </place>
-            </place>
-         </listPlace>
-      </body>
-   </text>
+                  <address>
+                    <addrLine>360 Huntington Ave</addrLine>
+                    <addrLine>Boston, MA 02115</addrLine>
+                  </address>
+                </location>
+                <listPlace>
+                  <place xml:id="place_snell_nu_bos_ma_us">
+                    <placeName>Snell Library</placeName>
+                    <location>
+                      <geo>42.3383962,-71.08807130000002</geo>
+                      <country key="US">United States</country>
+                      <address>
+                        <addrLine>360 Huntington Ave</addrLine>
+                        <addrLine>Boston, MA 02115</addrLine>
+                      </address>
+                    </location>
+                  </place>
+                </listPlace>
+              </place>
+            </listPlace>
+          </place>
+        </place>
+      </listPlace>
+    </body>
+  </text>
 </TEI>

@@ -61,14 +61,15 @@ directly into the [sample\_files/](./sample\_files) and
 
 #### Using get\_sample\_and\_template\_from\_raw.xslt
 
-Talk about parameters here
+**[**_Talk about parameters here_**]**
 
-#### Excuting XSLT
+#### Executing XSLT
 
 As XML and XSLT are completely non-proprietary standards, any XSLT
 process should be able to handle this. As most TEIers use either
-SaxonHE on the commandline or Saxon as built-in to [oXygen](), we are
-providing instructions for those environments here.
+SaxonHE on the commandline or Saxon as built-in to
+[oXygen](https://www.oxygenxml.com/), we are providing instructions
+for those environments here.
 
 ### SaxonHE on the commandline
 
@@ -83,19 +84,25 @@ There are several ways to do this in oXygen. Probably the easiest is
 to use the XSLT debugger. First, open both
 get\_sample\_and\_template\_from\_raw.xslt and the file you wish to
 transform (here we’ll use raw\_files/MYDEMO.xml). Then switch to the
-XSLT Debugger perspective by clicking on the small window icon with
-“XSLT” written against a yellow banner in front of it, and a ladybug
-over its upper right corner. You will see three panes: the XML, the
-XSLT, and the output. The debugger does not necessarily use the XML
-document and XSLT program you see in the panes, it uses those that you
-select from the “XML:” and “XSL:” drop-down lists in the upper right
-corner. Set those to raw\_files/MYDEMO.xml and
-get\_sample\_and\_template\_from\_raw.xslt, and choose Debugger > Run, or
-click on the dark blue rightward arrow.
+XSLT Debugger perspective by clicking on the appropriate icon near the
+upper right corner of the oXygen window; it is an icon of a small
+window with “XSLT” written against a yellow banner in front of it, and
+a ladybug over its upper right corner. You will see three panes: the
+XML, the XSLT, and the output. The debugger does not necessarily use
+the XML document and XSLT program you see in the panes, it uses those
+that you select from the “XML:” and “XSL:” drop-down lists in the
+upper right corner. Set those to raw\_files/MYDEMO.xml and
+get\_sample\_and\_template\_from\_raw.xslt, and choose Debugger > Run,
+or click on the dark blue rightward arrow.
 
-The output you will see in the Output pane is either pointless (if you
-have the XML / XSLT-FO-XQuery / Debugger option “Show
-"xsl:result-document" output” checked) or close to useless (if you
-don’t). Either way, the output you actually want is automatically
+If everything works, the message “Debug execution finished” should
+appear in the message area in the center of the bottom edge of the
+oXygen window. The output you will see in the Output pane is either
+pointless (if you have the XML / XSLT-FO-XQuery / Debugger option
+“Show "xsl:result-document" output” checked) or close to useless (if
+you don’t). Either way, the output you actually want is automatically
 written to sample\_files/MYDEMO.xml and template\_files/MYDEMO.xml.
+
+If something goes wrong, you should get one or more error messages in
+the Results pane.
 
