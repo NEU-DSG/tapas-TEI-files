@@ -7,10 +7,14 @@ be used to teach TEI or as a starting point for using TEI.
 
 ### General layout
 
+* [Raw files](./raw\_files/): These are the files from which the
+  samples and templates (below) are generated. If you want to make
+  changes to a sample or template file, make the changes here.
+
 * [Samples](./sample\_files/): These are simple examples of valid TEI
   files and should look reasonably good in at least one TAPAS
   viewpackage. They are generated (from the files in raw\_files/, see
-  below), so you probably don’t want to make any changes here. (Note:
+  above), so you probably don’t want to make any changes here. (Note:
   sample files may be hand-tweaked after generation, usually to
   improve whitespace.)
 
@@ -21,16 +25,13 @@ be used to teach TEI or as a starting point for using TEI.
   information missing, these files may be invalid and may not look
   acceptable in TAPAS if used as-is. (But should be valid and look OK
   after having been filled out.) These files are generated (from the
-  files in raw\_files/, see below), so you probably don’t want to make
+  files in raw\_files/, see above), so you probably don’t want to make
   any changes here. (Note: template files may be hand-tweaked after
   generation, usually to improve whitespace.)
 
 * [Tests](./test\_suite/): Files used internally to test TAPAS. See the
   [README](./test\_suite/README.md) file in that directory for more
   details.
-
-* [Raw files](./raw\_files/): These are the files from which the
-  samples and templates are generated. 
 
 ### Generation
 
