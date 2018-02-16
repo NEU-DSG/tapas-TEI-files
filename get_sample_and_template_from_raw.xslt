@@ -15,42 +15,46 @@
   <!-- <?tapas keep-first=3 ?> -->
   <!-- A value of '0' (the default) meands keep 'em all. -->
 
+  <xsl:output method="text"/>
+  <!-- Note: output of both explicit result files is XML, not text -->
   <xsl:param name="debug" select="false()" as="xs:boolean"/>
   <xsl:variable name="inpath" select="document-uri(/)"/>
   <xsl:variable name="template" select="replace( $inpath,'raw_files/','template_files/')"/>
   <xsl:variable name="sample"   select="replace( $inpath,'raw_files/','sample_files/')"/>
-  <xsl:variable name="elide" as="xs:integer">
+  <xsl:param name="elide" as="xs:integer">
     <xsl:choose>
       <xsl:when test="/processing-instruction('tapas')/contains(.,'keep-first')">
         <xsl:value-of select="/processing-instruction('tapas')/replace( normalize-space(.),'.*keep-first=.?([0-9]+).*','$1')"/>
       </xsl:when>
       <xsl:otherwise>0</xsl:otherwise>
     </xsl:choose>
-  </xsl:variable>
+  </xsl:param>
   
   <xsl:template match="/">
-    <xsl:if test="$debug">
-      <xsl:message>
-        <xsl:text>&#x0A;</xsl:text>
-        input: <xsl:value-of select="$inpath"/>
-        <xsl:text>&#x0A;</xsl:text>
-        out 1: <xsl:value-of select="$sample"/>
-        <xsl:text>&#x0A;</xsl:text>
-        out 2: <xsl:value-of select="$template"/>
-        <xsl:text>&#x0A;</xsl:text>
-        keeping first <xsl:value-of select="$elide"/> if each sequence of siblings of same type
-        <xsl:text>&#x0A;</xsl:text>
-      </xsl:message>
-    </xsl:if>
+    <xsl:variable name="metaInfo">
+      <xsl:text>Run information — &#x0A;input: </xsl:text>
+      <xsl:value-of select="$inpath"/>
+      <xsl:text>&#x0A;out 1: </xsl:text>
+      <xsl:value-of select="$sample"/>
+      <xsl:text>&#x0A;out 2: </xsl:text>
+      <xsl:value-of select="$template"/>
+      <xsl:text>&#x0A;keeping </xsl:text>
+      <xsl:value-of select="if ($elide eq 0) then 'all' else concat('first ', $elide )"/>
+      <xsl:text> of each sequence of siblings of same type&#x0A;timestamp: </xsl:text>
+      <xsl:value-of select="current-dateTime()"/>
+      <xsl:text>&#x0A;</xsl:text>
+    </xsl:variable>
+<!--    <xsl:message terminate="no" select="$metaInfo"/>
+-->    <xsl:value-of select="$metaInfo"/>
     <xsl:choose>
       <xsl:when test="$inpath eq $sample  or  $inpath eq $template">
         <xsl:message terminate="yes">ERROR: input and one of the outputs are the same file (is input in raw_files/ directory?)</xsl:message>
       </xsl:when>
       <xsl:otherwise>
-        <xsl:result-document href="{$template}">
+        <xsl:result-document href="{$template}" method="xml">
           <xsl:apply-templates select="node()" mode="template"/>
         </xsl:result-document>
-        <xsl:result-document href="{$sample}">
+        <xsl:result-document href="{$sample}" method="xml">
           <xsl:apply-templates select="node()" mode="sample"/>
         </xsl:result-document>
       </xsl:otherwise>
