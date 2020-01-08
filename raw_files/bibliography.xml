@@ -56,7 +56,7 @@
         <bibl xml:id="bibl_fashionable"><title rend="italic">Tales of 
           Fashionable Life.</title> By <author ref="#aut_edgeworth">Miss Edgeworth</author>, 
           Author of <title rend="italic">Practical Education</title>, 
-          <title rend="italic">Belinda</title>, <title rend="italic">Castle 
+          <title rend="italic">Belinda</title>, <title rend="italic" ref="#bibl_rackrent">Castle 
           Rackrent</title>, &amp;c. 12mo. 3 vol. <pubPlace>London</pubPlace>. 
           <date when="1809">1809</date>. Announced for republication by 
           <publisher><name>J. Milligan</name></publisher>, 
@@ -79,7 +79,9 @@
           </persName>
           <floruit from="1795" to="1848"/>
           <note>
-            <p>Popular, prolific author. Her works included <title ref="#bibl_rackrent">Castle Rackrent</title> and <title ref="#bibl_fashionable">Tales of a Fashionable Life</title>.</p>
+            <p>Popular, prolific author. Her works include 
+              <title ref="#bibl_rackrent">Castle Rackrent</title> and 
+              <title ref="#bibl_fashionable">Tales of a Fashionable Life</title>.</p>
           </note>
         </person>
       </listPerson>
