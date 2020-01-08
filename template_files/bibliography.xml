@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?tapas keepFirst="1"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <publisher/>
+            <availability>
+               <licence target="https://mit-license.org/">
+            <!-- 
+                 Put a short paragraph describing the terms under which
+                 other people may copy, use, modify, and publish this
+                 TEI document. Commonly, an existing open-source license
+                 is used, with only a brief reference to it here, and
+                 a pointer to its web address on the @target attribute.
+            --></licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <p/>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <listBibl>
+            <head/>
+            <!-- Repeat '<bibl></bibl>' container for each new entry. -->
+        
+            <bibl xml:id="bibl_rackrent">
+               <title/>
+               <author>
+                  <persName ref="#aut_edgeworth"/>
+               </author>
+               <measure unit="pages"/>
+               <publisher>
+                  <name/>
+               </publisher>
+               <date when="1801"/>
+               <note>
+                  <p/>
+               </note>
+            </bibl>
+        
+        </listBibl>
+      </body>
+      <back>
+         <listPerson>
+            <head/>
+            <person xml:id="aut_edgeworth" sex="female">
+               <persName>
+                  <surname/>
+                  <forename/>
+               </persName>
+               <floruit from="1795" to="1848"/>
+               <note>
+                  <p>
+                     <title ref="#bibl_rackrent"/>
+                  </p>
+               </note>
+            </person>
+         </listPerson>
+      </back>
+  </text>
+</TEI>

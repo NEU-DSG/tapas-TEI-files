@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?tapas keepFirst="1"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>TAPAS Sample File: TAPAS Reading Interface Handling of Ography DATA</title>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Northeastern University TAPAS project</publisher>
+            <availability>
+               <licence target="https://mit-license.org/">
+            Copyleft 2017 by the TAPAS Project, available under the terms of
+            the MIT license.
+          </licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born Digital</p>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="pers_jane_doe">
+                  <persName>Jane Doe</persName>
+                  <birth when="2017-01-01">
+                     <placeName ref="#location_name">Birthplace</placeName>
+                  </birth>
+                  <death notBefore="2017"/>
+                  <education>
+                     <orgName>Name of Institution</orgName>
+                  </education>
+                  <langKnowledge>
+                     <langKnown tag="en">first language</langKnown>
+                  </langKnowledge>
+                  <nationality>
+                     <placeName>United States</placeName>
+                  </nationality>
+                  <occupation from="2017">Subject of a TAPAS Personography template</occupation>
+                  <residence from="2017-01" to="2017-02">
+                     <placeName ref="#place_residence_1">Place of Residence 1</placeName>
+                  </residence>
+                  <residence from="2017-02" to="2017-03">
+                     <placeName ref="#place_residence_2">Place of Residence 2</placeName>
+                  </residence>
+                  <event when="2017-02" where="#place_residence_1">
+                     <p>Something cool happened...</p>
+                  </event>
+                  <trait type="eye_color">
+                     <label>eye color</label>
+                     <desc>green</desc>
+                  </trait>
+                  <state type="marital_status">
+                     <label>marital status</label>
+                     <desc>partnered</desc>
+                  </state>
+               </person>
+            </listPerson>
+            <listOrg>
+               <org xml:id="org_name">
+                  <orgName>Northeastern University</orgName>
+                  <desc>A North American private university located in Boston, Massachusetts.</desc>
+                  <listOrg>
+                     <org xml:id="org_dsg">
+                        <orgName>Digital Scholarship Group</orgName>
+                        <desc>A community of digital scholars, practitioners, and developers who educate and support the Northeastern Community in using digital resources and technologies for designing, implementing, and managing digital scholarly projects</desc>
+                     </org>
+                     <org xml:id="org_tapas">
+                        <orgName>The TEI Archiving, Publishing, and Access Service</orgName>
+                        <desc>A digital project platform and repository for the public to store, publish, and research TEI data. </desc>
+                     </org>
+                  </listOrg>
+               </org>
+            </listOrg>
+         </particDesc>
+      </profileDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <div>
+            <head>Introduction</head>
+            <p>This document demonstrates how the TAPAS reading interface handles internal and external ography data.</p>
+         </div>
+         <div>
+            <head>General Notes about Linking</head>
+            <p>You can allow front-end user to dynamically call on -Ography data in two ways through the TAPAS Reader:</p>
+            <p>(1) by generating a link to -Ography data stored in the tei header. To do accomplish this, we use, for example, &lt;persName&gt; with @ref to desired anchor ID in header. As this is an internal link, we only need to use a "#". For example, to grab data from  internally stored personography data on Jane Doe in this file's header, we wrap &lt;persName&gt; around the named reference "Jane Doe" with her unique ID: "pers_jane_doe".</p>
+            <p>&lt;persName ref="#pers_jane_doe"&gt;Jane Doe&lt;/persName&gt;</p>
+            <p>TRY IT: Click <persName ref="#pers_jane_doe">Jane Doe</persName> to learn more about her. </p>
+            <p>(2) by linking to an external -Ography file. You may also upload your -Ography files into your TAPAS project as "Support" Records. <note>(*Note: all Support Records must be uploaded prior to Primary Records to ensure proper association. Step 1: Upload your -Ography files first; Step 2: then, upload your primary encoded file(s).</note> Here we use a similar setup, but as we are linking to data outside the primary file, we need to include the full path to the reference file:</p>
+            <p>&lt;persName ref="/tapas-commons/files/personography.xml#pers_jane_doe"&gt;Jane Doe&lt;/persName&gt;</p>
+            <p>We identify the project (/tapas-commons) within which both files live, and include full path to -Ography file (/files/tapas-personography) followed by the referenced entry (#pers_jane_doe):</p>
+            <p>TRY IT: Click <persName ref="/tapas-commons/files/personography.xml#pers_jane_doe">Jane Doe</persName> to learn more about her. </p>
+         </div>
+         <div>
+            <head>Sample Ography files in TAPAS Commons</head>
+            <list>
+               <item>
+                  <ref target="/tapas-commons/files/tapas-personography">TAPAS Template Personography</ref>
+               </item>
+               <item>
+                  <ref target="/tapas-commons/files/tapas-placeography">TAPAS Template Placeography</ref>
+               </item>
+               <item>
+                  <ref target="/tapas-commons/files/tapas-orgography">TAPAS Template Orgography</ref>
+               </item>
+               <item>
+                  <ref target="/tapas-commons/files/tapas-bibliography">TAPAS Template Bibliography</ref>
+               </item>
+            </list>
+         </div>
+      
+      </body>
+  </text>
+</TEI>

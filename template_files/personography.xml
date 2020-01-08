@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <publisher/>
+            <availability>
+               <licence target="https://mit-license.org/"><!-- 
+               Put a short paragraph describing the terms under which
+               other people may copy, use, modify, and publish this
+               TEI document. Commonly, an existing open-source license
+               is used, with only a brief reference to it here, and
+               a pointer to its web address on the @target attribute.
+            --></licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc><!-- Born digital: no previous source exists. This document was composed using the following resource as a guide:-->
+            <bibl>
+               <title level="a"/>
+               <author xml:id="jf"/>
+               <title/>
+               <publisher/>
+               <date/>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listPerson><!-- Repeat '<person></person>' container for each new entry. -->
+            <person xml:id="pers_jane_doe">
+               <persName/>
+               <figure>
+                  <graphic url="pers-jane-doe-biopic.jpg"/>
+                  <head/>
+                  <figDesc/>
+               </figure>
+               <birth when="2017-01-01">
+                  <placeName ref="#location_name"/>
+               </birth>
+               <death notBefore="2017"/>
+               <education>
+                  <orgName/>
+               </education>
+               <langKnowledge>
+                  <langKnown tag="en"/>
+               </langKnowledge>
+               <nationality>
+                  <placeName/>
+               </nationality>
+               <occupation from="2017"/>
+               <residence from="2017-01" to="2017-02">
+                  <placeName ref="#place_residence_1"/>
+               </residence>
+               <residence from="2017-02" to="2017-03">
+                  <placeName ref="#place_residence_2"/>
+               </residence>
+               <event when="2017-02" where="#place_residence_1">
+                  <p/>
+               </event>
+               <trait type="eye_color">
+                  <label/>
+                  <desc/>
+               </trait>
+               <state type="marital_status">
+                  <label/>
+                  <desc/>
+               </state>
+            </person>
+         </listPerson>
+      </body>
+   </text>
+</TEI>
