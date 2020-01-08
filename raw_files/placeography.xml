@@ -30,7 +30,7 @@
   <text>
     <body>
       <listPlace>
-        <!-- reapeat '<place></place>' container for new entry -->
+        <!-- Repeat '<place></place>' container for each new entry. -->
         <place xml:id="place_ma_usa">
           <placeName>Massachusetts</placeName>
           <location>

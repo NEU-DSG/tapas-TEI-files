@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <publisher/>
+            <availability>
+               <licence target="https://mit-license.org/"><!-- 
+                 Put a short paragraph describing the terms under which
+                 other people may copy, use, modify, and publish this
+                 TEI document. Commonly, an existing open-source license
+                 is used, with only a brief reference to it here, and
+                 a pointer to its web address on the @target attribute.
+            --></licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <p/>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listOrg><!-- Repeat '<org></org>' container for each new entry. -->
+            <org xml:id="org_name">
+               <orgName/>
+               <desc/>
+               <listOrg>
+                  <org xml:id="org_dsg">
+                     <orgName/>
+                     <desc/>
+                  </org>
+                  <org xml:id="org_tapas">
+                     <orgName/>
+                     <desc/>
+                  </org>
+               </listOrg>
+            </org>
+         </listOrg>
+      </body>
+   </text>
+</TEI>

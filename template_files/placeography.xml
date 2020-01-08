@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title/>
+         </titleStmt>
+         <publicationStmt>
+            <publisher/>
+            <availability>
+               <licence target="https://mit-license.org/"><!-- 
+                 Put a short paragraph describing the terms under which
+                 other people may copy, use, modify, and publish this
+                 TEI document. Commonly, an existing open-source license
+                 is used, with only a brief reference to it here, and
+                 a pointer to its web address on the @target attribute.
+            --></licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <p/>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listPlace><!-- Repeat '<place></place>' container for each new entry. -->
+            <place xml:id="place_ma_usa">
+               <placeName/>
+               <location>
+                  <geo/>
+                  <country key="US"/>
+               </location>
+               <place xml:id="place_bos_ma_usa">
+                  <placeName/>
+                  <location>
+                     <geo/>
+                     <country key="US"/>
+                  </location>
+                  <listPlace>
+                     <place xml:id="place_nu_bos_ma_usa">
+                        <placeName/>
+                        <location>
+                           <geo/>
+                           <country key="US"/>
+                           <address>
+                              <addrLine/>
+                              <addrLine/>
+                           </address>
+                        </location>
+                        <listPlace>
+                           <place xml:id="place_snell_nu_bos_ma_us">
+                              <placeName/>
+                              <location>
+                                 <geo/>
+                                 <country key="US"/>
+                                 <address>
+                                    <addrLine/>
+                                    <addrLine/>
+                                 </address>
+                              </location>
+                           </place>
+                        </listPlace>
+                     </place>
+                  </listPlace>
+               </place>
+            </place>
+         </listPlace>
+      </body>
+   </text>
+</TEI>
