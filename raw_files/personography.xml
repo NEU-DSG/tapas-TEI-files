@@ -36,7 +36,7 @@
   <text>
     <body>
       <listPerson>
-        <!-- repeat '<person></person>' container for each new entry -->
+        <!-- Repeat '<person></person>' container for each new entry. -->
         <person xml:id="pers_jane_doe">
           <persName>Jane Doe</persName>
           <figure>

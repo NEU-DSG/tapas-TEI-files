@@ -30,7 +30,7 @@
   <text>
     <body>
       <listOrg>
-        <!-- reapeat '<org></org>' container for new entry -->
+        <!-- Repeat '<org></org>' container for each new entry. -->
         <org xml:id="org_name">
           <orgName>Northeastern University</orgName>
           <desc>A North American private university located in Boston, Massachusetts.</desc>

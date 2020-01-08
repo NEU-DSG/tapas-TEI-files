@@ -8,7 +8,7 @@
   <!-- Read in a TEI P5 file (or any other XML file, really) that has both content -->
   <!-- and comments; write out 2 extractions of the input file, 1 with everything -->
   <!-- except the comments, the other with everything except the content. Write -->
-  <!-- those out to the particular dicrectories we use in TAPAS. -->
+  <!-- those out to the particular directories we use in TAPAS. -->
   <!-- Written 2017-03-16 by Syd Bauman -->
   <!-- Updated 2017-06-08 by Syd Bauman: keep only the first N of any given sequence of a particular -->
   <!--   element type in output template. N is specified in a processing instruction like: -->
@@ -17,7 +17,7 @@
   <!--   allows us to generate samples with a dozen sample entries of some sort, but a template -->
   <!--   that has only 2 or 3. (See e-mail _Re: TAPAS sample & template feature_ of 201-02-16.) -->
 
-  <xsl:output method="text"/>
+  <xsl:output method="text" indent="yes"/>
   <!-- Note: output of both explicit result files is XML, not text -->
   <xsl:param name="debug" select="false()" as="xs:boolean"/>
   <xsl:variable name="inpath" select="document-uri(/)"/>
@@ -76,7 +76,7 @@
 
   <!-- ***** mode="template" ***** -->
 
-  <!-- for templates, ignore all but the first $elide elements of same type in a row -->
+  <!-- for templates, ignore all but the first $keepFirst elements of same type in a row -->
   <xsl:template match="*[ count( preceding-sibling::*[ name(.) eq name( current() )] ) ge $keepFirst]" mode="template" priority="3"/>
   <!-- and ignore whitespace immediately after such nodes -->
   <xsl:template match="text()[normalize-space(.) eq '']" mode="template" priority="3">
@@ -88,7 +88,7 @@
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
-  <xsl:template match="*[$keepFirst eq 0] | text()[$keepFirst eq 0]" mode="template" priority="4">
+  <xsl:template match="*[$keepFirst eq 0]" mode="template" priority="4">
     <xsl:copy>
       <xsl:apply-templates select="@*|node()" mode="#current"/>
     </xsl:copy>

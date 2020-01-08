@@ -29,7 +29,7 @@
   </teiHeader>
   <text>
     <body>
-      <listBibl><!-- repeat '<bibl></bibl>' container for new entry -->
+      <listBibl><!-- Repeat '<bibl></bibl>' container for each new entry. -->
         <bibl xml:id="bibl_source_1">
           <author>Author Name</author>
           <title>Document Title</title>
