@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?tapas keepFirst="1"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
@@ -29,13 +30,59 @@
   </teiHeader>
   <text>
     <body>
-      <listBibl><!-- Repeat '<bibl></bibl>' container for each new entry. -->
-        <bibl xml:id="bibl_source_1">
-          <author>Author Name</author>
-          <title>Document Title</title>
-          <date>Year</date>
+      <listBibl>
+        <head>Sample Bibliography</head>
+        <!-- Repeat '<bibl></bibl>' container for each new entry. -->
+        
+        <bibl xml:id="bibl_rackrent">
+          <title>Castle Rackrent: an Hibernian Tale</title>
+          <title type="sub">Taken from Facts, and from the Manners of the 
+            Irish Squires before the Year 1782</title>
+          <author>
+            <persName ref="#aut_edgeworth">Edgeworth, Maria</persName>
+          </author>
+          <measure unit="pages">214</measure>
+          <measure unit="price">4s</measure>
+          <publisher>
+            <name>Johnson</name>
+          </publisher>
+          <date when="1801">1801</date>
+          <note>
+            <p><![CDATA[<bibl>]]> can be used to represent bibliographic 
+              information without a narrative structure.</p>
+          </note>
+        </bibl>
+        
+        <bibl xml:id="bibl_fashionable"><title rend="italic">Tales of 
+          Fashionable Life.</title> By <author ref="#aut_edgeworth">Miss Edgeworth</author>, 
+          Author of <title rend="italic">Practical Education</title>, 
+          <title rend="italic">Belinda</title>, <title rend="italic">Castle 
+          Rackrent</title>, &amp;c. 12mo. 3 vol. <pubPlace>London</pubPlace>. 
+          <date when="1809">1809</date>. Announced for republication by 
+          <publisher><name>J. Milligan</name></publisher>, 
+          <pubPlace>Georgetown</pubPlace>, and by <publisher><name>Bradford 
+          and Inskeep</name></publisher>, <pubPlace>Philadelphia</pubPlace>.
+          <note>
+            <p>Another use of <![CDATA[<bibl>]]> is to represent data (such 
+              as a work’s title) within a human-readable citation.</p>
+          </note>
         </bibl>
       </listBibl>
     </body>
+    <back>
+      <listPerson>
+        <head>Author list</head>
+        <person xml:id="aut_edgeworth" sex="female">
+          <persName>
+            <surname>Edgeworth</surname>
+            <forename>Maria</forename>
+          </persName>
+          <floruit from="1795" to="1848"/>
+          <note>
+            <p>Popular, prolific author. Her works included <title ref="#bibl_rackrent">Castle Rackrent</title> and <title ref="#bibl_fashionable">Tales of a Fashionable Life</title>.</p>
+          </note>
+        </person>
+      </listPerson>
+    </back>
   </text>
 </TEI>
